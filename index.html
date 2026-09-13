@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>my plan 🌸</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="my plan 🌸">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#e84f8a">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{background:#e84f8a}body{padding-top:env(safe-area-inset-top);font-family:'Segoe UI',system-ui,sans-serif;background:#fff5f8;color:#1a1a1a;-webkit-tap-highlight-color:transparent;padding-bottom:70px}
+.ctr{max-width:640px;margin:0 auto;padding:16px 16px 40px}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#f072a8;font-weight:600}
+h1{font-size:22px;font-weight:700;margin:4px 0 4px;line-height:1.2}.sub{font-size:13px;color:#666;margin-bottom:4px}
+.bnav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:0.5px solid #f0c0d5;display:flex;z-index:100;padding:4px 0;padding-bottom:env(safe-area-inset-bottom)}
+.bnav button{flex:1;border:none;background:none;cursor:pointer;padding:6px 0;font-size:10px;color:#999;display:flex;flex-direction:column;align-items:center;gap:2px;transition:color .2s}.bnav button.on{color:#e84f8a;font-weight:700}.bnav button .bi{font-size:20px}
+.pg{display:none}.pg.on{display:block}
+.dbar{display:flex;gap:5px;margin:0 0 16px;overflow-x:auto;padding-bottom:4px}
+.dbtn{flex:1 0 auto;min-width:44px;padding:8px 4px;border:none;border-radius:10px;cursor:pointer;font-size:12px;font-weight:500;background:#ffd6e8;color:#555;transition:all .2s;text-align:center;line-height:1.3}
+.dbtn.on{background:#e84f8a;color:#fff;font-weight:700}.dbtn .di{font-size:10px;display:block;margin-top:1px;opacity:.6}
+.dsum{display:flex;gap:6px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:4px;border-radius:20px;padding:5px 11px;font-size:11px;font-weight:600}
+.pill.f{background:#fff0f5;color:#e84f8a}.pill.g{background:#f8e8ff;color:#b05ab0}.pill.r{background:#f0e8ff;color:#9a7ab8}
+.card{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:14px;transition:border .2s;position:relative;margin-bottom:10px}
+.card.exp{border:1.5px solid #e84f8a}.card.clk{cursor:pointer}
+.mhdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;flex-wrap:wrap;gap:4px}
+.mt{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-weight:600}
+.mm{display:flex;gap:5px;align-items:center}
+.tb{font-size:10px;color:#888;background:#ffe8f0;border-radius:6px;padding:2px 6px}
+.pt{font-size:10px;color:#e84f8a;background:#ffe0ee;border-radius:6px;padding:2px 6px;font-weight:600}
+.arr{font-size:13px;color:#999;transition:transform .2s;display:inline-block}.arr.o{transform:rotate(180deg)}
+.tr{display:flex;justify-content:space-between;align-items:flex-start;gap:6px}
+.mn{font-size:15px;font-weight:650;margin-bottom:4px;flex:1}
+.fb{background:none;border:none;font-size:16px;cursor:pointer;padding:0;line-height:1;flex-shrink:0;opacity:.3;transition:opacity .2s}.fb.on{opacity:1}
+.md{font-size:12px;color:#555;line-height:1.5}
+.vibes{display:flex;gap:4px;flex-wrap:wrap;margin-top:5px}
+.vb{font-size:10px;color:#d06a90;background:#ffe8f0;border-radius:20px;padding:2px 7px;font-weight:500}
+.tip{font-size:11px;color:#8a6aaa;background:#f0e8ff;border-radius:8px;padding:4px 8px;margin-top:5px;line-height:1.4}
+.tip::before{content:"💡 "}
+.rcp{margin-top:10px;padding-top:10px;border-top:1px dashed #e0ddd8;display:none}.rcp.show{display:block}
+.rhd{font-size:11px;font-weight:700;color:#e84f8a;margin-bottom:5px;text-transform:uppercase;letter-spacing:1px}
+.rcp ul,.rcp ol{padding-left:16px}.rcp li{font-size:12px;color:#555;line-height:1.6;margin-bottom:2px}
+.rcp ul{margin-bottom:10px;list-style:disc}.rcp ol{list-style:decimal}
+.sw{margin-top:8px;padding-top:8px;border-top:1px dashed #f0c0d5}
+.swt{font-size:10px;color:#999;margin-bottom:4px;font-weight:600}
+.swo{font-size:11px;color:#f072a8;background:#ffe8f0;border-radius:8px;padding:8px 10px;margin-bottom:4px;line-height:1.4;cursor:pointer;transition:all .15s;border:1px solid transparent}
+.swo:hover,.swo:active{border-color:#e84f8a;background:#ffd6e8}
+.swapped-tag{font-size:10px;color:#fff;background:#9a7ab8;border-radius:12px;padding:2px 8px;font-weight:600;margin-right:6px}
+.swap-back{font-size:11px;color:#b05ab0;background:#f8e8ff;border:none;border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:600;margin-top:8px}
+/* Portion adjuster */
+.por{display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.por-label{font-size:11px;color:#888;font-weight:600}
+.por-btn{width:30px;height:30px;border-radius:8px;border:2px solid #f0c0d5;background:#fff;cursor:pointer;font-size:12px;font-weight:700;color:#888;transition:all .15s;display:flex;align-items:center;justify-content:center}
+.por-btn.on{background:#e84f8a;border-color:#e84f8a;color:#fff}
+body.dark .por-btn{background:#2a1520;border-color:#444;color:#999}
+body.dark .por-btn.on{background:#c05080;border-color:#c05080;color:#fff}
+body.dark .swo{background:#2a1520;color:#9a8a7a}
+body.dark .swo:hover{border-color:#c05080;background:#3a1a2a}
+body.dark .swap-back{background:#2a1a35;color:#b09ad0}
+.ws{font-size:11px;font-weight:700;color:#b05ab0;text-transform:uppercase;letter-spacing:1px;margin:14px 0 6px;padding-top:6px;border-top:1px solid #f8e8ff}.ws:first-child{border-top:none;margin-top:0;padding-top:0}
+.ex{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:12px;margin-bottom:8px}
+.en{font-size:14px;font-weight:650;margin-bottom:2px;display:flex;justify-content:space-between;align-items:center}
+.efl{font-size:10px;color:#b05ab0;text-decoration:none;background:#f8e8ff;padding:3px 8px;border-radius:6px;font-weight:600;white-space:nowrap;flex-shrink:0}
+.es{font-size:12px;color:#b05ab0;font-weight:600;margin-bottom:3px}
+.eno{font-size:11px;color:#888;line-height:1.4}
+.et{display:inline-block;font-size:9px;color:#fff;background:#b05ab0;border-radius:12px;padding:2px 7px;margin-top:3px;font-weight:600;margin-right:4px}
+.et.abs{background:#f072a8}.et.sh{background:#5a7c6b}
+.sr{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;align-items:center}
+.sd{width:30px;height:30px;border-radius:50%;border:2px solid #ddd;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:10px;font-weight:600;color:#bbb;transition:all .15s}.sd.dn{background:#b05ab0;border-color:#b05ab0;color:#fff}
+.wl{display:flex;align-items:center;gap:4px;margin-top:6px}
+.wl label{font-size:10px;color:#999}.wl input{width:50px;border:1px solid #ddd;border-radius:6px;padding:4px 6px;font-size:12px;text-align:center;font-family:inherit}
+.wl .pv{font-size:10px;color:#bbb;margin-left:4px}
+.tbar{position:fixed;bottom:60px;left:0;right:0;background:#b05ab0;color:#fff;padding:10px 16px;display:none;justify-content:space-between;align-items:center;z-index:99}.tbar.on{display:flex}
+.tt{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.tbar button{background:rgba(255,255,255,.2);border:none;color:#fff;padding:6px 12px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:600}
+.btn{background:#b05ab0;border:none;color:#fff;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:11px;font-weight:600;margin-right:4px}.btn.sm{padding:4px 10px;font-size:10px}
+.sc{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:12px;margin-bottom:8px}
+.scn{font-size:14px;font-weight:600;margin-bottom:2px}.scd{font-size:11px;color:#9a7ab8;font-weight:600;margin-bottom:3px}
+.scno{font-size:11px;color:#888;line-height:1.4}
+.rs{font-size:11px;font-weight:700;color:#9a7ab8;text-transform:uppercase;letter-spacing:1px;margin:14px 0 6px}
+.stc{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:16px;margin-bottom:12px}
+.stc h3{font-size:14px;font-weight:700;color:#e84f8a;margin-bottom:8px}
+.stc p{font-size:12px;color:#555;line-height:1.5;margin-bottom:5px}.stc p:last-child{margin-bottom:0}
+.strow{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:0.5px solid #ffe8f2}.strow:last-child{border-bottom:none}
+.stday{font-size:13px;font-weight:600;width:60px}
+.stsel{border:1px solid #ddd;border-radius:8px;padding:6px 8px;font-size:12px;background:#fff;font-family:inherit;flex:1;margin-left:8px;max-width:200px}
+.scat{margin-bottom:16px}
+.sct{font-size:12px;font-weight:700;color:#e84f8a;margin-bottom:5px;padding-bottom:3px;border-bottom:1px solid #f0c0d5}
+.si{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:12px;color:#444;cursor:pointer;user-select:none}.si.chk{color:#bbb;text-decoration:line-through}
+.cb{width:18px;height:18px;border-radius:5px;border:2px solid #ccc;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s}
+.si.chk .cb{background:#e84f8a;border-color:#e84f8a}.cb::after{content:'✓';color:#fff;font-size:10px;font-weight:700;opacity:0}.si.chk .cb::after{opacity:1}
+.spg{font-size:11px;color:#888;margin-bottom:12px}
+.spb{height:5px;background:#ffd6e8;border-radius:3px;margin-top:5px;overflow:hidden}
+.spf{height:100%;background:linear-gradient(90deg,#f5a0c0,#e84f8a);border-radius:3px;transition:width .3s}
+.ic{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:14px;margin-bottom:10px}
+.ic h3{font-size:13px;font-weight:700;margin-bottom:5px;color:#e84f8a}
+.ic p{font-size:12px;color:#555;line-height:1.5;margin-bottom:5px}
+.ps{display:flex;gap:10px;margin-bottom:8px}
+.pn{width:24px;height:24px;background:#ffe0ee;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#e84f8a;flex-shrink:0}
+.ptx{font-size:12px;color:#555;line-height:1.4}
+.clr{background:none;border:1px solid #ddd;border-radius:8px;padding:6px 12px;font-size:11px;color:#888;cursor:pointer;margin-top:6px}.clr:hover{border-color:#e84f8a;color:#e84f8a}
+.fli{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:10px 14px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.fln{font-size:13px;font-weight:600}.fld{font-size:10px;color:#888;margin-top:1px}
+.frm{background:none;border:none;font-size:14px;cursor:pointer;color:#ccc;padding:4px}
+.empty{text-align:center;padding:30px 20px;color:#aaa;font-size:12px}.empty span{font-size:28px;display:block;margin-bottom:8px}
+.thdr{background:linear-gradient(135deg,#e84f8a,#f472b6);border-radius:14px;padding:20px;color:#fff;margin-bottom:16px}
+.tdy{font-size:24px;font-weight:700}.tdt{font-size:12px;opacity:.7;margin-top:2px}
+.ttp{display:inline-block;background:rgba(255,255,255,.2);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:600;margin-top:8px}
+.shdr{font-size:13px;font-weight:700;margin:16px 0 8px;display:flex;align-items:center;gap:6px}
+.shdr.gh{color:#b05ab0}.shdr.rh{color:#9a7ab8}.shdr.fh{color:#e84f8a}
+.pov{margin-top:20px;border-top:1px solid #f0c0d5}.pov summary{cursor:pointer;font-size:12px;font-weight:600;color:#e84f8a;padding:8px 0}
+.brow{display:flex;align-items:center;gap:8px;margin-bottom:6px}.bl{font-size:11px;width:32px;color:#666}.bt{flex:1;background:#ffd6e8;border-radius:5px;height:10px;overflow:hidden}.bf{height:100%;background:linear-gradient(90deg,#f5a0c0,#e84f8a);border-radius:5px}.bv{font-size:11px;font-weight:600;color:#e84f8a;width:32px;text-align:right}
+.ftr{font-size:10px;color:#aaa;margin-top:20px;text-align:center}
+.wbb{display:flex;gap:5px;margin:0 0 16px;overflow-x:auto;padding-bottom:4px}
+.wb{flex:1 0 auto;min-width:55px;padding:8px 6px;border:none;border-radius:10px;cursor:pointer;font-size:11px;font-weight:500;background:#f8e8ff;color:#c080d0;transition:all .2s;text-align:center}.wb.on{background:#b05ab0;color:#fff;font-weight:700}
+.wb .wd{font-size:9px;opacity:.7;display:block;margin-top:1px}
+.rab{display:flex;gap:6px;margin-bottom:14px}
+.ra{flex:1;padding:8px;border:none;border-radius:10px;cursor:pointer;font-size:11px;font-weight:500;background:#f0e8ff;color:#9a7ab8;text-align:center;transition:all .2s}.ra.on{background:#9a7ab8;color:#fff;font-weight:700}
+/* Water tracker */
+.wtr{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:14px;margin-bottom:12px}
+.wtr-title{font-size:12px;font-weight:700;color:#e84f8a;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.wtr-glasses{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.wtr-g{width:28px;height:28px;border-radius:8px;border:2px solid #e8c0d0;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:12px;transition:all .15s}
+.wtr-g.full{background:#e84f8a;border-color:#e84f8a}.wtr-g.full::after{content:'💖';font-size:12px}
+.wtr-g.empty::after{content:'·';color:#ccc;font-size:16px}
+/* Workout notes */
+.wnote{margin-top:12px}
+.wnote textarea{width:100%;border:1px solid #ddd;border-radius:10px;padding:10px;font-size:12px;font-family:inherit;resize:vertical;min-height:60px;color:#555;background:#fff5f8}
+.wnote label{font-size:11px;color:#999;display:block;margin-bottom:4px;font-weight:600}
+/* Weekly review */
+.wrev{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:14px;margin-bottom:12px}
+.wrev-title{font-size:12px;font-weight:700;color:#e84f8a;margin-bottom:10px}
+.wrev-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.wrev-stat{background:#fff0f5;border-radius:10px;padding:10px;text-align:center}
+.wrev-num{font-size:22px;font-weight:700;color:#e84f8a}.wrev-lbl{font-size:10px;color:#888;margin-top:2px}
+/* Dark mode toggle */
+.dm-toggle{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.dm-switch{width:44px;height:24px;background:#ddd;border-radius:12px;cursor:pointer;position:relative;transition:background .2s}
+.dm-switch.on{background:#e84f8a}
+.dm-switch::after{content:'';position:absolute;width:20px;height:20px;background:#fff;border-radius:50%;top:2px;left:2px;transition:transform .2s}
+.dm-switch.on::after{transform:translateX(20px)}
+/* Dark mode */
+body.dark{background:#1f1018;color:#ddd}
+body.dark h1{color:#e8e8e8}
+body.dark .lbl{color:#9a8a7e}
+body.dark .sub,.body.dark .md{color:#999}
+body.dark .card,.dark .ex,.dark .sc,.dark .stc,.dark .ic,.dark .fli,.dark .wtr,.dark .wrev{background:#2a1520;border-color:#3a1a2a}
+body.dark .bnav{background:#1f1018;border-color:#3a1a2a}
+body.dark .dbtn{background:#2a1520;color:#999}
+body.dark .dbtn.on{background:#c05080;color:#fff}
+body.dark .pill.f{background:#3a2030;color:#f5a0c0}
+body.dark .pill.g{background:#2a1525;color:#b090d0}
+body.dark .pill.r{background:#1a1a2a;color:#b0a0d0}
+body.dark .thdr{background:linear-gradient(135deg,#2a1025,#8a3060)}
+body.dark .mn,.dark .en span,.dark .scn{color:#e0e0e0}
+body.dark .md,.dark .eno,.dark .ptx,.dark .stc p,.dark .ic p,.dark .scno{color:#999}
+body.dark .mt,.dark .mtype{color:#777}
+body.dark .pt{background:#3a2030;color:#f5a0c0}
+body.dark .tb{background:#2a1520;color:#999}
+body.dark .vb{background:#2a1520;color:#9a8a7a}
+body.dark .tip{background:#1a1a2a;color:#b0a0d0}
+body.dark .ws{border-color:#3a1a2a;color:#7a8ac0}
+body.dark .efl{background:#2a1a35;color:#b09ad0}
+body.dark .sd{border-color:#444}
+body.dark .btn{background:#b060b0}
+body.dark input,.dark select,.dark textarea{background:#2a1520;border-color:#444;color:#ddd}
+body.dark .sct{color:#f5a0c0;border-color:#3a1a2a}
+body.dark .si{color:#bbb}
+body.dark .cb{border-color:#555}
+body.dark .si.chk .cb{background:#c05080;border-color:#c05080}
+body.dark .strow{border-color:#3a1a2a}
+body.dark .sw,.dark .rcp{border-color:#3a1a2a}
+body.dark .swo{background:#2a1520;color:#9a8a7a}
+body.dark .wrev-stat{background:#2a1520}
+body.dark .wrev-num{color:#f5a0c0}
+body.dark .wtr-g{border-color:#8a3060}
+body.dark .wtr-g.full{background:#8a3060;border-color:#8a3060}
+body.dark .wnote textarea{background:#2a1520;border-color:#444;color:#ccc}
+body.dark .ra{background:#1a1a2a;color:#a090c0}
+body.dark .ra.on{background:#7a5a9a}
+body.dark .pov{border-color:#3a1a2a}
+body.dark .bt{background:#2a1520}
+body.dark .spb{background:#2a1520}
+body.dark .clr{border-color:#444;color:#999}
+body.dark .dm-switch{background:#555}
+/* Timetable */
+.tt-wrap{overflow-x:auto;margin:12px 0}
+.tt-table{width:100%;min-width:500px;border-collapse:collapse;font-size:11px}
+.tt-table th{background:#ffd6e8;color:#f072a8;font-weight:700;padding:8px 4px;text-align:center;font-size:10px;text-transform:uppercase;letter-spacing:1px;border:1px solid #f0c0d5}
+.tt-table td{padding:6px 4px;text-align:center;border:1px solid #f0c0d5;vertical-align:top;line-height:1.3;background:#fff}
+.tt-table td.rest{background:#f0e8ff;color:#9a7ab8;font-style:italic}
+.tt-table td.today{background:#fff0f5;font-weight:700}
+.tt-table .tt-meal{font-weight:600;color:#e84f8a;font-size:11px}
+.tt-table .tt-wo{font-weight:600;color:#b05ab0;font-size:11px}
+.tt-table .tt-rest{color:#9a7ab8;font-size:11px}
+.tt-table .tt-rowlbl{text-align:left;font-weight:700;color:#888;background:#fff5f8;padding:6px 8px;white-space:nowrap;font-size:10px;text-transform:uppercase;letter-spacing:.5px}
+body.dark .tt-table th{background:#2a1520;color:#9a8a7e;border-color:#3a1a2a}
+body.dark .tt-table td{background:#2a1520;border-color:#3a1a2a;color:#ccc}
+body.dark .tt-table td.rest{background:#1a1a2a}
+body.dark .tt-table td.today{background:#3a2030}
+body.dark .tt-table .tt-meal{color:#f5a0c0}
+body.dark .tt-table .tt-wo{color:#b090d0}
+body.dark .tt-table .tt-rowlbl{background:#1f1018}
+
+/* Streak */
+.streak{background:linear-gradient(135deg,#e84f8a,#f472b6);border-radius:12px;padding:14px;color:#fff;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.streak-num{font-size:28px;font-weight:700}.streak-lbl{font-size:11px;opacity:.8}
+.streak-fire{font-size:24px}
+/* Difficulty */
+.diff{display:flex;gap:6px;margin-top:8px;align-items:center}
+.diff-lbl{font-size:11px;color:#999;font-weight:600}
+.diff-dot{width:28px;height:28px;border-radius:50%;border:2px solid #f0c0d5;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:11px;font-weight:600;color:#ddd;transition:all .15s}
+.diff-dot.on{background:#e84f8a;border-color:#e84f8a;color:#fff}
+/* Volume tracker */
+.vol-bar{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.vol-lbl{font-size:11px;width:70px;color:#888;text-transform:capitalize}.vol-trk{flex:1;background:#ffd6e8;border-radius:5px;height:10px;overflow:hidden}
+.vol-fil{height:100%;background:linear-gradient(90deg,#f5a0c0,#e84f8a);border-radius:5px}.vol-val{font-size:11px;font-weight:600;color:#e84f8a;width:40px;text-align:right}
+/* Cycle */
+.cyc-phase{border-radius:12px;padding:14px;margin-bottom:12px}
+.cyc-phase.fol{background:#fff0f5;border:1px solid #f0c0d5}
+.cyc-phase.lut{background:#f0e8ff;border:1px solid #d0c0e8}
+.cyc-phase.men{background:#ffe8e8;border:1px solid #f0c0c0}
+.cyc-phase.ovu{background:#e8fff0;border:1px solid #c0e8d0}
+.cyc-title{font-size:13px;font-weight:700;margin-bottom:4px}.cyc-tip{font-size:11px;color:#888;line-height:1.5}
+/* Backup */
+.bkp-btn{background:#e84f8a;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:600;cursor:pointer;margin-right:8px;font-family:inherit}
+.bkp-btn.sec{background:#ffd6e8;color:#e84f8a}
+body.dark .streak{background:linear-gradient(135deg,#8a3060,#c05080)}
+body.dark .diff-dot{border-color:#3a1a2a}
+body.dark .vol-trk{background:#2a1520}
+body.dark .cyc-phase.fol{background:#2a1520;border-color:#3a1a2a}
+body.dark .cyc-phase.lut{background:#1a1525;border-color:#2a1a35}
+body.dark .cyc-phase.men{background:#2a1515;border-color:#3a1a1a}
+body.dark .cyc-phase.ovu{background:#152a1a;border-color:#1a3a20}
+
+/* Collapsible sections */
+.coll-hdr{font-size:12px;font-weight:700;margin:6px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:8px 0}
+.coll-hdr .coll-arr{font-size:12px;color:#d09ab0;transition:transform .2s;display:inline-block}
+.coll-hdr .coll-arr.shut{transform:rotate(-90deg)}
+.coll-body{overflow:hidden;transition:max-height .3s}
+/* Sleep tracker */
+.sleep{background:#fff;border:1px solid #f0c0d5;border-radius:12px;padding:14px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.sleep-left{display:flex;align-items:center;gap:8px}
+.sleep-input{width:45px;border:1px solid #f0c0d5;border-radius:8px;padding:4px 6px;font-size:14px;text-align:center;font-family:inherit;font-weight:600;color:#e84f8a}
+.sleep-lbl{font-size:11px;color:#999}
+.sleep-msg{font-size:11px;color:#d06a90;font-weight:600;text-align:right;max-width:140px}
+body.dark .sleep{background:#2a1520;border-color:#3a1a2a}
+body.dark .sleep-input{background:#2a1520;border-color:#3a1a2a;color:#f0a0c0}
+/* PR Board */
+.pr-card{background:linear-gradient(135deg,#fff0f5,#ffe0ee);border:1px solid #f0c0d5;border-radius:12px;padding:12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.pr-name{font-size:13px;font-weight:600;color:#c4567a}
+.pr-val{font-size:18px;font-weight:700;color:#e84f8a}
+.pr-date{font-size:10px;color:#d09ab0}
+.pr-empty{text-align:center;padding:20px;color:#d0a0b0;font-size:12px}
+body.dark .pr-card{background:linear-gradient(135deg,#2a1520,#351a28);border-color:#3a1a2a}
+body.dark .pr-name{color:#f0a0c0}
+body.dark .pr-val{color:#f5b0d0}
+/* Measurements */
+.meas-row{display:flex;gap:10px;margin-bottom:10px;align-items:center}
+.meas-lbl{font-size:12px;font-weight:600;color:#d06a90;width:50px}
+.meas-input{width:55px;border:1px solid #f0c0d5;border-radius:8px;padding:5px 6px;font-size:13px;text-align:center;font-family:inherit}
+.meas-unit{font-size:11px;color:#999}
+.meas-hist{font-size:10px;color:#d09ab0;margin-left:8px}
+.meas-change{font-size:11px;font-weight:600;padding:2px 6px;border-radius:10px;margin-left:4px}
+.meas-change.up{background:#ffe0ee;color:#e84f8a}
+.meas-change.down{background:#e8f0ff;color:#6080c0}
+.meas-save{background:#e84f8a;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:600;cursor:pointer;margin-top:8px;font-family:inherit}
+body.dark .meas-input{background:#2a1520;border-color:#3a1a2a;color:#f0a0c0}
+</style>
+
+</head>
+<body>
+<div class="ctr" id="app"></div>
+<div class="tbar" id="tbar"><div class="tt" id="tdisp">0:00</div><div><button onclick="stopT()">✕ Close</button></div></div>
+<div class="bnav" id="bnav"></div>
+<script>
+const DN=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+const MI={breakfast:"🌸",lunch:"🌷",dinner:"🌙",snack:"🍬",preworkout:"✨",postworkout:"🧋"};
+const ML={breakfast:"Breakfast",lunch:"Lunch",dinner:"Dinner",snack:"Snack",preworkout:"Pre-Workout",postworkout:"Post-Workout"};
+
+let cfg=JSON.parse(localStorage.getItem('cfg5')||'null')||{schedule:[0,1,2,null,3,null,4]};
+function saveCfg(){localStorage.setItem('cfg5',JSON.stringify(cfg))}
+
+const BM=[
+// 0=Mon
+{ck:40,m:{breakfast:{name:"Greek Yogurt Power Bowl",cal:"350",time:"5 min",protein:"18g",desc:"Greek yogurt with granola, hemp seeds, almonds, and berries.",vibe:"sweet · fruity",ingredients:["200g Greek yogurt","30g granola","1 tbsp hemp seeds","1 tbsp almonds","80g mixed berries","1 tbsp honey"],steps:["Yogurt in bowl.","Top with granola, seeds, almonds.","Add berries and honey."]},lunch:{name:"Greek Halloumi Salad Bowl",cal:"450",time:"15 min",protein:"20g",desc:"Lettuce, couscous, cucumber, tomatoes, olives, stuffed vine leaves, and crispy halloumi.",vibe:"fresh · Mediterranean",ingredients:["100g halloumi, sliced","80g couscous","Large handful of lettuce, chopped","½ cucumber, diced","6-8 cherry tomatoes, halved","8-10 olives","4-6 stuffed vine leaves (from jar)","Juice of ½ lemon","1 tbsp olive oil","80g frozen peas","6-8 cherry tomatoes, halved","Pinch of salt and pepper"],steps:["Pour boiling water over couscous (equal parts), cover 5 min, fluff.","Pan-fry halloumi in a dry pan 2 min each side until golden.","Arrange lettuce in a bowl. Add couscous, cucumber, tomatoes, olives, vine leaves.","Top with halloumi.","Dress with lemon juice and olive oil. Season."]},dinner:{name:"Gnocchi in Tomato Sauce",cal:"520",time:"20 min",protein:"16g",desc:"Soft gnocchi in a rich garlic tomato sauce with mozzarella melted through. Side salad.",vibe:"comforting · Italian",ingredients:["400g shop-bought gnocchi","1 × 400g tin chopped tomatoes","2 cloves garlic, minced","1 tbsp olive oil","1 tsp dried oregano","80g mozzarella, torn","Pinch of salt and pepper","4-5 fresh basil leaves (optional)","Handful of lettuce, cucumber, cherry tomatoes for side salad"],steps:["Heat olive oil in a pan. Cook garlic 1 min.","Add tomatoes and oregano. Simmer 8-10 min until thickened. Season.","Cook gnocchi per packet (usually boil 2-3 min until they float). Drain.","Add gnocchi to sauce, stir gently.","Scatter mozzarella on top, cover with lid 1-2 min until melted.","Serve with basil if you have it. Toss lettuce, cucumber, and cherry tomatoes for a quick side salad."],swaps:["Tomato pasta","Cheese toastie","Pesto gnocchi"]},snack:{name:"Frozen grapes + dark chocolate",cal:"150",protein:"4g"}}},
+// 1=Tue
+{ck:40,m:{breakfast:{name:"Berry Smoothie Bowl",cal:"320",time:"5 min",protein:"18g",desc:"Thick blended berry bowl topped with granola, seeds, and honey.",vibe:"sweet · fresh",ingredients:["150g frozen mixed berries","100g Greek yogurt","1 scoop protein powder (~25g)","2-3 tbsp oat milk","30g granola","1 tsp sesame seeds","1 tbsp honey"],steps:["Blend frozen berries, yogurt, protein powder, and a splash of oat milk until thick.","Pour into a bowl.","Top with granola, sesame seeds, and honey."]},lunch:{name:"Sesame Avocado Rice Bowl",cal:"380",time:"10 min",protein:"12g",desc:"Sushi rice with avocado, cucumber, nori, sesame, soy dressing.",vibe:"fresh · Japanese",ingredients:["150g rice","1 avocado","½ cucumber, sliced","1 sheet nori, cut into strips","1 tsp sesame seeds","1 tbsp soy sauce","2 tbsp rice vinegar","1 tsp sesame oil"],steps:["Mix soy, rice vinegar, sesame oil.","Top rice with avocado, cucumber, nori.","Drizzle dressing + sesame seeds."]},dinner:{name:"Halloumi Burger & Fries",cal:"650",time:"25 min",protein:"20g",desc:"Crispy halloumi in a bun with avocado, tomato, garlic aioli. Oven fries.",vibe:"comforting · indulgent",ingredients:["160g halloumi","2 buns","1 avocado","1 medium tomato, sliced","2 tbsp Greek yogurt","2 cloves garlic, minced","Juice of ½ lemon","300g frozen oven fries"],steps:["Cook fries.","Aioli: yogurt + garlic + lemon.","Fry halloumi 2 min each side.","Build burger. Serve with fries."],swaps:["Halloumi wrap","Loaded fries","Cheese toastie"]},snack:{name:"Rice cakes + honey",cal:"120",cal:"120",protein:"4g"}}},
+// 2=Wed
+{ck:45,m:{breakfast:{name:"Honey Cinnamon Porridge",cal:"380",time:"8 min",protein:"14g",desc:"Warm, creamy porridge with honey, cinnamon, and your choice of toppings.",vibe:"sweet · warm · cosy",ingredients:["50g rolled oats","200ml oat milk","1 scoop protein powder (~25g)","½ tsp cinnamon","1 tbsp honey","1 banana, sliced","1 tsp sesame seeds","Small handful of walnuts (~20g)"],steps:["Add oats and oat milk to a saucepan over medium heat.","Stir frequently for 4-5 min until thick and creamy.","Stir in cinnamon and protein powder until smooth.","Pour into bowl, top with banana, honey, sesame seeds, and walnuts."]},lunch:{name:"Veggie Gyoza + Rice",cal:"400",time:"15 min",protein:"12g",desc:"Pan-fried gyoza with steamed rice and soy dipping sauce.",vibe:"Japanese · comfort",ingredients:["8-10 frozen veggie gyoza","150g cooked rice","1 tbsp soy sauce","1 tsp rice vinegar","1 tsp sesame oil","1 tsp sesame seeds","2-3 spring onions, sliced","1 tbsp vegetable oil"],steps:["Cook rice if not using leftover.","Heat oil in a frying pan over medium-high.","Add gyoza, fry 2 min until bottoms are golden.","Add 3-4 tbsp water, cover with lid, steam 4-5 min.","Mix soy sauce, rice vinegar, sesame oil for dipping.","Serve gyoza with rice. Drizzle sauce, top with sesame seeds and spring onions."]},dinner:{name:"Bibimbap-Style Rice Bowl",cal:"440",time:"20 min",protein:"18g",desc:"Rice with fried egg, sesame carrots, cucumber, sweetcorn, peas, soy-sesame drizzle.",vibe:"fresh · Korean-inspired",ingredients:["150g rice","1 egg","1 carrot, grated or julienned","½ cucumber, sliced","½ tin sweetcorn, drained","1 avocado","1 tbsp soy sauce","1 tsp sesame oil","2 tbsp rice vinegar","1 tsp sesame seeds"],steps:["Sauté carrot in sesame oil.","Fry egg, yolk runny.","Top rice with everything. Drizzle dressing."],swaps:["Egg fried rice","Avocado egg toast","Noodle bowl"]},snack:{name:"Greek yogurt + almonds + honey",cal:"200",protein:"14g"}}},
+// 3=Thu
+{ck:45,m:{breakfast:{name:"Citrus Mango Protein Smoothie",cal:"280",time:"5 min",protein:"18g",desc:"OJ, frozen mango, Greek yogurt, protein powder.",vibe:"tropical · citrusy",ingredients:["150ml OJ","80g frozen mango","100g Greek yogurt","1 scoop protein powder (~25g)","Optional: extra berries"],steps:["Blend everything smooth."]},lunch:{name:"Cold Sesame Soba Noodle Salad",cal:"370",time:"12 min",protein:"14g",desc:"Chilled soba noodles with cucumber, carrot, avocado, sesame seeds, and a soy-sesame-lime dressing.",vibe:"fresh · Japanese",ingredients:["150g soba noodles","1 carrot, julienned","½ cucumber, sliced","½ avocado","1 tsp sesame seeds","2 tbsp soy sauce","1 tbsp sesame oil","1 tbsp lime juice","1 tsp honey"],steps:["Cook soba noodles, rinse under cold water.","Mix soy, sesame oil, lime juice, honey for dressing.","Toss noodles with carrot, cucumber, avocado.","Drizzle dressing and top with sesame seeds."]},dinner:{name:"Tomato Soup + Mozzarella Garlic Bread",cal:"550",time:"25 min",protein:"18g",desc:"Rich homemade tomato soup with crispy mozzarella garlic bread for dunking. Cosy rainy-day dinner.",vibe:"comforting · cosy",ingredients:["1 × 400g tin chopped tomatoes","1 small onion, diced","2 cloves garlic, minced (1 for soup, 1 for bread)","1 tbsp olive oil","200ml vegetable stock","100ml double cream","Pinch of salt and pepper","1 small baguette or 2 thick slices sourdough","15g butter, softened","80g mozzarella, sliced","Handful of lettuce, cucumber, cherry tomatoes for side salad"],steps:["Heat olive oil, cook onion for 3-4 min until soft. Add 1 clove garlic, cook 1 min.","Add tinned tomatoes and stock. Simmer 10 min.","Meanwhile, mix softened butter with remaining minced garlic. Spread on bread.","Top bread with mozzarella slices. Grill or bake at 200°C for 5-8 min until golden and melty.","Stir cream into the soup. Blend with a stick blender until smooth (or leave chunky). Season.","Serve soup with garlic bread for dunking. Quick side salad: lettuce, cucumber, cherry tomatoes."],swaps:["Cheese toastie + tinned soup","Pasta bake","Cheese on toast"]},snack:{name:"Popcorn (salted or sweet)",cal:"100",protein:"4g"}}},
+// 4=Fri
+{ck:43,m:{breakfast:{name:"Avocado Toast with Fried Egg",cal:"350",time:"8 min",protein:"14g",desc:"Sourdough, avocado, fried egg, everything seasoning.",vibe:"savoury · fresh",ingredients:["2 slices sourdough","1 avocado","1 egg","½ tsp everything bagel seasoning","Juice of ½ lemon"],steps:["Toast sourdough. Fry egg.","Smash avocado on toast. Top with egg + seasoning."]},lunch:{name:"Egg Fried Rice with Boiled Veg",cal:"420",time:"15 min",protein:"16g",desc:"Day-old rice with egg, soy, sesame. Boiled broccoli, carrots, cauliflower.",vibe:"comforting · Asian",ingredients:["200g rice","2 eggs","1 tbsp soy sauce","1 tsp sesame oil","2-3 spring onions, sliced","100g broccoli florets, 1 carrot sliced, handful of sweetcorn"],steps:["Boil veg 4-5 min.","Scramble eggs in wok, add rice.","Add soy + sesame oil. Top with spring onions."]},dinner:{name:"Creamy Garlic Tomato Pasta",cal:"580",time:"20 min",protein:"18g",desc:"Penne in a creamy garlic tomato sauce with peas and cherry tomatoes.",vibe:"rich · garlicky · Italian",ingredients:["200g penne","2 cloves garlic, minced","15g butter","1 tbsp olive oil","1 × 400g tin chopped tomatoes","100ml double cream","1 tsp dried oregano","30g parmesan, grated","80g frozen peas","6-8 cherry tomatoes, halved","Pinch of salt and pepper"],steps:["Cook penne according to packet. Add peas for the last 2 min. Drain, saving a cup of pasta water.","Melt butter in the pasta pot over medium heat. Add garlic, cook 1 min until fragrant.","Pour in tinned tomatoes and oregano. Simmer 8-10 min until thickened.","Stir in the cream and parmesan, let it come together for 2 min. Season.","Toss pasta and peas through the sauce, loosening with pasta water if needed. Stir in halved cherry tomatoes.","Serve."],swaps:["Tomato pasta","Pesto pasta","Cheese on toast"]},snack:{name:"Smoothie bowl (berries + yogurt + granola)",cal:"220",protein:"12g"}}},
+// 5=Sat
+{ck:47,m:{breakfast:{name:"Banana & Maple Oat Pancakes",cal:"400",time:"15 min",protein:"14g",desc:"Oat pancakes with banana, maple syrup, cinnamon.",vibe:"sweet · cosy",ingredients:["80g oats","1 egg","80ml oat milk","1 scoop protein powder (~25g)","½ tsp baking powder","½ tsp cinnamon","1 banana, sliced","1-2 tbsp maple syrup","15g butter"],steps:["Blend oats. Mix with egg, milk, protein powder, baking powder, cinnamon.","Cook rounds 2 min, flip 1 min.","Top with banana + maple."]},lunch:{name:"Margherita Flatbread Pizza",cal:"480",time:"12 min",protein:"16g",desc:"Flatbread, tomato sauce, mozzarella, basil, olive oil.",vibe:"classic · Italian",ingredients:["2 flatbreads","3 tbsp passata","125g mozzarella","4-5 fresh basil leaves","1 tbsp olive oil"],steps:["220°C. Sauce + mozzarella.","Bake 8-10 min. Add basil + oil."]},dinner:{name:"Egg Fried Noodles",cal:"450",time:"15 min",protein:"16g",desc:"Thick udon noodles stir-fried with egg, carrots, and spring onions in soy and sesame. Quick and satisfying.",vibe:"comforting · Asian",ingredients:["200g udon noodles","2 eggs","1 carrot, grated or julienned","2-3 spring onions, sliced","1 tbsp soy sauce","1 tsp sesame oil","1 tsp sesame seeds","2-3 tbsp vegetable oil"],steps:["Cook udon noodles according to packet. Drain.","Heat oil in a wok over high heat. Crack in eggs, scramble quickly.","Add carrot, stir-fry 1-2 min.","Add noodles, soy sauce, and sesame oil. Toss everything together for 2-3 min.","Top with spring onions and sesame seeds."],swaps:["Soy noodles + fried egg","Egg fried rice","Frozen gyoza + rice"]},snack:{name:"Frozen grapes + dark chocolate",cal:"150",protein:"4g"}}},
+// 6=Sun
+{ck:45,m:{breakfast:{name:"Cinnamon Waffles + Berries",cal:"380",time:"12 min",protein:"14g",desc:"Crispy cinnamon waffles topped with berries and maple syrup.",vibe:"sweet · weekend treat",ingredients:["100g plain flour","1 egg","120ml oat milk","1 scoop protein powder (~25g)","1 tbsp vegetable oil","1 tsp baking powder","½ tsp cinnamon","80g mixed berries","1-2 tbsp maple syrup"],steps:["Mix flour, baking powder, cinnamon in a bowl.","Whisk in egg, oat milk, protein powder, and oil until smooth.","Heat waffle maker or pour into a pan for thick pancake-style.","Cook until golden and crispy, about 3-4 min.","Top with berries and maple syrup."]},lunch:{name:"Miso-Glazed Tofu Rice Bowl",cal:"420",time:"15 min",protein:"18g",desc:"Miso tofu, avocado, pickled carrot, cucumber, sesame over rice.",vibe:"umami · Japanese",ingredients:["200g tofu","1 tbsp white miso paste","1 tbsp honey","1 tsp sesame oil","150g cooked rice","1 avocado","1 carrot, grated or julienned","2 tbsp rice vinegar","½ cucumber, sliced","1 tsp sesame seeds","1 tbsp soy sauce"],steps:["Glaze tofu with miso + honey + sesame oil.","Bake 200°C 15 min or pan-fry.","Pickle carrot. Arrange bowl."]},dinner:{name:"Walnut Bolognese Spaghetti",cal:"550",time:"25 min",protein:"16g",desc:"Blitzed walnuts + carrot in tomato sauce, spaghetti, parmesan.",vibe:"hearty · nutty · Italian",ingredients:["200g spaghetti","100g walnuts","1 carrot, grated or julienned","1 small onion, diced","2 cloves garlic, minced","1 × 400g tin chopped tomatoes","1 tbsp tomato purée","1 tsp dried oregano","30g parmesan, grated"],steps:["Cook spaghetti.","Cook onion + garlic. Add carrot + walnuts.","Add tomatoes + purée + oregano. Simmer 15 min.","Serve with parmesan."],swaps:["Tomato pasta","Pesto spaghetti","Toast + leftovers"]},snack:{name:"Popcorn (salted or sweet)",cal:"100",protein:"4g"}}}
+];
+
+// Pre-workout options (varied by day index)
+const PRE=[
+{name:"Toast with honey + cashews",cal:"150",protein:"6g",desc:"30-45 min before gym. Quick carbs for energy."},
+{name:"Banana + almonds",cal:"140",protein:"6g",desc:"30-45 min before gym. Classic combo."},
+null, // Wed rest
+{name:"Dates (3-4) + cashews",cal:"160",protein:"4g",desc:"30-45 min before gym. Natural energy boost."},
+{name:"Granola bar",cal:"130",protein:"4g",desc:"30-45 min before gym. Grab-and-go option."},
+{name:"Rice cakes + honey",cal:"120",protein:"4g",desc:"30-45 min before gym. Light but fuelling."},
+null // Sun rest
+];
+
+// Post-workout options (varied by day index)
+const POST=[
+{name:"Mango Protein Smoothie",cal:"200",protein:"24g",desc:"OJ + frozen mango + protein powder. Blitz and go."},
+{name:"Greek Yogurt + Granola + Honey",cal:"250",protein:"18g",desc:"Quick, no blender needed. Protein + carbs."},
+{name:"Berry Protein Shake (recovery)",cal:"180",protein:"24g",desc:"Rest day recovery. Oat milk + berries + protein powder."},
+{name:"Berry Protein Shake",cal:"180",protein:"24g",desc:"Oat milk + frozen berries + protein powder."},
+{name:"Protein Shake",cal:"170",protein:"24g",desc:"Oat milk + protein powder. Simple and effective."},
+{name:"Chocolate Protein Shake",cal:"190",protein:"24g",desc:"Oat milk + protein powder + 1 tsp cocoa. Tastes like a treat."},
+{name:"Protein Shake (recovery)",cal:"170",protein:"24g",desc:"Rest day recovery. Have this in the afternoon."}
+];
+
+const WO=[
+{t:"Glutes & Quads",f:"Glutes · Quads",tm:"~70 min",sec:[
+{n:"🔥 warm-up (8 min)",ex:[{n:"Glute band walks",s:2,r:"15 each way",nt:"Band at ankles, stay low"},{n:"Fire Hydrants",s:2,r:"12 each side",nt:"On all fours, lift knee out. Activates outer glute."},{n:"Bodyweight squats",s:2,r:"15",nt:"Slow, wake legs up"}]},
+{n:"💪 main lifts",ex:[{n:"Barbell Hip Thrusts",s:3,r:"10",nt:"Feet slightly further out to target upper glute shelf. Squeeze hard, pause 1 sec at top. 2 warm-up sets first.",tg:"glutes",lg:1,sw:"20"},{n:"Barbell Back Squats",s:3,r:"10",nt:"Full depth. Core tight. 2 warm-up sets first.",tg:"quads",lg:1,sw:"20"},{n:"Bulgarian Split Squats",s:3,r:"10 each leg",nt:"Rear foot on bench. Long stride for glutes.",tg:"glutes",lg:1,sw:"BW"}]},
+{n:"✨ accessories",ex:[{n:"Leg Press (feet low & narrow)",s:3,r:"12",nt:"Feet LOW on platform = more quads. Different from Thursday where feet go high for glutes.",tg:"quads",lg:1,sw:"40"},{n:"Leg Extensions",s:3,r:"12",nt:"Squeeze quads hard at the top. Builds defined front of legs.",tg:"quads",lg:1,sw:"15"},{n:"Curtsy Lunges",s:3,r:"12 each leg",nt:"Step behind and across like a curtsy. Specifically fills in hip dips. Start bodyweight.",tg:"glutes",lg:1,sw:"BW"}]},
+{n:"🧊 cool-down (5 min)",ex:[{n:"Pigeon Pose",s:1,r:"45 sec each side",nt:"Deep glute stretch."},{n:"Standing Quad Stretch",s:1,r:"30 sec each leg",nt:"Hold ankle, knees together."},{n:"Hip Flexor Stretch",s:1,r:"30 sec each side",nt:"Lunge position, push hips forward."},{n:"Seated Hamstring Stretch",s:1,r:"45 sec",nt:"Reach for toes."}]}]},
+{t:"Push — Shoulders & Chest",f:"Shoulders · Chest · Triceps",tm:"~70 min",sec:[
+{n:"🔥 warm-up (5 min)",ex:[{n:"Arm circles",s:2,r:"15 each way",nt:"Small to big"},{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Push-ups",s:1,r:"10",nt:"Wake up chest + triceps"},{n:"Face Pulls (light)",s:2,r:"12",nt:"Warms up rear delts. Keeps shoulders balanced and healthy."}]},
+{n:"💪 main lifts",ex:[{n:"Dumbbell Overhead Press",s:3,r:"10",nt:"Builds real pressing strength without visible bulk. Start ~5kg each.",tg:"shoulders",lg:1,sw:"5"},{n:"Incline Dumbbell Chest Press",s:4,r:"10",nt:"30° bench. Upper chest + front delts. Start ~6kg each.",tg:"chest",lg:1,sw:"6"},{n:"Lateral Raises",s:2,r:"12",nt:"Light — just enough to keep toned, not build caps. Start ~2-3kg.",tg:"shoulders",lg:1,sw:"3"}]},
+{n:"✨ accessories",ex:[{n:"Cable Flyes",s:3,r:"12",nt:"Slight bend in elbows. Squeeze at middle. Start ~5kg each.",tg:"chest",lg:1,sw:"5"},{n:"Dips (assisted or bench)",s:3,r:"10",nt:"Great for chest AND triceps. Use assisted machine or bench dips.",tg:"chest",lg:1,sw:"assisted"},{n:"Tricep Pushdowns",s:3,r:"12",nt:"Cable, rope or bar. Lock elbows at sides. Start ~10kg.",tg:"triceps",lg:1,sw:"10"},{n:"Overhead Tricep Extension",s:3,r:"12",nt:"Dumbbell or rope behind head. Start ~6kg.",tg:"triceps",lg:1,sw:"6"}]},
+{n:"🧊 cool-down (5 min)",ex:[{n:"Cross-Body Shoulder Stretch",s:1,r:"30 sec each arm",nt:"Pull arm across chest."},{n:"Doorway Chest Stretch",s:1,r:"30 sec",nt:"Arms on frame, lean through."},{n:"Overhead Tricep Stretch",s:1,r:"30 sec each arm",nt:"Reach behind head."},{n:"Cat-Cow",s:1,r:"10 reps",nt:"Slow spinal movement."}]}]},
+{t:"Glutes & Hamstrings",f:"Glutes · Hamstrings",tm:"~70 min",sec:[
+{n:"🔥 warm-up (8 min)",ex:[{n:"Hip circles",s:2,r:"10 each way",nt:"Big circles"},{n:"Clamshells",s:2,r:"15 each side",nt:"Band above knees. Open top knee. Wakes up outer glute."},{n:"Glute bridges",s:2,r:"15",nt:"Bodyweight, squeeze at top"}]},
+{n:"💪 main lifts",ex:[{n:"Sumo Deadlifts",s:3,r:"8",nt:"Wide stance, toes out. Drive through heels. Start ~30kg. 2 warm-up sets.",tg:"glutes",lg:1,sw:"30"},{n:"Romanian Deadlifts",s:3,r:"10",nt:"Carves the line between glutes and hamstrings. Slow lowering. Start ~20kg.",tg:"hamstrings",lg:1,sw:"20"},{n:"Walking Lunges",s:3,r:"12 each leg",nt:"Long stride + slight forward lean hits the glute-ham tie-in. Start ~6kg each.",tg:"glutes",lg:1,sw:"6"}]},
+{n:"✨ accessories",ex:[{n:"Leg Curl Machine",s:3,r:"12",nt:"Slow on the way down. Start ~15kg.",tg:"hamstrings",lg:1,sw:"15"},{n:"Hip Abductor Machine",s:3,r:"15",nt:"Fills hip dips. Lean slightly forward for more glute. Start ~20kg.",tg:"glutes",lg:1,sw:"20"},{n:"Swiss Ball Hamstring Curls",s:3,r:"12",nt:"Lie on back, feet on a Swiss ball, lift hips up and curl the ball towards you. Hits hamstrings through knee flexion — completely different from any deadlift. Bodyweight only, harder than it sounds.",tg:"hamstrings",lg:1,sw:"BW"}]},
+{n:"🧊 cool-down (5 min)",ex:[{n:"Pigeon Pose",s:1,r:"45 sec each side",nt:"Deep glute stretch."},{n:"Lying Hamstring Stretch",s:1,r:"30 sec each leg",nt:"On back, pull leg towards you."},{n:"Figure-4 Stretch",s:1,r:"30 sec each side",nt:"Ankle on opposite knee."},{n:"Child's Pose",s:1,r:"45 sec",nt:"Breathe."}]}]},
+{t:"Pull — Back & Biceps",f:"Back · Biceps · Rear Delts",tm:"~70 min",sec:[
+{n:"🔥 warm-up (5 min)",ex:[{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Cat-Cow",s:1,r:"10",nt:"Wake up the spine"},{n:"Dead hangs",s:2,r:"20 sec",nt:"Hang from bar. Decompresses spine."}]},
+{n:"💪 main lifts",ex:[{n:"Lat Pulldown",s:4,r:"10",nt:"Wide grip, pull to chest. Builds V-taper = waist looks smaller. Start ~25kg.",tg:"back",lg:1,sw:"25"},{n:"Seated Cable Rows",s:4,r:"12",nt:"Pull to belly. Squeeze shoulder blades. Start ~20kg.",tg:"back",lg:1,sw:"20"},{n:"Straight Arm Pulldowns",s:3,r:"12",nt:"Cable machine, straight arms, pull the bar down to your thighs in an arc. Completely different from rows — isolates your lats. Start ~10kg.",tg:"back",lg:1,sw:"10"}]},
+{n:"✨ accessories",ex:[{n:"Face Pulls",s:3,r:"15",nt:"Posture and shoulder health. Pulls shoulders back so you stand taller. Start ~7kg.",tg:"shoulders",lg:1,sw:"7"},{n:"Reverse Flyes",s:3,r:"12",nt:"Bent over, light weight. Defined upper back. Start ~3kg each.",tg:"back",lg:1,sw:"3"},{n:"Bicep Curls",s:3,r:"12",nt:"Dumbbells. Full range. Don't swing. Start ~5kg each.",tg:"biceps",lg:1,sw:"5"},{n:"Hammer Curls",s:3,r:"12",nt:"Thumbs up grip. Different bicep head + forearms. Start ~5kg.",tg:"biceps",lg:1,sw:"5"},{n:"Cable Curls",s:3,r:"12",nt:"Cable machine with straight bar. Constant tension throughout the whole curl — dumbbells lose tension at the top, cables don't. Different feel entirely. Start ~8kg.",tg:"biceps",lg:1,sw:"8"},{n:"Wrist Curls",s:2,r:"15",nt:"Rest forearms on thighs, curl just your wrists. Builds forearm definition and grip strength for deadlifts. Start ~4kg.",tg:"arms",lg:1,sw:"4"}]},
+{n:"🧊 cool-down (5 min)",ex:[{n:"Lat Stretch (doorway)",s:1,r:"30 sec each side",nt:"Hold frame, lean away."},{n:"Bicep Wall Stretch",s:1,r:"30 sec each arm",nt:"Palm on wall, rotate away."},{n:"Thread the Needle",s:1,r:"30 sec each side",nt:"On all fours, reach under. Opens upper back."},{n:"Child's Pose",s:1,r:"45 sec",nt:"Arms forward."}]}]},
+{t:"Full Body & Core",f:"Everything + Abs",tm:"~70 min",sec:[
+{n:"🔥 warm-up (5 min)",ex:[{n:"Cat-Cow",s:1,r:"10",nt:"Spine mobility"},{n:"Inchworms",s:1,r:"8",nt:"Walk hands to plank and back"},{n:"Bodyweight squats",s:1,r:"10",nt:"Get blood flowing"}]},
+{n:"💪 compound strength",ex:[{n:"Barbell Squats",s:3,r:"8",nt:"Full depth. Core braced. 2 warm-up sets. Start ~20kg.",tg:"quads",lg:1,sw:"20"},{n:"Dumbbell Shoulder Press",s:3,r:"10",nt:"Maintenance strength. Start ~5kg each.",tg:"shoulders",lg:1,sw:"5"},{n:"Dumbbell Chest Press",s:3,r:"10",nt:"Flat bench. Shoulders pinned back. Start ~6kg each.",tg:"chest",lg:1,sw:"6"},{n:"Bent Over Rows",s:3,r:"12",nt:"Pull to hips. Back flat. Start ~8kg each.",tg:"back",lg:1,sw:"8"},{n:"Hip Thrusts (lighter, high rep)",s:2,r:"15",nt:"Lighter, higher reps. Feet further out for shelf. 2 sec hold at top.",tg:"glutes",lg:1,sw:"15"},{n:"Bench Tricep Dips",s:3,r:"12",nt:"Hands on bench behind you. Builds tricep definition for toned arms.",tg:"triceps",lg:1,sw:"BW"}]},
+{n:"🔥 core circuit — 3 rounds, 60 sec rest",ex:[{n:"Plank",s:3,r:"30 sec",nt:"Forearms. Squeeze everything.",tg:"abs"},{n:"Dead Bugs",s:3,r:"10 each side",nt:"THE best ab exercise. Back flat, opposite arm + leg.",tg:"abs"},{n:"Cable Woodchops",s:3,r:"12 each side",nt:"Rotate through core. Start ~5kg.",tg:"abs",lg:1,sw:"5"},{n:"Hanging Knee Raises",s:3,r:"10",nt:"Hang from bar, knees to chest. Or lying leg raises.",tg:"abs"}]},
+{n:"🧊 cool-down (5 min)",ex:[{n:"Standing Quad Stretch",s:1,r:"30 sec each leg",nt:""},{n:"Seated Forward Fold",s:1,r:"45 sec",nt:"Reach for toes."},{n:"Supine Twist",s:1,r:"30 sec each side",nt:"Knees one side, arms wide."},{n:"Child's Pose",s:1,r:"45 sec",nt:"You did it."}]}]}
+];
+
+const RA=[
+{t:"Ballet Flexibility",tm:"25 min",ic:"🩰",ex:[
+{n:"Demi-Plié in First Position",d:"2 min",nt:"Heels together, toes turned out. Bend knees over toes, keep spine tall. This warms up your legs and opens your hips. Go deeper each rep."},
+{n:"Tendu & Relevé",d:"2 min",nt:"Stand tall, extend one leg out pointing toes to the floor (forward, side, back). Then rise onto the balls of your feet. Builds the long lean leg lines ballet is known for."},
+{n:"Barre Hamstring Stretch (each leg)",d:"2 min each",nt:"Use a table, counter, or chair as your barre. Rest one foot on it and fold your chest forward over your leg. Keep both legs straight. Working towards chest-to-knee."},
+{n:"Grand Battement (each leg)",d:"1.5 min each",nt:"Standing tall, kick one leg up as high as you can — forward, then side. Controlled, not swinging. Builds active flexibility which is harder than passive."},
+{n:"Développé Practice (each leg)",d:"2 min each",nt:"Lift knee to chest, then slowly extend leg out in front or to the side. Hold at the top. This builds the strength to hold your leg high — not just kick it there."},
+{n:"Front Split Progression (each side)",d:"2 min each",nt:"Slide into your deepest front split. Use yoga blocks under your hands if you need support. Don't force it — breathe and let gravity do the work over time."},
+{n:"Cambré Back Bend",d:"1.5 min",nt:"Stand tall, arms overhead. Lean back from your upper back, not your lower back. This is the elegant back arch you see in ballet. Engage your core to protect your spine."},
+{n:"Middle Split Progression",d:"2 min",nt:"Stand wide, feet turned out, slowly slide wider. Use hands on floor for support. Even a few cm of progress each week is great."},
+{n:"Port de Bras Forward Fold",d:"1.5 min",nt:"Sit with legs together, fold forward with graceful arms reaching past your feet. Think about lengthening your spine, not just rounding forward."}]},
+{t:"Back Flexibility",tm:"25 min",ic:"🤸",ex:[
+{n:"Cat-Cow (slow, exaggerated)",d:"2 min",nt:"On all fours. Really arch and round as far as you can. Move each vertebra individually. This warms up every segment of your spine."},
+{n:"Cobra Pose",d:"2 min",nt:"Lie face down, hands under shoulders, press up. Keep hips on the floor. Start small and gradually press higher over weeks. Don't crunch your lower back — think about lengthening."},
+{n:"Seal Stretch",d:"1.5 min",nt:"Like cobra but arms fully straight, hips pressing into floor. Look up. This stretches your abs and hip flexors which are what restrict your back bending. Hold and breathe."},
+{n:"Sphinx to Cobra Flow",d:"2 min",nt:"Alternate between resting on forearms (sphinx) and pressing to straight arms (cobra). 5-6 slow reps. Each one should feel a little deeper."},
+{n:"Bridge Pose (hold)",d:"2 min",nt:"Lie on back, feet flat, push hips up. For beginners just hold here. Advanced: press up onto hands for a full bridge. Work towards straightening your arms and walking hands closer to feet over time."},
+{n:"Bridge Wall Walk (if able)",d:"2 min",nt:"Stand facing away from a wall. Lean back and walk your hands down the wall into a bridge. This is a progression — skip if you're not ready. Use a pillow behind you for confidence."},
+{n:"Scorpion Stretch (each side)",d:"1.5 min each",nt:"Lie face down, bring one foot towards your head bending at the knee. Reach back with the opposite hand. Gentle — this is an advanced stretch. Only go as far as feels safe."},
+{n:"Chest Opener on Foam Roller",d:"2 min",nt:"Lie lengthways on a foam roller (along your spine). Arms out to the sides. Let gravity open your chest and upper back. Incredibly effective for back flexibility."},
+{n:"Child's Pose with Extension",d:"2 min",nt:"Child's pose, then walk your hands as far forward as possible. Press your chest towards the floor. Opens shoulders and upper back. Counter-stretch after all that bending."},
+{n:"Lying Spinal Twist (each side)",d:"1.5 min each",nt:"Decompress everything. Knees to one side, arms wide. Let your spine unwind."}]},
+{t:"Hip & Leg Mobility",tm:"20 min",ic:"🦵",ex:[
+{n:"90/90 Hip Switches",d:"2 min",nt:"Sit with both legs at 90°, switch sides. THE mobility drill for hip flexibility and filling hip dips."},
+{n:"Deep Squat Hold",d:"1 min",nt:"Sit in bottom of squat, elbows pushing knees out. Improves squat depth."},
+{n:"Frog Stretch",d:"2 min",nt:"On all fours, knees wide, rock back. Intense inner hip opener."},
+{n:"Couch Stretch (each side)",d:"1.5 min each",nt:"Back foot on couch/wall, lunge position. Best hip flexor stretch. Undoes all that sitting."},
+{n:"Single Leg RDL (bodyweight)",d:"1 min each",nt:"Slow, controlled. Hamstring flexibility AND balance."},
+{n:"Pigeon Pose (each side)",d:"2 min each",nt:"Essential for hip mobility. You'll be doing this a lot."},
+{n:"Figure-4 Stretch (each side)",d:"1.5 min each",nt:"On your back, ankle on knee. Deep glute stretch."},
+{n:"Hamstring Doorway Stretch (each leg)",d:"1.5 min each",nt:"Lie in doorway, one leg up the frame. Passive — just relax into it."}]}
+];
+
+const SH=[
+{c:"🥬 Produce",i:["Avocados × 6","Bananas × 10","Berries (2 punnets)","Grapes (for freezing)","Lemons × 3","Limes × 3","Carrots × 8","Cucumbers × 3","Cherry tomatoes (2)","Tomatoes × 2","100g broccoli florets","Cauliflower (½)","6-8 asparagus spears, trimmed","80g bean sprouts","2-3 spring onions, sliced","4-5 fresh basil leaves","6-8 fresh mint leaves","2 cloves garlic, minced","1 small onion, diced","Kale (optional)","Salad leaves","Apples × 2","Dates (small pack)"]},
+{c:"🧀 Dairy & Eggs",i:["Eggs × 18","Greek yogurt (750g)","Halloumi × 3","Mozzarella × 3","Parmesan (~150g)","15g butter","Cream (100ml)"]},
+{c:"🫘 Protein",i:["Firm tofu × 4","Protein powder (14 scoops)","Granola bar × 1"]},
+{c:"🍞 Carbs",i:["Sourdough (large)","Brioche (2 slices)","Flatbreads × 2","Burger buns × 2","Bao buns × 4","Penne (400g)","Spaghetti (200g)","Soba noodles (300g)","Rice noodles (150g)","White rice (750g)","Risotto rice (150g)","Couscous (100g)","Rice cakes","Popcorn kernels"]},
+{c:"🥜 Nuts & Seeds",i:["Almonds (250g)","Walnuts (150g)","Cashews (150g)","1 tsp sesame seeds","Hemp seeds","Sunflower seeds","Pine nuts","Chia seeds","1 tbsp almond butter"]},
+{c:"🫙 Pantry",i:["1 tbsp soy sauce","1 tsp sesame oil","2 tbsp rice vinegar","1 tbsp basil pesto","3-4 sun-dried tomatoes, chopped","1 tbsp white miso paste","1 tbsp tamarind paste","3 tbsp passata","1 × 400g tin chopped tomatoes","1 tbsp tomato purée","Marinara sauce","1 tbsp honey","1-2 tbsp maple syrup","1 tbsp olive oil","Veg oil","1 tbsp brown sugar","1 tbsp cornflour","50g plain flour","80g breadcrumbs","½ tsp baking powder","Cocoa powder"]},
+{c:"🧂 Spices",i:["½ tsp cinnamon","1 tsp dried oregano","½ tsp everything bagel seasoning","Salt & pepper"]},
+{c:"🥤 Drinks",i:["Oat milk (3 litres)","Orange juice (500ml)"]},
+{c:"🧊 Frozen",i:["Frozen mango","Frozen berries","Frozen peas","300g frozen oven fries"]},
+{c:"🥣 Other",i:["Oats (250g)","Granola (150g)","1 sheet nori, cut into strips","Sweetcorn (tin)","Dark chocolate","Stock cubes"]}
+];
+
+let sel=0,exM=null,curTab='today',chk=JSON.parse(localStorage.getItem('sc5')||'{}'),favs=JSON.parse(localStorage.getItem('mf5')||'{}'),selW=0,setD=JSON.parse(localStorage.getItem('sd5')||'{}'),wlog=JSON.parse(localStorage.getItem('wl3')||'{}'),selRA=0;
+let tInt=null,tSec=0;
+let dark=localStorage.getItem('dark')==='1';
+let water=JSON.parse(localStorage.getItem('water')||'{}');
+let wnotes=JSON.parse(localStorage.getItem('wnotes')||'{}');
+let activeSwaps=JSON.parse(localStorage.getItem('swaps2')||'{}');
+let portions={};
+let collapsed={todayMeals:false,todayWorkout:true,todayReview:true};
+if(dark)document.body.classList.add('dark');
+
+function scaleIng(ing,p){
+if(p===1)return ing;
+const m=ing.match(/^(\d+(?:\.\d+)?|½|¼|¾)/);
+if(!m)return ing;
+let n=m[1];if(n==='½')n=0.5;else if(n==='¼')n=0.25;else if(n==='¾')n=0.75;else n=parseFloat(n);
+const s=n*p,rest=ing.slice(m[0].length);
+if(s===0.5)return'½'+rest;if(s===0.25)return'¼'+rest;if(s===0.75)return'¾'+rest;
+if(s===Math.floor(s))return s+rest;
+return s.toFixed(1).replace(/\.0$/,'')+rest;
+}
+function toggleCollapse(key){collapsed[key]=!collapsed[key];window._scrollSave=window.scrollY;render()}
+
+function setPortion(day,key,p){portions[day+'::'+key]=p;window._scrollSave=window.scrollY;render()}
+function getPortion(day,key){return portions[day+'::'+key]||1}
+
+function swapMeal(day,mealKey,swapName){activeSwaps[day+'::'+mealKey]=swapName;localStorage.setItem('swaps2',JSON.stringify(activeSwaps));window._scrollSave=window.scrollY;render()}
+function unswapMeal(day,mealKey){delete activeSwaps[day+'::'+mealKey];localStorage.setItem('swaps2',JSON.stringify(activeSwaps));window._scrollSave=window.scrollY;render()}
+
+function saveCk(){localStorage.setItem('sc5',JSON.stringify(chk))}
+function saveFv(){localStorage.setItem('mf5',JSON.stringify(favs))}
+function saveSD(){localStorage.setItem('sd5',JSON.stringify(setD))}
+function saveWL(){localStorage.setItem('wl3',JSON.stringify(wlog))}
+
+let streak=JSON.parse(localStorage.getItem('streak2')||'{"count":0,"lastDate":""}');
+let difficulty=JSON.parse(localStorage.getItem('diff')||'{}');
+let wlogHist=JSON.parse(localStorage.getItem('wlh')||'{}');
+let cycleData=JSON.parse(localStorage.getItem('cycle')||'{"lastPeriod":"","cycleLength":28}');
+
+function checkStreak(){
+  const today=todayKey();const yesterday=new Date(Date.now()-86400000).toISOString().slice(0,10);
+  if(streak.lastDate===today)return;
+  if(streak.lastDate===yesterday){streak.count++;streak.lastDate=today;}
+  else if(streak.lastDate!==today){streak.count=1;streak.lastDate=today;}
+  localStorage.setItem('streak2',JSON.stringify(streak));
+}
+checkStreak();
+
+function setDiff(day,val){difficulty[day]=val;localStorage.setItem('diff',JSON.stringify(difficulty));window._scrollSave=window.scrollY;render()}
+
+function getProgressStr(ek){
+  var hist=wlogHist['hist::'+ek];
+  if(!hist||hist.length<2)return '';
+  var vals=hist.map(function(h){return parseFloat(h.w)});
+  var first=vals[0],last=vals[vals.length-1];
+  var diff=last-first;
+  if(diff>0)return ' 📈 +'+diff.toFixed(1)+'kg';
+  if(diff<0)return ' 📉 '+diff.toFixed(1)+'kg';
+  return ' =';
+}
+
+function logW(k,v){
+  if(v){
+    wlog[k]=v;
+    const hk='hist::'+k;
+    if(!wlogHist[hk])wlogHist[hk]=[];
+    const today=todayKey();
+    const last=wlogHist[hk][wlogHist[hk].length-1];
+    if(!last||last.d!==today)wlogHist[hk].push({d:today,w:v});
+    else last.w=v;
+    if(wlogHist[hk].length>8)wlogHist[hk]=wlogHist[hk].slice(-8);
+    localStorage.setItem('wlh',JSON.stringify(wlogHist));
+  }else delete wlog[k];
+  saveWL();
+}
+
+function getVolume(){
+  const vol={};
+  for(let i=0;i<7;i++){if(!isTD(i))continue;const wo=getWO(i);if(!wo)continue;
+    wo.sec.forEach(s=>s.ex.forEach(e=>{if(e.tg){if(!vol[e.tg])vol[e.tg]=0;vol[e.tg]+=e.s;}}));}
+  return vol;
+}
+
+function getCyclePhase(){
+  if(!cycleData.lastPeriod)return null;
+  const start=new Date(cycleData.lastPeriod);const today=new Date();
+  const dayInCycle=Math.floor((today-start)/(1000*60*60*24))%cycleData.cycleLength;
+  if(dayInCycle<5)return{phase:"menstrual",day:dayInCycle+1,emoji:"🌸",title:"menstrual phase",tip:"Energy may be lower. Go lighter if needed, focus on form over weight. Extra iron-rich foods today. Be kind to yourself 💜",cls:"men"};
+  if(dayInCycle<13)return{phase:"follicular",day:dayInCycle+1,emoji:"🌱",title:"follicular phase",tip:"Your strongest phase! Push harder, try for new PRs. Energy and recovery are at their peak. Make the most of it 💪",cls:"fol"};
+  if(dayInCycle<16)return{phase:"ovulatory",day:dayInCycle+1,emoji:"✨",title:"ovulatory phase",tip:"Peak energy and strength. Great time for heavy lifts and challenging workouts. Stay hydrated 🌟",cls:"ovu"};
+  return{phase:"luteal",day:dayInCycle+1,emoji:"🌙",title:"luteal phase",tip:"Energy starts to dip. You might crave more carbs — that's normal, eat them. Focus on steady workouts, don't push for PRs. Extra rest is okay 🧘‍♀️",cls:"lut"};
+}
+
+function setCycle(field,val){cycleData[field]=val;localStorage.setItem('cycle',JSON.stringify(cycleData));localStorage.setItem('sleep',JSON.stringify(sleepData));localStorage.setItem('meas',JSON.stringify(measurements));window._scrollSave=window.scrollY;render()}
+
+function exportData(){
+  const data={cfg,chk,favs,setD,wlog,wlogHist,water,wnotes,activeSwaps,portions,streak,difficulty,cycleData,sleepData,measurements};
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='meal-workout-backup-'+todayKey()+'.json';a.click();
+}
+
+function importData(input){
+  const file=input.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=function(e){
+    try{
+      const data=JSON.parse(e.target.result);
+      if(data.cfg)cfg=data.cfg;if(data.chk)chk=data.chk;if(data.favs)favs=data.favs;
+      if(data.setD)setD=data.setD;if(data.wlog)wlog=data.wlog;if(data.wlogHist)wlogHist=data.wlogHist;
+      if(data.water)water=data.water;if(data.wnotes)wnotes=data.wnotes;
+      if(data.activeSwaps)activeSwaps=data.activeSwaps;if(data.portions)portions=data.portions;
+      if(data.streak)streak=data.streak;if(data.difficulty)difficulty=data.difficulty;
+      if(data.cycleData)cycleData=data.cycleData;if(data.sleepData)sleepData=data.sleepData;if(data.measurements)measurements=data.measurements;
+      saveCfg();saveCk();saveFv();saveSD();saveWL();
+      localStorage.setItem('wlh',JSON.stringify(wlogHist));
+      localStorage.setItem('water',JSON.stringify(water));
+      localStorage.setItem('wnotes',JSON.stringify(wnotes));
+      localStorage.setItem('swaps2',JSON.stringify(activeSwaps));
+      localStorage.setItem('streak2',JSON.stringify(streak));
+      localStorage.setItem('diff',JSON.stringify(difficulty));
+      localStorage.setItem('cycle',JSON.stringify(cycleData));localStorage.setItem('sleep',JSON.stringify(sleepData));localStorage.setItem('meas',JSON.stringify(measurements));
+      alert('Data restored! 🩷');render();
+    }catch(err){alert('Invalid file');}
+  };reader.readAsText(file);
+}
+
+function getDayCals(d){return Object.values(getMeals(d)).reduce((s,m)=>s+parseInt(m.cal||'0'),0)}
+
+let sleepData=JSON.parse(localStorage.getItem('sleep')||'{}');
+let measurements=JSON.parse(localStorage.getItem('meas')||'[]');
+
+function setSleep(val){sleepData[todayKey()]=val;localStorage.setItem('sleep',JSON.stringify(sleepData))}
+function getSleep(){return sleepData[todayKey()]||''}
+function getSleepMsg(hrs){
+  if(!hrs)return'';hrs=parseFloat(hrs);
+  if(hrs>=8)return'perfect 💖 your muscles are loving you';
+  if(hrs>=7)return'solid 😊 good recovery';
+  if(hrs>=6)return'okay but try for more 🌙';
+  return'your body needs more rest 💜 aim for 7-8hrs';
+}
+
+function getPRs(){
+  const prs={};
+  Object.entries(wlogHist).forEach(([k,hist])=>{
+    const name=k.replace('hist::','').replace(/^\d+::/,'');
+    hist.forEach(h=>{
+      const w=parseFloat(h.w);
+      if(!prs[name]||w>prs[name].w){prs[name]={w:w,d:h.d};}
+    });
+  });
+  return prs;
+}
+
+function saveMeasurement(){
+  const mw=document.getElementById('meas-waist');const w=mw?mw.value:'';
+  const mh=document.getElementById('meas-hips');const h=mh?mh.value:'';
+  const mg=document.getElementById('meas-glutes');const g=mg?mg.value:'';
+  if(!w&&!h&&!g){alert('enter at least one measurement');return;}
+  measurements.push({d:todayKey(),waist:w||'',hips:h||'',glutes:g||''});
+  if(measurements.length>20)measurements=measurements.slice(-20);
+  localStorage.setItem('meas',JSON.stringify(measurements));
+  window._scrollSave=window.scrollY;render();
+}
+
+function getMeasChange(field){
+  if(measurements.length<2)return null;
+  const recent=measurements.filter(m=>m[field]);
+  if(recent.length<2)return null;
+  const first=parseFloat(recent[0][field]);
+  const last=parseFloat(recent[recent.length-1][field]);
+  return{diff:(last-first).toFixed(1),first,last};
+}
+
+function todayKey(){return new Date().toISOString().slice(0,10)}
+
+// Where the protein actually comes from
+const PSRC={
+"Gnocchi in Tomato Sauce":"Mozzarella (80g = ~18g) melted through. Gnocchi has ~4g per 100g",
+"Tomato Soup + Mozzarella Garlic Bread":"Mozzarella (80g = ~18g) + cream (~3g). The garlic bread does the heavy lifting",
+"Egg Fried Noodles":"2 eggs (~12g) + udon noodles (~5g). Simple but solid",
+"Berry Smoothie Bowl":"Protein powder (~20g) + Greek yogurt (~10g). Protein-packed",
+"Honey Cinnamon Porridge":"Protein powder (~20g) + oats (~5g) + walnuts (~4g). Solid start",
+"Cinnamon Waffles + Berries":"Protein powder (~20g) + egg (~6g) + flour (~4g). Proper fuel",
+"Greek Halloumi Salad Bowl":"Halloumi (100g = ~14g) + couscous (~4g) + vine leaves (~2g)",
+"Veggie Gyoza + Rice":"Gyoza filling (~8g) + rice (~4g). Light on protein",
+"Gnocchi in Tomato Sauce":"Mozzarella (80g = ~18g) melted through. Gnocchi itself has ~4g protein per 100g",
+"Tomato Soup + Mozzarella Garlic Bread":"Mozzarella (80g = ~18g) + cream in soup (~3g). The garlic bread does the heavy lifting",
+"Egg Fried Noodles":"2 eggs (~12g) + udon noodles (~5g). Simple but solid",
+"Berry Smoothie Bowl":"Protein powder (~20g) + Greek yogurt (~10g). Protein-packed",
+"Honey Cinnamon Porridge":"Oats (~5g) + oat milk (~2g) + walnuts (~4g). Add protein powder to boost it",
+"Cinnamon Waffles + Berries":"Egg (~6g) + flour (~4g). Light on protein — have yogurt on the side",
+"Greek Halloumi Salad Bowl":"Halloumi (100g = ~14g) + couscous (~4g) + vine leaves (~2g). Well-rounded",
+"Veggie Gyoza + Rice":"Gyoza filling (~8g) + rice (~4g). Add soy sauce for flavour not protein",
+"Greek Yogurt Power Bowl":"Greek yogurt (200g = ~20g protein), hemp seeds, almonds",
+
+"Citrus Mango Protein Smoothie":"Protein powder (~20g) + Greek yogurt (~10g)",
+"Avocado Toast with Fried Egg":"1 egg (~6g) + sourdough (~4g). Add a second egg to bump this up",
+"Banana & Maple Oat Pancakes":"1 egg (~6g) + oats (~4g). Add a scoop of protein powder to the batter for an extra 20g",
+
+"Sesame Avocado Rice Bowl":"Mostly carbs honestly. Add a boiled egg or some tofu to make this more substantial",
+
+"Cold Sesame Soba Noodle Salad":"Soba noodles (~7g) + avocado (~2g). Low side — add crispy tofu or a boiled egg",
+"Egg Fried Rice with Boiled Veg":"2 eggs (~12g) + rice (~4g)",
+"Margherita Flatbread Pizza":"Mozzarella (125g = ~16g protein)",
+"Miso-Glazed Tofu Rice Bowl":"Tofu (200g = ~20g). Tofu is your best veggie protein source",
+
+"Halloumi Burger & Fries":"Halloumi (160g = ~20g) + Greek yogurt aioli (~2g)",
+"Bibimbap-Style Rice Bowl":"1 egg (~6g) + rice (~4g). Add tofu or a second egg — this is protein-light as-is",
+
+"Creamy Garlic Tomato Pasta":"Parmesan (30g = ~10g) + peas (~5g) + cream (~3g). Peas add protein and colour",
+
+"Walnut Bolognese Spaghetti":"Walnuts (100g = ~15g) + parmesan (~4g). Walnuts are a solid protein source",
+};
+
+// Generic swap options by meal type
+const SWAPS={
+breakfast:["Yogurt + granola + berries","Toast with honey + cashews","Overnight oats with berries","Smoothie (mango or berry)","Scrambled eggs on toast"],
+lunch:["Pesto & mozzarella toastie","Flatbread pizza","Egg fried rice","Avocado rice bowl","Cold sesame noodle salad","Halloumi & couscous"],
+snack:["Greek yogurt + honey","Almonds + dark chocolate","Rice cakes","Boiled egg + cashews","Apple + cashews","Popcorn","Smoothie bowl","Frozen grapes + chocolate"],
+preworkout:["Banana + almonds","Toast with honey + cashews","Dates (3-4) + cashews","Rice cakes + honey","Granola bar","Small handful of dried mango"],
+postworkout:["Protein shake (plain)","Mango protein smoothie","Berry protein shake","Chocolate protein shake","Greek yogurt + granola + honey","Protein bar + banana"]
+};
+
+const SWAP_RECIPES={
+// Breakfast
+"Yogurt + granola + berries":{ingredients:["200g Greek yogurt","30g granola","Handful of berries","1 tbsp honey"],steps:["Yogurt in bowl. Top with granola, berries, honey."]},
+"Toast with honey + cashews":{ingredients:["2 slices toast","1 tbsp honey","Handful of cashews"],steps:["Toast bread. Drizzle with honey. Scatter cashews on top."]},
+"Overnight oats with berries":{ingredients:["50g oats","150ml oat milk","1 tbsp chia seeds","80g mixed berries"],steps:["Mix oats, milk, chia. Fridge overnight.","Top with berries in the morning."]},
+"Smoothie (mango or berry)":{ingredients:["150ml OJ or oat milk","80g frozen mango or berries","100g Greek yogurt","1 scoop protein powder"],steps:["Blend everything smooth. Done."]},
+"Scrambled eggs on toast":{ingredients:["2-3 eggs","15g butter","2 slices toast","80g frozen peas","6-8 cherry tomatoes, halved","Pinch of salt and pepper"],steps:["Whisk eggs. Cook in butter over low heat, stirring constantly until just set.","Serve on toast. Season."]},
+// Lunch
+"Pesto & mozzarella toastie":{ingredients:["2 slices sourdough","1 tbsp pesto","80g mozzarella","3-4 sun-dried tomatoes, chopped","15g butter"],steps:["Spread pesto on bread. Add mozzarella + tomatoes, close.","Cook in butter 2-3 min each side until golden."]},
+"Flatbread pizza":{ingredients:["2 flatbreads","3 tbsp passata","125g mozzarella, torn","4-5 fresh basil leaves","1 tbsp olive oil"],steps:["Preheat 220°C. Sauce + mozzarella on flatbreads.","Bake 8-10 min. Add basil + oil."]},
+"Egg fried rice":{ingredients:["200g cooked rice (day-old)","2 eggs","1 tbsp soy sauce","1 tsp sesame oil","2-3 spring onions, sliced"],steps:["Scramble eggs in oiled wok, add rice.","Stir-fry 3-4 min. Add soy + sesame oil.","Top with spring onions."]},
+"Avocado rice bowl":{ingredients:["150g cooked rice","1 avocado, sliced","Cucumber, sliced","1 tsp sesame seeds","1 tbsp soy sauce","1 tsp rice vinegar","½ tsp sesame oil"],steps:["Top rice with avocado and cucumber.","Mix soy, rice vinegar, sesame oil. Drizzle over.","Sprinkle sesame seeds."]},
+"Cold sesame noodle salad":{ingredients:["150g soba noodles","1 carrot, julienned","½ cucumber, sliced","½ avocado","1 tsp sesame seeds","2 tbsp soy sauce","1 tbsp sesame oil","1 tbsp lime juice","1 tsp honey"],steps:["Cook soba noodles, rinse under cold water.","Mix soy, sesame oil, lime, honey for dressing.","Toss noodles with carrot, cucumber, avocado.","Drizzle dressing and top with sesame seeds."]},
+"Halloumi & couscous":{ingredients:["160g halloumi, sliced","100g couscous","8-10 cherry tomatoes, halved","½ cucumber, sliced","Fresh mint","Lemon juice","1 tbsp olive oil"],steps:["Boiling water over couscous, cover 5 min, fluff.","Fry halloumi 2 min each side.","Toss couscous with tomatoes, cucumber, mint.","Dress with lemon + olive oil. Top with halloumi."]},
+// Dinner
+"Sesame noodle bowl":{ingredients:["150g soba noodles","200g firm tofu, sliced","2 tbsp soy sauce","1 tbsp sesame oil","1 tbsp honey","Carrots, julienned","1 tsp sesame seeds"],steps:["Cook noodles, drain.","Fry tofu in oil until crispy, 3-4 min each side.","Mix soy, sesame oil, honey. Pour over tofu.","Toss noodles with tofu and sauce. Top with carrots and sesame seeds."]},
+"Egg fried noodles":{ingredients:["150g udon or egg noodles","2 eggs","1 tbsp soy sauce","1 tsp sesame oil","Spring onions, sliced","1 carrot, grated"],steps:["Cook noodles, drain.","Scramble eggs in oiled wok.","Add noodles, carrot, soy sauce, sesame oil.","Toss 2 min. Top with spring onions."]},
+"Cheese toastie":{ingredients:["2 slices bread","80g mozzarella, sliced","15g butter"],steps:["Fill bread with mozzarella.","Cook in butter over medium heat, 2-3 min each side until golden."]},
+"Halloumi wrap":{ingredients:["1 large tortilla","100g halloumi, sliced","½ avocado","1 tomato, sliced","Handful of salad leaves","Squeeze of lemon"],steps:["Fry halloumi 2 min each side until golden.","Lay tortilla flat. Add salad, avocado, tomato, halloumi.","Squeeze lemon over. Roll up."]},
+"Loaded fries":{ingredients:["300g oven fries","100g halloumi, sliced","½ avocado, sliced","2 tbsp Greek yogurt","1 garlic clove, minced","Squeeze of lemon"],steps:["Cook fries per packet.","Fry halloumi until golden.","Mix yogurt, garlic, lemon for aioli.","Pile halloumi and avocado on fries. Drizzle aioli."]},
+"Cheese toastie + fries":{ingredients:["2 slices bread","80g mozzarella","15g butter","200g oven fries"],steps:["Put fries in oven per packet.","Make cheese toastie in butter while fries cook.","Serve together."]},
+"Avocado egg toast":{ingredients:["2 slices sourdough","1 avocado","1-2 eggs","Everything seasoning or salt","Squeeze of lemon"],steps:["Toast bread. Fry eggs.","Smash avocado with lemon and spread on toast.","Top with eggs and seasoning."]},
+"Noodle bowl":{ingredients:["150g soba noodles","1 carrot, julienned","½ cucumber, sliced","½ avocado","1 tbsp soy sauce","1 tsp sesame oil","1 tsp sesame seeds"],steps:["Cook noodles, drain.","Top with carrot, cucumber, avocado.","Drizzle with soy + sesame oil. Add sesame seeds."]},
+"Simple risotto":{ingredients:["150g arborio rice","400ml veg stock (hot)","30g parmesan, grated","Knob of butter","1 small onion, diced"],steps:["Cook onion in butter until soft.","Add rice, stir 1 min.","Add stock a ladle at a time, stirring, until rice is creamy (about 18 min).","Stir in parmesan. Season."]},
+"Pasta bake":{ingredients:["200g penne","1 jar marinara sauce","125g mozzarella, torn","30g parmesan, grated"],steps:["Cook pasta, drain.","Mix with marinara sauce. Pour into an oven dish.","Top with mozzarella + parmesan.","Bake 200°C for 15 min until bubbling."]},
+"Tomato pasta":{ingredients:["200g pasta","2 garlic cloves, sliced","400g tinned tomatoes","30g parmesan, grated","1 tbsp olive oil","80g frozen peas","6-8 cherry tomatoes, halved","Pinch of salt and pepper"],steps:["Cook pasta. Save a cup of pasta water.","Fry garlic in olive oil 1 min.","Add tomatoes, simmer 10 min. Season.","Toss with pasta, loosen with pasta water. Top with parmesan."]},
+"Pesto pasta":{ingredients:["200g pasta","2 tbsp pesto","Handful of peas","30g parmesan, grated"],steps:["Cook pasta, add peas last 2 min. Drain.","Toss with pesto.","Top with parmesan."]},
+"Cheese on toast":{ingredients:["2 slices bread","Mozzarella or parmesan, grated"],steps:["Toast bread one side under grill.","Flip, add cheese, grill until melted and bubbling."]},
+"Soy noodles + egg":{ingredients:["150g noodles","1 egg","1 tbsp soy sauce","1 tsp sesame oil","2-3 spring onions, sliced"],steps:["Cook noodles, drain.","Fry egg.","Toss noodles with soy + sesame oil.","Top with egg and spring onions."]},
+"Frozen gyoza + rice":{ingredients:["8-10 frozen gyoza","150g cooked rice","Soy sauce for dipping"],steps:["Cook rice.","Pan-fry gyoza from frozen: oil in pan, add gyoza, fry 2 min.","Add splash of water, cover, steam 4-5 min.","Serve with rice and soy sauce."]},
+"Pesto spaghetti":{ingredients:["200g spaghetti","2 tbsp pesto","30g parmesan, grated"],steps:["Cook spaghetti, drain.","Toss with pesto.","Top with parmesan. Done."]},
+"Toast + leftovers":{ingredients:["Whatever's in the fridge","Toast"],steps:["Check fridge. Heat up leftovers. Make toast. Enjoy."]},
+// Snacks
+"Greek yogurt + honey":{ingredients:["200g Greek yogurt","Drizzle of honey"],steps:["Yogurt in bowl. Add honey."]},
+"Almonds + dark chocolate":{ingredients:["Handful of almonds","2 squares dark chocolate"],steps:["Eat together. Sweet + salty."]},
+"Rice cakes":{ingredients:["2-3 rice cakes"],steps:["Eat plain, or top with whatever you fancy."]},
+"Boiled egg + cashews":{ingredients:["1-2 boiled eggs","Handful of cashews"],steps:["Peel egg. Eat with cashews. Pinch of salt on the egg."]},
+"Apple + cashews":{ingredients:["1 apple","Handful of cashews"],steps:["Slice apple if you want. Eat with cashews."]},
+"Popcorn":{ingredients:["2 tbsp popcorn kernels","1 tbsp oil","Salt or seasoning"],steps:["Heat oil in a pot over medium-high.","Add kernels, cover with lid.","Shake occasionally until popping stops.","Season with salt or whatever you like."]},
+"Smoothie bowl":{ingredients:["100g frozen berries","100g Greek yogurt","30g granola","Drizzle of honey"],steps:["Blend berries + yogurt until thick (less liquid than a smoothie).","Pour into bowl. Top with granola + honey."]},
+"Frozen grapes + chocolate":{ingredients:["Handful of grapes","2 squares dark chocolate"],steps:["Freeze grapes for at least 2 hours.","Eat with chocolate. Tastes like mini sorbets."]},
+// Pre-workout
+"Banana + almonds":{ingredients:["1 banana","Small handful of almonds"],steps:["Eat 30-45 min before gym."]},
+"Toast with honey + cashews":{ingredients:["1 slice toast","1 tbsp honey","Handful of cashews"],steps:["Toast bread. Drizzle honey. Top with cashews. Eat 30-45 min before gym."]},
+"Dates (3-4) + cashews":{ingredients:["3-4 medjool dates","Handful of cashews"],steps:["Eat together 30-45 min before gym. Natural energy."]},
+"Rice cakes + honey":{ingredients:["2 rice cakes","Drizzle of honey"],steps:["Drizzle honey on rice cakes. Eat 30-45 min before gym."]},
+"Granola bar":{ingredients:["1 granola bar"],steps:["Unwrap. Eat. Go to gym."]},
+"Small handful of dried mango":{ingredients:["Small handful of dried mango"],steps:["Eat 30-45 min before gym. Quick natural sugars."]},
+// Post-workout
+"Protein shake (plain)":{ingredients:["1 scoop protein powder","250ml oat milk"],steps:["Shake in a shaker bottle. Drink within an hour of finishing."]},
+"Mango protein smoothie":{ingredients:["150ml OJ","80g frozen mango","1 scoop protein powder"],steps:["Blend until smooth."]},
+"Berry protein shake":{ingredients:["250ml oat milk","Handful of frozen berries","1 scoop protein powder"],steps:["Blend until smooth."]},
+"Chocolate protein shake":{ingredients:["250ml oat milk","1 scoop protein powder","1 tsp cocoa powder"],steps:["Shake or blend. Tastes like a treat."]},
+"Greek yogurt + granola + honey":{ingredients:["200g Greek yogurt","30g granola","Drizzle of honey"],steps:["Yogurt in bowl. Top with granola + honey. Quick, no blender needed."]},
+"Protein bar + banana":{ingredients:["1 protein bar","1 banana"],steps:["Eat both. Simple."]},
+};
+function getWater(){return water[todayKey()]||0}
+function addWater(){const k=todayKey();water[k]=Math.min(10,(water[k]||0)+1);localStorage.setItem('water',JSON.stringify(water));render()}
+function subWater(){const k=todayKey();water[k]=Math.max(0,(water[k]||0)-1);localStorage.setItem('water',JSON.stringify(water));render()}
+function toggleDark(){dark=!dark;document.body.classList.toggle('dark');localStorage.setItem('dark',dark?'1':'0');render()}
+function saveNote(k,v){wnotes[k]=v;localStorage.setItem('wnotes',JSON.stringify(wnotes))}
+
+function isTD(d){return cfg.schedule[d]!==null&&cfg.schedule[d]!==undefined}
+function getWO(d){const w=cfg.schedule[d];return(w!==null&&w!==undefined)?WO[w]:null}
+function getMeals(d){
+  const m=JSON.parse(JSON.stringify(BM[d].m));
+  if(isTD(d)){m.preworkout=PRE[d]||PRE[1];m.postworkout=POST[d]||POST[4];}
+  else{m.postworkout=POST[d]||POST[6];}
+  // Check for active swaps on any meal
+  ['breakfast','lunch','dinner','snack'].forEach(k=>{
+    const sk=d+'::'+k;
+    if(activeSwaps[sk]){
+      const recipe=SWAP_RECIPES[activeSwaps[sk]];
+      m[k]={name:activeSwaps[sk],protein:m[k].protein,desc:recipe?'':'Quick swap.',swapped:true,originalName:BM[d].m[k].name,mealKey:k,ingredients:recipe?recipe.ingredients:null,steps:recipe?recipe.steps:null};
+    }
+  });
+  return m;
+}
+function getDP(d){return Object.values(getMeals(d)).reduce((s,m)=>s+parseInt(m.protein),0)}
+function todayI(){return(new Date().getDay()+6)%7}
+function getWeekStats(){
+  let woDone=0,totalSets=0,totalSetsDone=0;
+  for(let i=0;i<7;i++){if(!isTD(i))continue;let dayDone=false;
+    const wo=getWO(i);if(!wo)continue;
+    wo.sec.forEach(s=>s.ex.forEach(e=>{for(let j=0;j<e.s;j++){totalSets++;const k=i+'::'+e.n+'::'+j;if(setD[k]){totalSetsDone++;dayDone=true}}})
+    );if(dayDone)woDone++;}
+  const avgP=Math.round(DN.reduce((s,_,i)=>s+getDP(i),0)/7);
+  return{woDone,trainDays:cfg.schedule.filter(s=>s!==null&&s!==undefined).length,totalSets,totalSetsDone,avgP}
+}
+
+function startT(s){tSec=s;document.getElementById('tbar').classList.add('on');clearInterval(tInt);tInt=setInterval(()=>{tSec--;updT();if(tSec<=0){clearInterval(tInt);try{const a=new(window.AudioContext||window.webkitAudioContext)();const o=a.createOscillator();o.frequency.value=800;o.connect(a.destination);o.start();setTimeout(()=>o.stop(),300)}catch(e){}}},1000);updT()}
+function updT(){const m=Math.floor(tSec/60),s=tSec%60;document.getElementById('tdisp').textContent=tSec<=0?'Done!':m+':'+(s<10?'0':'')+s}
+function stopT(){clearInterval(tInt);document.getElementById('tbar').classList.remove('on')}
+
+function renderNav(){document.getElementById('bnav').innerHTML=[['today','📅','Today'],['meals','🍽️','Meals'],['gym','🏋️','Gym'],['shop','🛒','Shop'],['more','⚙️','More']].map(([id,ic,lb])=>`<button class="${curTab===id?'on':''}" onclick="sT('${id}')"><span class="bi">${ic}</span>${lb}</button>`).join('')}
+
+function mealCard(k,m,day,expand,showFav){
+const isE=expand===k,hasR=!!m.ingredients;
+const hasSwaps=!m.swapped&&(m.swaps||(SWAPS[k]&&SWAPS[k].filter(s=>s!==m.name).length>0));
+const canExpand=hasR||hasSwaps;
+const fk=DN[day]+'::'+k,isF=!!favs[fk];
+let h=`<div class="card ${canExpand?'clk':''} ${isE?'exp':''}" ${canExpand?`onclick="tM('${k}')"`:''}>`;
+h+=`<div class="mhdr"><span class="mt">${MI[k]||''} ${ML[k]||k}</span><div class="mm">${m.time?`<span class="tb">⏱ ${m.time}</span>`:''} <span class="pt">${m.protein}</span>${m.cal?`<span class="pt" style="color:#e84f8a">${m.cal} cal</span>`:""}${canExpand?`<span class="arr ${isE?'o':''}">▾</span>`:''} </div></div>`;
+if(showFav)h+=`<div class="tr"><div class="mn">${m.name}</div><button class="fb ${isF?'on':''}" onclick="event.stopPropagation();tF('${fk}')">${isF?'💖':'🤍'}</button></div>`;
+else h+=`<div class="mn">${m.name}</div>`;
+if(m.desc)h+=`<p class="md">${m.desc}</p>`;
+const psrc=PSRC[m.name];
+if(psrc&&isE)h+=`<div style="font-size:11px;color:#e84f8a;background:#ffe0ee;border-radius:8px;padding:5px 9px;margin-top:5px;line-height:1.4">🩷 <b>protein:</b> ${psrc}</div>`;
+if(m.swapped)h+=`<div style="margin-top:6px"><span class="swapped-tag">✨ swapped</span><button class="swap-back" onclick="event.stopPropagation();unswapMeal(${day},'${k}')">↩ Back to ${m.originalName}</button></div>`;
+if(m.vibe)h+=`<div class="vibes">${m.vibe.split(' · ').map(v=>`<span class="vb">${v}</span>`).join('')}</div>`;
+if(m.tip)h+=`<div class="tip">${m.tip}</div>`;
+if(isE&&m.ingredients){
+const por=getPortion(day,k);
+h+=`<div class="rcp show">`;
+h+=`<div class="por"><span class="por-label">Portions:</span>${[1,2,3,4].map(p=>`<div class="por-btn ${por===p?'on':''}" onclick="event.stopPropagation();setPortion(${day},'${k}',${p})">${p}</div>`).join('')}</div>`;
+h+=`<p class="rhd">Ingredients${por>1?' (×'+por+')':''}</p><ul>${m.ingredients.map(i=>`<li>${scaleIng(i,por)}</li>`).join('')}</ul><p class="rhd">Method</p><ol>${m.steps.map(s=>`<li>${s}</li>`).join('')}</ol></div>`;}
+// Show swaps - use meal's own swaps or generic ones
+if(isE&&!m.swapped){
+const swapList=m.swaps||(SWAPS[k]?SWAPS[k].filter(s=>s!==m.name):null);
+if(swapList)h+=`<div class="sw"><div class="swt">🔄 not feeling it? tap to swap ~</div>${swapList.map(s=>`<div class="swo" onclick="event.stopPropagation();swapMeal(${day},'${k}','${s.replace(/'/g,"\\'")}')">${s}</div>`).join('')}</div>`;}
+return h+`</div>`}
+
+function render(){
+renderNav();const ti=todayI();let h='';
+const slp=getSleep();const wc=getWater();
+
+if(curTab==='today'){
+const d=ti,meals=getMeals(d),dp=getDP(d),train=isTD(d),wo=getWO(d);
+h+=`<div class="thdr" style="padding:14px"><div class="tdy" style="font-size:20px">${DN[d]}</div><div class="tdt" style="font-size:11px">${new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</div><div class="ttp" style="font-size:10px;padding:3px 10px;margin-top:6px">${train?'💪 '+(wo?wo.t:'Training'):'🧘‍♀️ rest & recovery 💜'}</div></div>`;
+h+=`<div class="dsum" style="gap:4px;margin-bottom:10px"><div class="pill f" style="padding:4px 8px;font-size:10px">🩷 ${dp}g</div><div class="pill f">⏱ ~${BM[d].ck} min cooking</div>${`<div class="pill f" style="color:#e84f8a">🔥 ~${getDayCals(d)} cal</div>`}${train&&wo?`<div class="pill g">💪 ${wo.tm}</div>`:''}</div>`;
+// Sleep + Water + Streak compact row
+const slpMsg=getSleepMsg(slp);
+h+=`<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:8px">`;
+h+=`<div style="background:#fff;border:1px solid #f0c0d5;border-radius:10px;padding:10px;text-align:center"><div style="font-size:11px;color:#999">😴 sleep</div><input class="sleep-input" style="margin-top:4px" type="number" inputmode="decimal" step="0.5" min="0" max="14" value="${slp}" placeholder="—" onchange="setSleep(this.value)"></div>`;
+h+=`<div style="background:#fff;border:1px solid #f0c0d5;border-radius:10px;padding:10px;text-align:center"><div style="font-size:11px;color:#999">💖 water</div><div style="font-size:18px;font-weight:700;color:#e84f8a;margin-top:4px">${wc}/8</div></div>`;
+h+=`<div style="background:linear-gradient(135deg,#e84f8a,#f472b6);border-radius:10px;padding:10px;text-align:center;color:#fff"><div style="font-size:11px;opacity:.8">🔥 streak</div><div style="font-size:18px;font-weight:700;margin-top:4px">${streak.count} ${streak.count>=7?'👑':streak.count>=3?'🔥':'🌱'}</div></div>`;
+h+=`</div>`;
+h+=`<div style="display:flex;gap:6px;margin-bottom:8px;justify-content:center"><button class="btn sm" onclick="subWater()" style="background:#999;font-size:10px;padding:3px 10px">− water</button><button class="btn sm" onclick="addWater()" style="background:#e84f8a;font-size:10px;padding:3px 10px">+ water</button></div>`;
+// Cycle phase
+const cyc=getCyclePhase();
+if(cyc)h+=`<div class="cyc-phase ${cyc.cls}" style="padding:10px;margin-bottom:8px"><div class="cyc-title" style="font-size:12px">${cyc.emoji} ${cyc.title} — day ${cyc.day}</div><div class="cyc-tip" style="font-size:10px">${cyc.tip}</div></div>`;
+const ws=getWeekStats();
+h+=`<div class="coll-hdr" style="color:#e84f8a" onclick="toggleCollapse('todayReview')">✨ this week ✨<span class="coll-arr ${collapsed.todayReview?'shut':''}">▾</span></div>`;
+if(!collapsed.todayReview){h+=`<div class="wrev" style="padding:10px;margin-bottom:10px"><div class="wrev-title" style="font-size:11px;margin-bottom:6px">✨ this week ✨</div><div class="wrev-grid" style="gap:6px"><div class="wrev-stat"><div class="wrev-num" style="font-size:18px">${ws.woDone}/${ws.trainDays}</div><div class="wrev-lbl" style="font-size:9px">workouts</div></div><div class="wrev-stat"><div class="wrev-num" style="font-size:18px">${ws.totalSetsDone}</div><div class="wrev-lbl" style="font-size:9px">sets</div></div><div class="wrev-stat"><div class="wrev-num" style="font-size:18px">${ws.avgP}g</div><div class="wrev-lbl" style="font-size:9px">avg protein</div></div><div class="wrev-stat"><div class="wrev-num" style="font-size:18px">${slp||"—"}</div><div class="wrev-lbl" style="font-size:9px">hrs sleep</div></div></div></div>`;}
+h+=`<div class="coll-hdr" style="color:#e84f8a" onclick="toggleCollapse('todayMeals')">🌸 today's meals<span><span style="font-size:10px;color:#d09ab0;margin-right:6px">${dp}g · ~${getDayCals(d)}cal</span><span class="coll-arr ${collapsed.todayMeals?'shut':''}">▾</span></span></div>`;
+if(!collapsed.todayMeals){
+const mo=train?['breakfast','preworkout','lunch','postworkout','dinner','snack']:['breakfast','lunch','postworkout','dinner','snack'];
+for(const k of mo){const m=meals[k];if(m)h+=`<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-bottom:0.5px solid #ffe8f2"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px">${MI[k]||''}</span><span style="font-size:12px;font-weight:600">${m.name}</span></div><span class="pt" style="font-size:9px">${m.protein}</span></div>`}
+}
+if(train&&wo){h+=`<div class="coll-hdr" style="color:#b05ab0" onclick="toggleCollapse('todayWorkout')">💪 ${wo.t}<span><span style="font-size:10px;color:#c080d0;margin-right:6px">${wo.tm}</span><span class="coll-arr ${collapsed.todayWorkout?'shut':''}">▾</span></span></div>`;
+if(!collapsed.todayWorkout){
+wo.sec.forEach(s=>{h+=`<div style="font-size:9px;font-weight:700;color:#b05ab0;text-transform:uppercase;letter-spacing:1px;margin:8px 0 4px;padding-top:4px;border-top:1px solid #f8e8ff">${s.n}</div>`;s.ex.forEach(e=>{h+=`<div style="display:flex;justify-content:space-between;align-items:center;padding:4px 8px;font-size:11px"><span style="font-weight:600">${e.n}</span><span style="color:#b05ab0;font-weight:600;font-size:10px">${e.s}×${e.r}</span></div>`})});
+h+=`<button class="btn" onclick="sT('gym')" style="margin-top:6px;font-size:10px">open full tracker →</button>`}
+}else{const ra=RA[d%RA.length];h+=`<div class="coll-hdr" style="color:#9a7ab8" onclick="toggleCollapse('todayWorkout')">🧘‍♀️ recovery 💜<span><span style="font-size:10px;color:#9a7ab8;margin-right:6px">${ra.tm}</span><span class="coll-arr ${collapsed.todayWorkout?'shut':''}">▾</span></span></div>`;
+if(!collapsed.todayWorkout){h+=`<div style="padding:8px 10px;font-size:12px"><span style="font-weight:600">${ra.ic} ${ra.t}</span><span style="color:#999;margin-left:6px">— tap Gym tab for full routine</span></div>`}}}
+
+if(curTab==='meals'){
+h+=`<p class="lbl">meals 🌸</p><h1>weekly plan 🌸</h1>`;
+h+=`<div class="dbar">${DN.map((d,i)=>`<button class="dbtn ${i===sel?'on':''}" onclick="sD(${i})">${d.slice(0,3)}<span class="di">${isTD(i)?'🏋️':'🧘'}</span></button>`).join('')}</div>`;
+const meals=getMeals(sel),dp=getDP(sel);
+h+=`<div class="dsum" style="gap:4px;margin-bottom:10px"><div class="pill f" style="padding:4px 8px;font-size:10px">🩷 ${dp}g</div><div class="pill f">⏱ ~${BM[sel].ck} min</div><div class="pill f" style="color:#e84f8a">🔥 ~${getDayCals(sel)} cal</div>${isTD(sel)?'<div class="pill g">Training day</div>':'<div class="pill r">Rest day</div>'}</div>`;
+const mo=isTD(sel)?['breakfast','preworkout','lunch','postworkout','dinner','snack']:['breakfast','lunch','postworkout','dinner','snack'];
+for(const k of mo){const m=meals[k];if(m)h+=mealCard(k,m,sel,exM,true)}
+h+=`<details class="pov"><summary>🩷 weekly protein</summary><div style="padding-top:6px">${DN.map((d,i)=>{const t=getDP(i);return`<div class="brow"><span class="bl">${d.slice(0,3)}</span><div class="bt"><div class="bf" style="width:${(t/110)*100}%;max-width:100%"></div></div><span class="bv">${t}g</span></div>`}).join('')}</div></details>`;
+// Meal timetable
+h+=`<details class="pov"><summary>📅 Weekly Meal Timetable</summary><div class="tt-wrap"><table class="tt-table"><tr><th></th>${DN.map((d,i)=>`<th>${d.slice(0,3)}</th>`).join('')}</tr>`;
+['breakfast','lunch','dinner'].forEach(meal=>{
+h+=`<tr><td class="tt-rowlbl">${meal==='breakfast'?'☀️ Bkfst':meal==='lunch'?'🌿 Lunch':'🍽️ Dinner'}</td>`;
+DN.forEach((d,i)=>{const m=BM[i].m[meal];const isToday=i===todayI();h+=`<td class="${isToday?'today':''}"><span class="tt-meal">${m?m.name.replace(/&/g,'&amp;').split(' ').slice(0,3).join(' '):''}</span></td>`});
+h+=`</tr>`});
+h+=`</table></div></details>`}
+
+if(curTab==='gym'){
+h+=`<p class="lbl">workouts 💪</p><h1>workouts & recovery 💪</h1>`;
+h+=`<div class="dbar">${DN.map((d,i)=>`<button class="dbtn ${i===sel?'on':''}" onclick="sD(${i})">${d.slice(0,3)}<span class="di">${isTD(i)?'🏋️':'🧘'}</span></button>`).join('')}</div>`;
+// Workout timetable
+h+=`<details class="pov" style="margin-top:0;margin-bottom:14px;border-top:none"><summary>💪 weekly workout timetable</summary><div class="tt-wrap"><table class="tt-table"><tr><th></th>${DN.map(d=>`<th>${d.slice(0,3)}</th>`).join('')}</tr><tr><td class="tt-rowlbl">💪 Session</td>`;
+DN.forEach((d,i)=>{const isToday=i===todayI();if(isTD(i)){const wo=getWO(i);h+=`<td class="${isToday?'today':''}"><span class="tt-wo">${wo?wo.t.split('—')[0].trim():''}</span></td>`}else{h+=`<td class="rest ${isToday?'today':''}"><span class="tt-rest">🧘 Rest</span></td>`}});
+h+=`</tr><tr><td class="tt-rowlbl">⏱ Duration</td>`;
+DN.forEach((d,i)=>{const isToday=i===todayI();if(isTD(i)){const wo=getWO(i);h+=`<td class="${isToday?'today':''}">${wo?wo.tm:''}</td>`}else{h+=`<td class="rest ${isToday?'today':''}">—</td>`}});
+h+=`</tr><tr><td class="tt-rowlbl">🎯 Focus</td>`;
+DN.forEach((d,i)=>{const isToday=i===todayI();if(isTD(i)){const wo=getWO(i);h+=`<td class="${isToday?'today':''}" style="font-size:10px">${wo?wo.f.split('·')[0].trim():''}</td>`}else{h+=`<td class="rest ${isToday?'today':''}">Recovery</td>`}});
+h+=`</tr></table></div></details>`;
+// PR Board
+const prs=getPRs();const prEntries=Object.entries(prs).sort((a,b)=>b[1].w-a[1].w);
+h+=`<details class="pov" style="margin-top:0;margin-bottom:14px;border-top:none"><summary>🏆 personal records</summary><div style="padding-top:6px">${prEntries.length?prEntries.map(([name,pr])=>`<div class="pr-card"><div><div class="pr-name">${name}</div><div class="pr-date">${pr.d}</div></div><div class="pr-val">${pr.w}kg 🏆</div></div>`).join(''):'<div class="pr-empty">no PRs yet — start logging your weights! 💪</div>'}</div></details>`;
+
+// Volume tracker
+const vol=getVolume();const volEntries=Object.entries(vol).sort((a,b)=>b[1]-a[1]);
+const maxVol=Math.max(...volEntries.map(e=>e[1]),1);
+h+=`<details class="pov" style="margin-top:0;margin-bottom:14px;border-top:none"><summary>💪 weekly volume (sets per muscle)</summary><div style="padding-top:6px">${volEntries.map(([m,v])=>`<div class="vol-bar"><span class="vol-lbl">${m}</span><div class="vol-trk"><div class="vol-fil" style="width:${(v/maxVol)*100}%"></div></div><span class="vol-val">${v} sets</span></div>`).join('')}</div></details>`;
+
+if(isTD(sel)){const wo=getWO(sel);
+h+=`<div class="dsum"><div class="pill g">💪 ${wo.t}</div><div class="pill g">${wo.tm}</div></div>`;
+h+=`<p style="font-size:12px;color:#888;margin-bottom:10px">${wo.f}</p>`;
+h+=`<div style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap"><span style="font-size:11px;color:#999;align-self:center;margin-right:2px">⏱ rest timer:</span><button class="btn sm" onclick="startT(60)">60s</button><button class="btn sm" onclick="startT(90)">90s</button><button class="btn sm" onclick="startT(120)">2m</button><button class="btn sm" onclick="startT(180)">3m</button></div>`;
+wo.sec.forEach(sec=>{h+=`<div class="ws">${sec.n}</div>`;sec.ex.forEach(e=>{
+const ek=sel+'::'+e.n,prev=wlog[ek];
+h+=`<div class="ex"><div class="en"><span>${e.n}</span><a class="efl" href="https://www.youtube.com/results?search_query=how+to+${encodeURIComponent(e.n)}+form" target="_blank" rel="noopener" onclick="event.stopPropagation()">▶ form</a></div><div class="es">${e.s} × ${e.r}</div><div class="eno">${e.nt}</div>`;
+if(e.tg)h+=`<span class="et${e.tg==='abs'?' abs':e.tg==='shoulders'?' sh':''}">${e.tg}</span>`;
+if(e.sw)h+=`<span class="et" style="background:#888">start: ${e.sw}kg</span>`;
+h+=`<div class="sr">${Array.from({length:e.s},(_,i)=>{const sk=ek+'::'+i,d=setD[sk]?'dn':'';return`<div class="sd ${d}" onclick="tSet('${sk.replace(/'/g,"\\'")}')"> ${i+1}</div>`}).join('')}</div>`;
+if(e.lg)h+=`<div class="wl"><label>Weight:</label><input type="number" inputmode="decimal" value="${prev||''}" placeholder="kg" onchange="logW('${ek.replace(/'/g,"\\'")}',this.value)">${prev?`<span class="pv">last: ${prev}kg${getProgressStr(ek)}</span>`:''}</div>`;
+h+=`</div>`})});
+h+=`<div class="wnote" style="margin-top:14px"><label>📝 session notes</label><textarea placeholder="How did it feel? Go heavier next time?" onchange="saveNote('${sel}::${DN[sel]}',this.value)">${wnotes[sel+'::'+DN[sel]]||''}</textarea></div>`;
+// Difficulty rating
+const dk=sel+'::diff';const curDiff=difficulty[dk]||0;
+h+=`<div style="margin-top:12px"><div class="diff-lbl" style="margin-bottom:6px">how hard was today? 💪</div><div class="diff">${[1,2,3,4,5].map(d=>`<div class="diff-dot ${curDiff===d?'on':''}" onclick="setDiff('${dk}',${d})">${['😴','😊','💪','🔥','☠️'][d-1]}</div>`).join('')}</div></div>`;
+h+=`<button class="clr" onclick="rSets()" style="margin-top:10px">reset sets 🔄</button>`;
+}else{
+h+=`<div class="dsum"><div class="pill r">🧘‍♀️ rest & recovery 💜</div></div>`;
+h+=`<p style="font-size:12px;color:#555;margin-bottom:10px">Pick a recovery routine:</p>`;
+h+=`<div class="rab">${RA.map((r,i)=>`<button class="ra ${i===selRA?'on':''}" onclick="selRA=${i};render()">${r.ic} ${r.t.split(' ')[0]}</button>`).join('')}</div>`;
+const ra=RA[selRA];h+=`<p style="font-size:15px;font-weight:700;color:#9a7ab8;margin-bottom:2px">${ra.ic} ${ra.t}</p><p style="font-size:12px;color:#888;margin-bottom:10px">${ra.tm}</p>`;
+ra.ex.forEach(e=>{h+=`<div class="sc"><div class="scn">${e.n}</div><div class="scd">${e.d}</div><div class="scno">${e.nt}</div></div>`})}}
+
+if(curTab==='shop'){
+h+=`<p class="lbl">shopping 🛒</p><h1>shopping list 🛒</h1>`;
+const ti=SH.reduce((s,c)=>s+c.i.length,0),cc=Object.values(chk).filter(Boolean).length;
+h+=`<div class="spg">${cc} of ${ti}<div class="spb"><div class="spf" style="width:${ti?(cc/ti)*100:0}%"></div></div></div>`;
+SH.forEach(cat=>{h+=`<div class="scat"><div class="sct">${cat.c}</div>`;
+cat.i.forEach(item=>{const k=cat.c+'::'+item,c=chk[k]?'chk':'';
+h+=`<div class="si ${c}" onclick="tI('${k.replace(/'/g,"\\'")}')"><div class="cb"></div><span>${item}</span></div>`});h+=`</div>`});
+h+=`<button class="clr" onclick="cA()">reset list 🔄</button>`}
+
+if(curTab==='more'){
+h+=`<p class="lbl">settings 🎀</p><h1>settings 🎀</h1>`;
+h+=`<div class="stc"><h3>🌙 dark mode</h3><div class="dm-toggle"><span style="font-size:13px">${dark?'Light':'Dark'} theme</span><div class="dm-switch ${dark?'on':''}" onclick="toggleDark()"></div></div></div>`;
+h+=`<div class="stc"><h3>💪 training schedule</h3><p>Assign workouts to days:</p>`;
+DN.forEach((d,i)=>{h+=`<div class="strow"><span class="stday">${d.slice(0,3)}</span><select class="stsel" onchange="updSch(${i},this.value)"><option value="x" ${cfg.schedule[i]===null?'selected':''}>🧘‍♀️ rest day 💜</option>`;
+WO.forEach((w,wi)=>{h+=`<option value="${wi}" ${cfg.schedule[i]===wi?'selected':''}>${w.t}</option>`});h+=`</select></div>`});h+=`</div>`;
+h+=`<div class="stc"><h3>📈 progression guide</h3><p><b>The golden rule:</b> if you complete all reps on all sets with good form, add weight next session.</p><p><b>How much to add:</b> 1-2.5kg for upper body, 2.5-5kg for lower body. Small jumps = steady progress.</p><p><b>Warm-up sets:</b> before your first heavy lift each day, do 2 sets at lighter weight (50% and 75% of your working weight). This prevents injury and primes your muscles.</p><p><b>Deload week:</b> every 4-5 weeks, drop ALL weights to 60% for one week. You'll feel like you're not working hard enough — that's the point. Your body repairs, and you come back stronger the following week.</p><p><b>Stalling:</b> if you can't add weight for 2+ sessions, drop by 10% and build back up. This is normal, not failure.</p></div>`;
+h+=`<div class="stc"><h3>🎀 sunday prep (45-60 min)</h3>`;
+["Cook big batch of rice for the week.","Make overnight oats for Tuesday.","Make arancini risotto for Thursday.","Pickle carrots: julienne + rice vinegar + sugar.","Hard-boil 3 eggs for snacks.","Blitz walnuts for Sunday's bolognese.","Double arancini — freeze extras."].forEach((s,i)=>{h+=`<div class="ps"><div class="pn">${i+1}</div><div class="ptx">${s}</div></div>`});
+h+=`</div>`;
+h+=`<div class="stc"><h3>💖 favourites</h3>`;
+const fe=Object.entries(favs).filter(([_,v])=>v);
+if(!fe.length)h+=`<p>Tap 🤍 on any meal to save.</p>`;
+else fe.forEach(([k])=>{const[dn,mk]=k.split('::');const di=DN.indexOf(dn);if(di<0)return;const m=getMeals(di)[mk];if(!m)return;
+h+=`<div class="fli"><div><div class="fln">${MI[mk]||''} ${m.name}</div><div class="fld">${dn} · ${m.protein}</div></div><button class="frm" onclick="tF('${k}')">✕</button></div>`});
+h+=`</div>`;
+// Measurement tracker
+const mWaist=getMeasChange('waist');const mHips=getMeasChange('hips');const mGlutes=getMeasChange('glutes');
+h+=`<div class="stc"><h3>📏 measurements</h3><p>track every 2-4 weeks. way more useful than the scale when you're building muscle.</p>`;
+h+=`<div class="meas-row"><span class="meas-lbl">waist</span><input class="meas-input" id="meas-waist" type="number" inputmode="decimal" placeholder="cm">${mWaist?`<span class="meas-hist">${mWaist.first} → ${mWaist.last}cm <span class="meas-change ${parseFloat(mWaist.diff)>0?'up':'down'}">${parseFloat(mWaist.diff)>0?'+':''}${mWaist.diff}cm</span></span>`:''}</div>`;
+h+=`<div class="meas-row"><span class="meas-lbl">hips</span><input class="meas-input" id="meas-hips" type="number" inputmode="decimal" placeholder="cm">${mHips?`<span class="meas-hist">${mHips.first} → ${mHips.last}cm <span class="meas-change ${parseFloat(mHips.diff)>0?'up':'down'}">${parseFloat(mHips.diff)>0?'+':''}${mHips.diff}cm</span></span>`:''}</div>`;
+h+=`<div class="meas-row"><span class="meas-lbl">glutes</span><input class="meas-input" id="meas-glutes" type="number" inputmode="decimal" placeholder="cm">${mGlutes?`<span class="meas-hist">${mGlutes.first} → ${mGlutes.last}cm <span class="meas-change ${parseFloat(mGlutes.diff)>0?'up':'down'}">${parseFloat(mGlutes.diff)>0?'+':''}${mGlutes.diff}cm</span></span>`:''}</div>`;
+h+=`<button class="meas-save" onclick="saveMeasurement()">save measurements 📏</button>`;
+if(measurements.length>0){h+=`<div style="margin-top:10px;font-size:11px;color:#d09ab0">${measurements.length} entries recorded · latest: ${measurements[measurements.length-1].d}</div>`}
+h+=`</div>`;
+
+h+=`<div class="stc"><h3>💾 backup & restore</h3><p>download all your data (workouts, weights, streaks, everything) or restore from a backup.</p><button class="bkp-btn" onclick="exportData()">📥 download backup</button><button class="bkp-btn sec" onclick="document.getElementById('imp').click()">📤 restore backup</button><input type="file" id="imp" accept=".json" style="display:none" onchange="importData(this)"></div>`;
+
+h+=`<div class="stc"><h3>🌸 cycle tracking</h3><p>tracks your phase and adjusts training advice. completely optional.</p><div style="margin:8px 0"><label style="font-size:12px;color:#888">last period start date:</label><br><input type="date" value="${cycleData.lastPeriod}" onchange="setCycle('lastPeriod',this.value)" style="margin-top:4px;padding:6px 10px;border-radius:8px;border:1px solid #f0c0d5;font-family:inherit;font-size:13px"></div><div style="margin:8px 0"><label style="font-size:12px;color:#888">cycle length (days):</label><br><input type="number" value="${cycleData.cycleLength}" min="21" max="40" onchange="setCycle('cycleLength',parseInt(this.value))" style="margin-top:4px;width:60px;padding:6px 10px;border-radius:8px;border:1px solid #f0c0d5;font-family:inherit;font-size:13px;text-align:center"></div></div>`;
+
+h+=`<div class="stc"><h3>👜 gym bag</h3><p>Water bottle · Protein shaker + powder · Banana · Almonds · Headphones · Towel · Resistance bands</p></div>`}
+
+document.getElementById('app').innerHTML=h;window.scrollTo(0,window._scrollSave||0)}
+
+function _render(){window._scrollSave=window.scrollY;render()}
+
+function sT(t){curTab=t;if(t==='gym'||t==='meals'){sel=todayI()}window._scrollSave=0;render()}
+function sD(i){sel=i;exM=null;window._scrollSave=0;render()}
+function tM(k){exM=exM===k?null:k;window._scrollSave=window.scrollY;render()}
+function tI(k){chk[k]=!chk[k];saveCk();window._scrollSave=window.scrollY;render()}
+function cA(){chk={};saveCk();render()}
+function tF(k){favs[k]=!favs[k];if(!favs[k])delete favs[k];saveFv();window._scrollSave=window.scrollY;render()}
+function tSet(k){setD[k]=!setD[k];if(!setD[k])delete setD[k];saveSD();window._scrollSave=window.scrollY;render()}
+function rSets(){Object.keys(setD).filter(k=>k.startsWith(sel+'::')).forEach(k=>delete setD[k]);saveSD();render()}
+function updSch(d,v){cfg.schedule[d]=v==='x'?null:parseInt(v);saveCfg();window._scrollSave=window.scrollY;render()}
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "meals & gym 🌸",
+  "short_name": "meals 🌸",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff5f8",
+  "theme_color": "#e84f8a",
+  "orientation": "portrait"
+}
