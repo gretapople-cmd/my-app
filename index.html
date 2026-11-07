@@ -405,6 +405,10 @@ body.dark .home-float{background:#8a3060;box-shadow:0 4px 12px rgba(138,48,96,0.
 body.dark .cal-day.blocked{background:#3a1a2a;color:#f0a0c0}
 body.dark .cal-day.has-plan{border-color:#8a3060}
 body.dark .cal-day.empty{color:#3a2535}
+
+/* Exercise swap */
+.ex details summary::-webkit-details-marker{display:none}
+.ex details summary::marker{display:none;content:""}
 </style>
 
 </head>
@@ -463,19 +467,19 @@ const POST=[
 const WO=[
 {t:"Glutes & Quads",f:"Glutes · Quads",tm:"~75 min",sec:[
 {n:"🔥 warm-up (8 min)",ex:[{n:"Glute band walks",s:2,r:"15 each way",nt:"Band at ankles, stay low"},{n:"Fire Hydrants",s:2,r:"12 each side",nt:"On all fours, lift knee out. Activates outer glute."},{n:"Bodyweight squats",s:2,r:"15",nt:"Slow, wake legs up"}]},
-{n:"💪 main lifts",ex:[{n:"Barbell Hip Thrusts",s:3,r:"6-8",nt:"Use barbell, Smith machine, or hip thrust machine. Feet slightly further out for the upper glute shelf. Squeeze hard, pause 1 sec at top. 2 warm-up sets first.",tg:"glutes",lg:1,sw:"20"},{n:"Hack Squat Machine",s:3,r:"6-8",nt:"Feet low and shoulder-width for quads. The machine you used. Go deep — full depth builds more muscle. Start ~40kg.",tg:"quads",lg:1,sw:"40"},{n:"Smith Machine Squats (feet forward)",s:3,r:"8-10",nt:"Feet about a foot in front of the bar, shoulder width. This foot position shifts all the work to your glutes. Go deep. Start ~20kg added.",tg:"glutes",lg:1,sw:"20"}]},
+{n:"💪 main lifts",ex:[{n:"Barbell Hip Thrusts",s:3,r:"6-8",nt:"Use barbell, Smith machine, or hip thrust machine. Feet slightly further out for the upper glute shelf. Squeeze hard, pause 1 sec at top. 2 warm-up sets first.",tg:"glutes",lg:1,sw:"20"},{n:"Hack Squat Machine",s:3,r:"6-8",nt:"Feet low and shoulder-width for quads. Go deep — full depth builds more muscle. Start ~40kg.",tg:"quads",lg:1,sw:"40",alt:["Leg Press (feet low)","Goblet Squat","Barbell Back Squat"]},{n:"Leg Press (feet high & wide)",s:3,r:"8-10",nt:"Feet HIGH on the platform and wide — this targets glutes instead of quads. Push through your heels. Go deep. Start ~40kg.",tg:"glutes",lg:1,sw:"40",alt:["Smith Machine Squats (feet forward)","Sumo Dumbbell Squat","Cable Pull-Throughs"]}]},
 {n:"✨ accessories",ex:[{n:"Leg Press (feet low & narrow)",s:3,r:"12",nt:"Feet LOW on the platform = more quads. Start ~40kg.",tg:"quads",lg:1,sw:"40"},{n:"Leg Extensions",s:3,r:"12",nt:"Squeeze quads hard at the top. Builds defined front of legs.",tg:"quads",lg:1,sw:"15"},{n:"Cable Kickbacks",s:3,r:"12 each leg",nt:"Ankle strap, squeeze at top. Glute isolation without loading your knees. Start ~5kg.",tg:"glutes",lg:1,sw:"5"}]},
 {n:"🧊 cool-down (5 min)",ex:[{n:"Pigeon Pose",s:1,r:"45 sec each side",nt:"Deep glute stretch."},{n:"Standing Quad Stretch",s:1,r:"30 sec each leg",nt:"Hold ankle, knees together."},{n:"Hip Flexor Stretch",s:1,r:"30 sec each side",nt:"Lunge position, push hips forward."},{n:"Seated Hamstring Stretch",s:1,r:"45 sec",nt:"Reach for toes."},{n:"Stair Master Finisher",s:1,r:"5 min",nt:"Big steps, lean slightly forward, squeeze glutes each step. This is cardio AND glute work."}]}
 ]},
 {t:"Push — Shoulders & Chest",f:"Shoulders · Chest · Triceps",tm:"~75 min",sec:[
 {n:"🔥 warm-up (5 min)",ex:[{n:"Arm circles",s:2,r:"15 each way",nt:"Small to big"},{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Push-ups",s:1,r:"10",nt:"Wake up chest + triceps"},{n:"Face Pulls (light)",s:2,r:"12",nt:"Warms up rear delts. Keeps shoulders balanced and healthy."}]},
 {n:"💪 main lifts",ex:[{n:"Dumbbell Overhead Press",s:3,r:"8-10",nt:"Builds real pressing strength without visible bulk. Start ~5kg each.",tg:"shoulders",lg:1,sw:"5"},{n:"Incline Dumbbell Chest Press",s:3,r:"8-10",nt:"30° bench. Upper chest + front delts. Start ~6kg each.",tg:"chest",lg:1,sw:"6"},{n:"Cable Lateral Raises",s:2,r:"12",nt:"Single arm, cable at your side. Better than dumbbells — constant tension throughout. Light weight, control the movement. Start ~5kg.",tg:"shoulders",lg:1,sw:"5"}]},
-{n:"✨ accessories",ex:[{n:"Chest Fly Machine (Pec Deck)",s:3,r:"12",nt:"Arms out wide, squeeze them together in the middle. The machine you used — constant tension on chest. Start ~15kg.",tg:"chest",lg:1,sw:"15"},{n:"Tricep Pushdowns",s:3,r:"12",nt:"Cable, rope or bar. Lock elbows at sides. Start ~10kg.",tg:"triceps",lg:1,sw:"10"},{n:"Overhead Tricep Extension",s:3,r:"12",nt:"Dumbbell or rope behind head. Different angle from pushdowns — stretches the long head. Start ~6kg.",tg:"triceps",lg:1,sw:"6"}]},
+{n:"✨ accessories",ex:[{n:"Chest Fly Machine (Pec Deck)",s:3,r:"12-15",nt:"Arms out wide, squeeze them together in the middle. Constant tension on chest. Start ~15kg.",tg:"chest",lg:1,sw:"15",alt:["Cable Flyes","Dumbbell Flyes (flat bench)"]},{n:"Tricep Pushdowns",s:3,r:"12",nt:"Cable, rope or bar. Lock elbows at sides. Start ~10kg.",tg:"triceps",lg:1,sw:"10"},{n:"Overhead Tricep Extension",s:3,r:"12",nt:"Dumbbell or rope behind head. Different angle from pushdowns — stretches the long head. Start ~6kg.",tg:"triceps",lg:1,sw:"6"}]},
 {n:"🧊 cool-down (5 min)",ex:[{n:"Cross-Body Shoulder Stretch",s:1,r:"30 sec each arm",nt:"Pull arm across chest."},{n:"Doorway Chest Stretch",s:1,r:"30 sec",nt:"Arms on frame, lean through."},{n:"Overhead Tricep Stretch",s:1,r:"30 sec each arm",nt:"Reach behind head."},{n:"Cat-Cow",s:1,r:"10 reps",nt:"Slow spinal movement."}]}]},
 {t:"Glutes & Hamstrings",f:"Glutes · Hamstrings",tm:"~75 min",sec:[
 {n:"🔥 warm-up (8 min)",ex:[{n:"Hip circles",s:2,r:"10 each way",nt:"Big circles"},{n:"Clamshells",s:2,r:"15 each side",nt:"Band above knees. Open top knee. Wakes up outer glute."},{n:"Glute bridges",s:2,r:"15",nt:"Bodyweight, squeeze at top"}]},
-{n:"💪 main lifts",ex:[{n:"Hip Thrusts (moderate weight)",s:3,r:"8-10",nt:"Use the barbell, Smith machine, or hip thrust machine if your gym has one. Lighter than Monday, higher reps. Feet further out for the shelf.",tg:"glutes",lg:1,sw:"15"},{n:"Romanian Deadlifts",s:3,r:"6-8",nt:"Carves the line between glutes and hamstrings. Slow lowering. Start ~20kg.",tg:"hamstrings",lg:1,sw:"20"},{n:"Smith Machine Reverse Lunges",s:3,r:"10 each leg",nt:"Step BACK into a lunge under the Smith machine. More glute than forward lunges, and the machine handles your balance. Start ~10kg added.",tg:"glutes",lg:1,sw:"10"}]},
-{n:"✨ accessories",ex:[{n:"Leg Curl Machine",s:3,r:"12",nt:"Slow on the way down. Start ~15kg.",tg:"hamstrings",lg:1,sw:"15"},{n:"Hip Abductor Machine",s:3,r:"15",nt:"Push knees OUT. Fills hip dips. Lean slightly forward for more glute. Start ~20kg.",tg:"glutes",lg:1,sw:"20"},{n:"Hip Adductor Machine",s:2,r:"15",nt:"Push knees IN. Inner thigh. Lighter priority but good for overall leg shape. Start ~20kg.",tg:"legs",lg:1,sw:"20"},{n:"Cable Pull-Throughs",s:3,r:"12-15",nt:"Face away from cable, rope between legs, hinge forward then squeeze glutes to stand. Directly targets glutes — like a standing hip thrust. Start ~15kg.",tg:"glutes",lg:1,sw:"15"}]},
+{n:"💪 main lifts",ex:[{n:"Hip Thrusts (moderate weight)",s:3,r:"8-10",nt:"Lighter than Monday. Feet further out for the shelf.",tg:"glutes",lg:1,sw:"15",alt:["Hip Thrust Machine","Leg Press (feet high & wide)","Glute Bridge (dumbbell on hips)"]},{n:"Romanian Deadlifts",s:3,r:"6-8",nt:"Carves the line between glutes and hamstrings. Slow lowering. Start ~20kg.",tg:"hamstrings",lg:1,sw:"20"},{n:"Reverse Lunges (dumbbells)",s:3,r:"10 each leg",nt:"Hold dumbbells by your sides, step BACK into a lunge. More glute than forward lunges. Start ~6kg each hand.",tg:"glutes",lg:1,sw:"6",alt:["Leg Press (single leg)","Walking Lunges","Step-ups (bench)"]}]},
+{n:"✨ accessories",ex:[{n:"Leg Curl Machine",s:3,r:"12",nt:"Slow on the way down. Start ~15kg.",tg:"hamstrings",lg:1,sw:"15"},{n:"Hip Abductor Machine",s:3,r:"15",nt:"Push knees OUT. Fills hip dips. Lean slightly forward for more glute. Start ~20kg.",tg:"glutes",lg:1,sw:"20"},{n:"Hip Adductor Machine",s:2,r:"15",nt:"Push knees IN. Inner thigh. Lighter priority but good for overall leg shape. Start ~20kg.",tg:"legs",lg:1,sw:"20"},{n:"Cable Pull-Throughs",s:3,r:"12-15",nt:"Face away from cable, rope between legs, hinge forward then squeeze glutes to stand. Like a standing hip thrust. Start ~15kg.",tg:"glutes",lg:1,sw:"15",alt:["Cable Kickbacks","Glute Kickback Machine","Dumbbell RDLs"]}]},
 {n:"🧊 cool-down (5 min)",ex:[{n:"Pigeon Pose",s:1,r:"45 sec each side",nt:"Deep glute stretch."},{n:"Lying Hamstring Stretch",s:1,r:"30 sec each leg",nt:"On back, pull leg towards you."},{n:"Figure-4 Stretch",s:1,r:"30 sec each side",nt:"Ankle on opposite knee."},{n:"Child's Pose",s:1,r:"45 sec",nt:"Breathe."},{n:"Stair Master Finisher",s:1,r:"5 min",nt:"Same as Monday — big steps, lean forward, squeeze glutes."}]}
 ]},
 {t:"Pull — Back & Biceps",f:"Back · Biceps · Rear Delts",tm:"~75 min",sec:[
@@ -541,6 +545,7 @@ let tInt=null,tSec=0;
 let dark=localStorage.getItem('dark')==='1';
 let water=JSON.parse(localStorage.getItem('water')||'{}');
 let wnotes=JSON.parse(localStorage.getItem('wnotes')||'{}');
+let exSwaps=JSON.parse(localStorage.getItem("exSwaps")||"{}");
 let activeSwaps=JSON.parse(localStorage.getItem('swaps2')||'{}');
 let portions={};
 let collapsed={todayMeals:false,todayWorkout:true,todayReview:true,todayStudy:true};
@@ -638,7 +643,7 @@ function getCyclePhase(){
 function setCycle(field,val){cycleData[field]=val;localStorage.setItem('cycle',JSON.stringify(cycleData));debouncedSync();localStorage.setItem('sleep',JSON.stringify(sleepData));debouncedSync();localStorage.setItem('studyChk',JSON.stringify(studyChecks));localStorage.setItem('studyProg',JSON.stringify(studyProgress));debouncedSync();localStorage.setItem('blocked',JSON.stringify(blockedDays));debouncedSync();localStorage.setItem('errorLogs',JSON.stringify(errorLogs));debouncedSync();localStorage.setItem('meas',JSON.stringify(measurements));debouncedSync();window._scrollSave=window.scrollY;render()}
 
 function exportData(){
-  const data={cfg,chk,favs,setD,wlog,wlogHist,water,wnotes,activeSwaps,portions,streak,difficulty,cycleData,sleepData,measurements,studyChecks,studyProgress,errorLogs,blockedDays,studyBlocks:JSON.parse(localStorage.getItem("studyBlocks")||"{}")};
+  const data={cfg,chk,favs,setD,wlog,wlogHist,water,wnotes,activeSwaps,portions,streak,difficulty,cycleData,sleepData,measurements,studyChecks,studyProgress,errorLogs,blockedDays,studyBlocks:JSON.parse(localStorage.getItem("studyBlocks")||"{}"),exSwaps:exSwaps};
   const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);
   a.download='meal-workout-backup-'+todayKey()+'.json';a.click();
@@ -1222,6 +1227,20 @@ function startT(s){tSec=s;document.getElementById('tbar').classList.add('on');cl
 function updT(){const m=Math.floor(tSec/60),s=tSec%60;document.getElementById('tdisp').textContent=tSec<=0?'Done!':m+':'+(s<10?'0':'')+s}
 function stopT(){clearInterval(tInt);document.getElementById('tbar').classList.remove('on')}
 
+
+function swapExercise(woIdx,secIdx,exIdx,swapName){
+  var k=woIdx+'::'+secIdx+'::'+exIdx;
+  exSwaps[k]=swapName;
+  localStorage.setItem('exSwaps',JSON.stringify(exSwaps));
+  window._scrollSave=window.scrollY;render();debouncedSync();
+}
+function unswapExercise(woIdx,secIdx,exIdx){
+  var k=woIdx+'::'+secIdx+'::'+exIdx;
+  delete exSwaps[k];
+  localStorage.setItem('exSwaps',JSON.stringify(exSwaps));
+  window._scrollSave=window.scrollY;render();debouncedSync();
+}
+
 function toggleMenu(){
   document.getElementById('menuOverlay').classList.toggle('open');
   document.getElementById('menuPanel').classList.toggle('open');
@@ -1288,7 +1307,7 @@ function applySyncData(data){
   localStorage.setItem('blocked',JSON.stringify(blockedDays));
   if(data.studyBlocks)localStorage.setItem('studyBlocks',JSON.stringify(data.studyBlocks));
   if(data.physCheck)localStorage.setItem('physCheck',JSON.stringify(data.physCheck));
-  if(data.shopChk2)localStorage.setItem('shopChk2',JSON.stringify(data.shopChk2));
+  if(data.shopChk2)localStorage.setItem('shopChk2',JSON.stringify(data.shopChk2));if(data.exSwaps){exSwaps=data.exSwaps;localStorage.setItem('exSwaps',JSON.stringify(exSwaps));}
 }
 
 function syncToFirebase(){
@@ -1488,9 +1507,15 @@ if(isTD(sel)){const wo=getWO(sel);
 h+=`<div class="dsum"><div class="pill g">💪 ${wo.t}</div><div class="pill g">${wo.tm}</div></div>`;
 h+=`<p style="font-size:12px;color:#888;margin-bottom:10px">${wo.f}</p>`;
 h+=`<div style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap"><span style="font-size:11px;color:#999;align-self:center;margin-right:2px">⏱ rest timer:</span><button class="btn sm" onclick="startT(60)">60s</button><button class="btn sm" onclick="startT(90)">90s</button><button class="btn sm" onclick="startT(120)">2m</button><button class="btn sm" onclick="startT(180)">3m</button></div>`;
-wo.sec.forEach(sec=>{h+=`<div class="ws">${sec.n}</div>`;sec.ex.forEach(e=>{
+wo.sec.forEach(function(sec,si){h+=`<div class="ws">${sec.n}</div>`;sec.ex.forEach(function(e,ei){
 const ek=sel+'::'+e.n,prev=wlog[ek];
-h+=`<div class="ex"><div class="en"><span>${e.n}</span><a class="efl" href="https://www.youtube.com/results?search_query=how+to+${encodeURIComponent(e.n)}+form" target="_blank" rel="noopener" onclick="event.stopPropagation()">▶ form</a></div><div class="es">${e.s} × ${e.r}</div><div class="eno">${e.nt}</div>`;
+h+=`<div class="ex">`;
+var exKey2=sel+'::'+si+'::'+ei;
+var activeAlt=exSwaps[exKey2];
+var displayEx=activeAlt?Object.assign({},e,{n:activeAlt}):e;
+h+=`<div class="en"><span>${displayEx.n}</span><a class="efl" href="https://www.youtube.com/results?search_query=how+to+${encodeURIComponent(displayEx.n)}+form" target="_blank" rel="noopener" onclick="event.stopPropagation()">▶ form</a></div><div class="es">${e.s} × ${e.r}</div><div class="eno">${e.nt}</div>`;
+if(activeAlt){h+=`<div style="margin:4px 0"><span style="font-size:10px;background:#ffe0ee;color:#e84f8a;padding:2px 8px;border-radius:6px">swapped from ${e.n}</span> <span style="font-size:10px;color:#d09ab0;cursor:pointer" onclick="event.stopPropagation();unswapExercise(${sel},${si},${ei})">↩ undo</span></div>`}
+if(e.alt){h+=`<details style="margin:4px 0" onclick="event.stopPropagation()"><summary style="font-size:10px;color:#d09ab0;cursor:pointer;list-style:none">🔄 swap for similar</summary><div style="margin-top:4px;background:#fff0f5;border-radius:8px;padding:4px 0">${e.alt.map(function(a){return '<div style="padding:6px 10px;font-size:11px;color:#c4567a;cursor:pointer;border-bottom:0.5px solid #ffe8f2" onclick="swapExercise('+sel+','+si+','+ei+',\''+a.replace(/'/g,'')+'\')">→ '+a+'</div>'}).join('')}</div></details>`};
 if(e.tg)h+=`<span class="et${e.tg==='abs'?' abs':e.tg==='shoulders'?' sh':''}">${e.tg}</span>`;
 if(e.sw)h+=`<span class="et" style="background:#888">start: ${e.sw}kg</span>`;
 h+=`<div class="sr">${Array.from({length:e.s},(_,i)=>{const sk=ek+'::'+i,d=setD[sk]?'dn':'';return`<div class="sd ${d}" onclick="tSet('${sk.replace(/'/g,"\\'")}')"> ${i+1}</div>`}).join('')}</div>`;
