@@ -422,7 +422,7 @@ const DN=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
 const MI={breakfast:"🌸",lunch:"🌷",dinner:"🌙",snack:"🍬",preworkout:"✨",postworkout:"🧋"};
 const ML={breakfast:"Breakfast",lunch:"Lunch",dinner:"Dinner",snack:"Snack",preworkout:"Pre-Workout",postworkout:"Post-Workout"};
 
-let cfg=JSON.parse(localStorage.getItem('cfg5')||'null')||{schedule:[1,2,3,null,0,null,4]};
+let cfg=JSON.parse(localStorage.getItem('cfg5')||'null')||{schedule:[1,2,3,null,0,null,null]};
 function saveCfg(){localStorage.setItem('cfg5',JSON.stringify(cfg))}
 
 const BM=[
@@ -475,6 +475,10 @@ const WO=[
 {n:"🔥 warm-up (5 min)",ex:[{n:"Arm circles",s:2,r:"15 each way",nt:"Small to big"},{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Push-ups",s:1,r:"10",nt:"Wake up chest + triceps"},{n:"Face Pulls (light)",s:2,r:"12",nt:"Warms up rear delts. Keeps shoulders balanced and healthy."}]},
 {n:"💪 main lifts",ex:[{n:"Dumbbell Overhead Press",s:3,r:"8-10",nt:"Builds real pressing strength without visible bulk. Start ~5kg each.",tg:"shoulders",lg:1,sw:"5"},{n:"Incline Dumbbell Chest Press",s:3,r:"8-10",nt:"30° bench. Upper chest + front delts. Start ~6kg each.",tg:"chest",lg:1,sw:"6"},{n:"Cable Lateral Raises",s:2,r:"12",nt:"Single arm, cable at your side. Better than dumbbells — constant tension throughout. Light weight, control the movement. Start ~5kg.",tg:"shoulders",lg:1,sw:"5"}]},
 {n:"✨ accessories",ex:[{n:"Dumbbell Flyes (floor)",s:3,r:"12-15",nt:"Lie on the FLOOR, not a bench — your elbows touch the ground as your stop point, which protects your hypermobile shoulders. Slight bend in arms, squeeze together at the top. Start ~4-5kg each.",tg:"chest",lg:1,sw:"4",alt:["Cable Flyes","Chest Fly Machine (Pec Deck)","Dumbbell Flyes (bench)"]},{n:"Tricep Pushdowns",s:3,r:"12",nt:"Cable, rope or bar. Lock elbows at sides. Start ~10kg.",tg:"triceps",lg:1,sw:"10"},{n:"Overhead Tricep Extension",s:3,r:"12",nt:"Dumbbell or rope behind head. Different angle from pushdowns — stretches the long head. Start ~6kg.",tg:"triceps",lg:1,sw:"6"}]},
+{n:"🔥 core (5 min)",ex:[
+{n:"Plank",s:2,r:"30-45 sec",nt:"Elbows under shoulders, squeeze glutes, straight line from head to heels. Don't let hips sag.",tg:"core"},
+{n:"Dead Bugs",s:2,r:"10 each side",nt:"Lie on back, arms up, knees at 90°. Lower opposite arm and leg slowly. Keep lower back pressed into floor.",tg:"core"}
+]},
 {n:"🧊 cool-down (5 min)",ex:[{n:"Cross-Body Shoulder Stretch",s:1,r:"30 sec each arm",nt:"Pull arm across chest."},{n:"Doorway Chest Stretch",s:1,r:"30 sec",nt:"Arms on frame, lean through."},{n:"Overhead Tricep Stretch",s:1,r:"30 sec each arm",nt:"Reach behind head."},{n:"Cat-Cow",s:1,r:"10 reps",nt:"Slow spinal movement."}]}]},
 {t:"Glutes & Hamstrings",f:"Glutes · Hamstrings",tm:"~75 min",sec:[
 {n:"🔥 warm-up (8 min)",ex:[{n:"Hip circles",s:2,r:"10 each way",nt:"Big circles"},{n:"Clamshells",s:2,r:"15 each side",nt:"Band above knees. Open top knee. Wakes up outer glute."},{n:"Glute bridges",s:2,r:"15",nt:"Bodyweight, squeeze at top"}]},
@@ -495,6 +499,10 @@ const WO=[
 {n:"🔥 warm-up (5 min)",ex:[{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Cat-Cow",s:1,r:"10",nt:"Wake up the spine"},{n:"Dead hangs",s:2,r:"20 sec",nt:"Hang from bar. Decompresses spine."}]},
 {n:"💪 main lifts",ex:[{n:"Lat Pulldown",s:3,r:"8-10",nt:"Wide grip, pull to chest. Builds V-taper = waist looks smaller. Start ~25kg.",tg:"back",lg:1,sw:"25"},{n:"Seated Cable Rows",s:3,r:"8-10",nt:"Pull to belly. Squeeze shoulder blades. Start ~20kg.",tg:"back",lg:1,sw:"20"},{n:"Straight Arm Pulldowns",s:3,r:"12-15",nt:"Cable machine, straight arms, pull bar to thighs in an arc. Isolates lats. Start ~10kg.",tg:"back",lg:1,sw:"10"}]},
 {n:"✨ accessories",ex:[{n:"Face Pulls",s:3,r:"12-15",nt:"Posture and shoulder health. Pulls shoulders back so you stand taller. Start ~7kg.",tg:"shoulders",lg:1,sw:"7"},{n:"Bicep Curls",s:3,r:"10-12",nt:"Dumbbells. Full range. Don't swing. Start ~5kg each.",tg:"biceps",lg:1,sw:"5"},{n:"Hammer Curls",s:3,r:"10-12",nt:"Thumbs up grip. Different bicep head + forearms. Start ~5kg.",tg:"biceps",lg:1,sw:"5"},{n:"Cable Curls",s:3,r:"10-12",nt:"Constant tension throughout the whole curl — dumbbells lose tension at the top, cables don't. Start ~8kg.",tg:"biceps",lg:1,sw:"8"}]},
+{n:"🔥 core (5 min)",ex:[
+{n:"Hanging Knee Raises",s:2,r:"10-12",nt:"Hang from a bar, curl knees up towards chest. Control the movement — don't swing. Use the ab straps if hanging is too hard.",tg:"core"},
+{n:"Cable Woodchops",s:2,r:"10 each side",nt:"Cable at high position, pull diagonally across your body. Rotate through your core, not your arms.",tg:"core"}
+]},
 {n:"🧊 cool-down (5 min)",ex:[{n:"Lat Stretch (doorway)",s:1,r:"30 sec each side",nt:"Hold frame, lean away."},{n:"Bicep Wall Stretch",s:1,r:"30 sec each arm",nt:"Palm on wall, rotate away."},{n:"Thread the Needle",s:1,r:"30 sec each side",nt:"On all fours, reach under. Opens upper back."},{n:"Child's Pose",s:1,r:"45 sec",nt:"Arms forward."}]}]},
 {t:"Upper Body & Core",f:"Chest · Back · Shoulders · Triceps · Abs",tm:"~75 min",sec:[
 {n:"🔥 warm-up (5 min)",ex:[{n:"Cat-Cow",s:1,r:"10",nt:"Spine mobility"},{n:"Arm circles",s:2,r:"15 each way",nt:"Loosen shoulders"},{n:"Band pull-aparts",s:1,r:"15",nt:"Wake up upper back"}]},
