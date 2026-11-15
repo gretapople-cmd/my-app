@@ -556,8 +556,8 @@ let difficulty=JSON.parse(localStorage.getItem('diff')||'{}');
 let wlogHist=JSON.parse(localStorage.getItem('wlh')||'{}');
 let cycleData=JSON.parse(localStorage.getItem('cycle')||'{"lastPeriod":"","cycleLength":28}');
 
-// One-time cleanup: remove saved data for exercises that no longer exist
-(function(){
+// Cleanup: remove saved data for exercises that no longer exist
+function cleanOldExercises(){
   var gone=["Smith Reverse Lunges","Face Pulls","Face Pulls (light)","Dumbbell Chest Press","Incline Dumbbell Press","Dumbbell Flyes","Dumbbell Flyes (floor)","Cable Flyes","Overhead Tricep Extension","Cable Overhead Tricep Extensions","Single-Leg RDLs","Chest-Supported Dumbbell Rows"];
   var cleaned=false;
   gone.forEach(function(name){
@@ -571,8 +571,10 @@ let cycleData=JSON.parse(localStorage.getItem('cycle')||'{"lastPeriod":"","cycle
     localStorage.setItem('wlh',JSON.stringify(wlogHist));
     localStorage.setItem('sd5',JSON.stringify(setD));
     localStorage.setItem('exSwaps',JSON.stringify(exSwaps));
+    debouncedSync();
   }
-})();
+}
+cleanOldExercises();
 
 function checkStreak(){
   const today=todayKey();const yesterday=new Date(Date.now()-86400000).toISOString().slice(0,10);
@@ -1042,7 +1044,7 @@ function setSyncKey(key){
 // Auto-sync on load
 if(syncKey){
   syncFromFirebase(function(found){
-    if(found)render();
+    if(found){cleanOldExercises();render();}
   });
 }
 
