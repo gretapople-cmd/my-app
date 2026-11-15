@@ -271,27 +271,6 @@ body.dark .pr-val{color:#f5b0d0}
 .meas-save{background:#e84f8a;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:600;cursor:pointer;margin-top:8px;font-family:inherit}
 body.dark .meas-input{background:#2a1520;border-color:#3a1a2a;color:#f0a0c0}
 
-/* Study */
-.study-subj{margin-bottom:12px;border:1px solid #f0c0d5;border-radius:12px;overflow:hidden}
-.study-hdr{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;cursor:pointer;background:#fff0f5}
-.study-hdr-name{font-size:13px;font-weight:700}
-.study-pct{font-size:11px;font-weight:600;color:#e84f8a}
-.study-prog{height:4px;background:#ffd6e8;margin:0 14px 8px}
-.study-prog-fill{height:100%;background:#e84f8a;border-radius:4px;transition:width .3s}
-.study-topic{display:flex;align-items:center;gap:8px;padding:6px 14px;font-size:12px;cursor:pointer;border-top:0.5px solid #ffe8f2}
-.study-topic:hover{background:#fff5f8}
-.study-tick{width:18px;height:18px;border-radius:4px;border:2px solid #f0c0d5;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0}
-.study-tick.done{background:#e84f8a;border-color:#e84f8a;color:#fff}
-.study-topic-name{flex:1}.study-topic-name.done{text-decoration:line-through;color:#d0a0b0}
-.study-sched{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
-.study-pill{padding:4px 10px;border-radius:8px;font-size:11px;font-weight:600}
-body.dark .study-subj{border-color:#3a1a2a}
-body.dark .study-hdr{background:#2a1520}
-body.dark .study-topic{border-color:#3a1a2a}
-body.dark .study-topic:hover{background:#2a1520}
-body.dark .study-tick{border-color:#3a1a2a}
-body.dark .study-prog{background:#2a1520}
-
 /* Home page */
 .home-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
 .home-card{background:#fff;border:1px solid #f0c0d5;border-radius:14px;padding:16px;cursor:pointer;text-align:center;transition:transform .1s}
@@ -322,48 +301,6 @@ body.dark .menu-item{color:#f0a0c0}
 body.dark .menu-item:active{background:#2a1520}
 body.dark .menu-close{color:#8a6070}
 
-/* Study sub-tabs */
-.study-tabs{display:flex;gap:4px;margin-bottom:14px;background:#fff0f5;border-radius:10px;padding:3px}
-.study-tab{flex:1;text-align:center;padding:8px 4px;border-radius:8px;font-size:11px;font-weight:600;color:#d09ab0;cursor:pointer;transition:all .15s}
-.study-tab.active{background:#e84f8a;color:#fff}
-body.dark .study-tabs{background:#2a1520}
-body.dark .study-tab{color:#8a6070}
-body.dark .study-tab.active{background:#8a3060}
-
-/* Study page polish */
-.study-countdown{background:linear-gradient(135deg,#e84f8a,#c44fa0);border-radius:14px;padding:16px;color:#fff;margin-bottom:14px;text-align:center;position:relative;overflow:hidden}
-.study-countdown::after{content:'';position:absolute;top:-20px;right:-20px;width:80px;height:80px;background:rgba(255,255,255,0.1);border-radius:50%}
-.study-countdown::before{content:'';position:absolute;bottom:-10px;left:-10px;width:50px;height:50px;background:rgba(255,255,255,0.08);border-radius:50%}
-.study-block{display:flex;align-items:flex-start;gap:10px;padding:12px;background:#fff;border-radius:12px;margin-bottom:8px;border:1px solid #f0c0d5;transition:opacity .2s}
-.study-block.done{opacity:0.35}
-.study-block-bar{width:4px;border-radius:4px;min-height:40px;flex-shrink:0}
-.study-block-subj{font-size:13px;font-weight:700}
-.study-block-task{font-size:11px;color:#888;margin-top:3px;line-height:1.5}
-.study-block-hrs{font-size:10px;font-weight:700;white-space:nowrap;padding:3px 8px;border-radius:6px;background:#fff0f5}
-.study-section-title{font-size:14px;font-weight:700;color:#c4567a;margin:18px 0 10px;display:flex;align-items:center;gap:6px}
-.study-section-title::after{content:'';flex:1;height:1px;background:#f0c0d5}
-.subj-card{border:1px solid #f0c0d5;border-radius:12px;margin-bottom:8px;overflow:hidden}
-.subj-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;cursor:pointer;transition:background .1s}
-.subj-header:active{background:#fff0f5}
-.subj-emoji{font-size:18px;margin-right:8px}
-.subj-name{font-size:13px;font-weight:700;color:#c4567a}
-.subj-stats{text-align:right}
-.subj-pct{font-size:16px;font-weight:700;color:#e84f8a}
-.subj-count{font-size:10px;color:#d09ab0}
-.subj-bar{height:3px;background:#ffd6e8;margin:0 14px}
-.subj-bar-fill{height:100%;background:linear-gradient(90deg,#f5a0c0,#e84f8a);border-radius:3px;transition:width .3s}
-.subj-topics{padding:8px 14px 12px}
-.subj-topic{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:0.5px solid #ffe8f2;cursor:pointer;font-size:12px}
-.subj-topic:last-child{border-bottom:none}
-.subj-topic.done-topic{color:#d0a0b0;text-decoration:line-through}
-body.dark .study-block{background:#2a1520;border-color:#3a1a2a}
-body.dark .study-block-hrs{background:#2a1520}
-body.dark .subj-card{border-color:#3a1a2a}
-body.dark .subj-header:active{background:#2a1520}
-body.dark .subj-bar{background:#2a1520}
-body.dark .subj-topic{border-color:#3a1a2a}
-body.dark .study-countdown{background:linear-gradient(135deg,#8a3060,#6a3080)}
-
 /* Shopping list */
 .sci{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:0.5px solid #ffe8f2;cursor:pointer;font-size:12px}
 .sci.ck{opacity:0.4;text-decoration:line-through}
@@ -384,25 +321,6 @@ body.dark .clr{border-color:#3a1a2a;color:#8a6070}
 .home-float{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#e84f8a;color:#fff;border:none;width:48px;height:48px;border-radius:50%;font-size:20px;cursor:pointer;box-shadow:0 4px 12px rgba(232,79,138,0.4);z-index:997;display:flex;align-items:center;justify-content:center;transition:transform .1s}
 .home-float:active{transform:translateX(-50%) scale(0.9)}
 body.dark .home-float{background:#8a3060;box-shadow:0 4px 12px rgba(138,48,96,0.4)}
-
-/* Calendar */
-.cal-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.cal-nav-btn{background:none;border:none;color:#e84f8a;font-size:18px;cursor:pointer;padding:4px 10px}
-.cal-month{font-size:14px;font-weight:700;color:#c4567a}
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
-.cal-day-hdr{font-size:9px;font-weight:600;color:#d09ab0;padding:4px 0}
-.cal-day{padding:8px 2px;border-radius:8px;font-size:11px;cursor:pointer;transition:all .1s;position:relative}
-.cal-day:active{transform:scale(0.9)}
-.cal-day.today{background:#e84f8a;color:#fff;font-weight:700}
-.cal-day.blocked{background:#ffd6e8;color:#c4567a;text-decoration:line-through}
-.cal-day.has-plan{border:2px solid #e84f8a}
-.cal-day.empty{color:#e0d0d8;cursor:default}
-.cal-day.past{opacity:0.4}
-.cal-legend{display:flex;gap:12px;justify-content:center;margin-top:10px;font-size:10px;color:#d09ab0}
-.cal-legend-dot{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:3px;vertical-align:middle}
-body.dark .cal-day.blocked{background:#3a1a2a;color:#f0a0c0}
-body.dark .cal-day.has-plan{border-color:#8a3060}
-body.dark .cal-day.empty{color:#3a2535}
 
 /* Exercise swap */
 .ex details summary::-webkit-details-marker{display:none}
@@ -463,23 +381,23 @@ const POST=[
 ];
 
 const WO=[
-{t:"Glutes & Quads",f:"Glutes · Quads",tm:"~75 min",sec:[
-{n:"🔥 warm-up (8 min)",ex:[{n:"Glute band walks",s:2,r:"15 each way",nt:"Band at ankles, stay low"},{n:"Fire Hydrants",s:2,r:"12 each side",nt:"On all fours, lift knee out. Activates outer glute."},{n:"Bodyweight squats",s:2,r:"15",nt:"Slow, wake legs up"}]},
+{t:"Glutes & Quads",f:"Glutes · Quads · Hams",tm:"~75 min",sec:[
+{n:"🔥 warm-up (10 min)",ex:[{n:"Stairmaster",s:1,r:"5 min",nt:"Big steps, moderate pace. Warms up legs + glutes + gets heart rate up."},{n:"Glute band walks",s:2,r:"15 each way",nt:"Band at ankles, stay low"},{n:"Bodyweight squats",s:2,r:"15",nt:"Slow, wake legs up"}]},
 {n:"💪 main lifts",ex:[{n:"Hip Thrusts",s:3,r:"6-8",alt:["Hip Thrust Machine","Leg Press (feet high & wide)","Glute Bridge"],nt:"Use barbell, Smith machine, or hip thrust machine. Feet slightly further out for the upper glute shelf. Squeeze hard, pause 1 sec at top. 2 warm-up sets first.",tg:"glutes",lg:1,sw:"20"},{n:"Hack Squat Machine",s:3,r:"6-8",nt:"Feet low and shoulder-width for quads. Go deep — full depth builds more muscle. Start ~40kg.",tg:"quads",lg:1,sw:"40",alt:["Leg Press (feet low)","Goblet Squat","Barbell Back Squat"]},{n:"Leg Press (feet medium height)",s:3,r:"8-10",nt:"Feet MIDDLE of the platform, shoulder width — this hits both glutes and quads evenly. Push through your whole foot. Go deep. Start ~40kg.",tg:"glutes",lg:1,sw:"40",alt:["Leg Press (feet high for more glute)","Leg Press (feet low for more quad)","Sumo Dumbbell Squat"]}]},
-{n:"✨ accessories",ex:[{n:"Leg Press (feet medium)",alt:["Leg Press (feet high for glute)","Leg Press (feet low for quad)","Hack Squat"],s:3,r:"12",nt:"Feet LOW on the platform = more quads. Start ~40kg.",tg:"quads",lg:1,sw:"40"},{n:"Leg Extensions",s:3,r:"12-15",alt:["Leg Press (feet low)","Hack Squat (narrow stance)"],nt:"Squeeze quads hard at the top. Builds defined front of legs.",tg:"quads",lg:1,sw:"15"},{n:"Cable Kickbacks",s:3,r:"12 each leg",nt:"Ankle strap, squeeze at top. Glute isolation without loading your knees. Start ~5kg.",tg:"glutes",lg:1,sw:"5",alt:["Glute Kickback Machine","Hip Abductor (extra set)","Donkey Kicks"]}]},
-{n:"🧊 cool-down (5 min)",ex:[{n:"Pigeon Pose",s:1,r:"45 sec each side",nt:"Deep glute stretch."},{n:"Standing Quad Stretch",s:1,r:"30 sec each leg",nt:"Hold ankle, knees together."},{n:"Hip Flexor Stretch",s:1,r:"30 sec each side",nt:"Lunge position, push hips forward."},{n:"Seated Hamstring Stretch",s:1,r:"45 sec",nt:"Reach for toes."},{n:"Stair Master Finisher",s:1,r:"5 min",nt:"Big steps, lean slightly forward, squeeze glutes each step. This is cardio AND glute work."}]}
+{n:"✨ accessories",ex:[{n:"Leg Press (feet low)",s:3,r:"10-12",nt:"Feet LOW on the platform = more quads. Lighter weight, higher reps than main lifts. Start ~30kg.",tg:"quads",lg:1,sw:"30",alt:["Hack Squat (narrow stance)","Goblet Squat"]},{n:"Leg Extensions",s:3,r:"12-15",alt:["Leg Press (feet low)","Hack Squat (narrow stance)"],nt:"Squeeze quads hard at the top. Builds defined front of legs.",tg:"quads",lg:1,sw:"15"},{n:"Cable Kickbacks",s:3,r:"12 each leg",nt:"Ankle strap, squeeze at top. Glute isolation without loading your knees. Start ~5kg.",tg:"glutes",lg:1,sw:"5",alt:["Glute Kickback Machine","Hip Abductor (extra set)","Donkey Kicks"]}]},
+{n:"🧊 cool-down (5 min)",ex:[{n:"Pigeon Pose",s:1,r:"45 sec each side",nt:"Deep glute stretch."},{n:"Standing Quad Stretch",s:1,r:"30 sec each leg",nt:"Hold ankle, knees together."},{n:"Hip Flexor Stretch",s:1,r:"30 sec each side",nt:"Lunge position, push hips forward."},{n:"Seated Hamstring Stretch",s:1,r:"45 sec",nt:"Reach for toes."},{n:"Stairmaster Finisher",s:1,r:"5 min",nt:"Big steps, lean slightly forward, squeeze glutes each step. This is cardio AND glute work."}]}
 ]},
 {t:"Push — Shoulders & Chest",f:"Shoulders · Chest · Triceps",tm:"~75 min",sec:[
-{n:"🔥 warm-up (5 min)",ex:[{n:"Arm circles",s:2,r:"15 each way",nt:"Small to big"},{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Push-ups",s:1,r:"10",nt:"Wake up chest + triceps"},{n:"Face Pulls (light)",s:2,r:"12",nt:"Warms up rear delts. Keeps shoulders balanced and healthy."}]},
-{n:"💪 main lifts",ex:[{n:"Chest Press Machine",s:3,r:"8-10",nt:"Adjust seat so handles are at mid-chest. Push forward, squeeze chest, control back.",tg:"chest",lg:1,sw:"15",alt:["Dumbbell Chest Press","Incline Dumbbell Press"]},{n:"Shoulder Press Machine",s:3,r:"8-10",nt:"Adjust seat so handles are at shoulder height. Push up, control down.",tg:"shoulders",lg:1,sw:"10",alt:["Dumbbell Overhead Press"]},{n:"Lateral Raises",s:2,r:"12-15",nt:"Dumbbells, light weight. Raise arms out to sides. Simplest exercise in the gym. Start ~3kg.",tg:"shoulders",lg:1,sw:"3",alt:["Cable Lateral Raises"]}]},
-{n:"✨ accessories",ex:[{n:"Pectoral Machine",s:3,r:"12-15",nt:"Do NOT let pads go past your body line — protects your hypermobile shoulders. Squeeze chest at the front.",tg:"chest",lg:1,sw:"10",alt:["Dumbbell Flyes (floor)","Cable Flyes"]},{n:"Push-ups",s:2,r:"8-10",nt:"Extra chest fullness. Off a bench if full ones are hard. Hands wider than shoulders.",tg:"chest",alt:["Chest Press Machine (extra set)","Dumbbell Flyes"]},{n:"Triceps Machine",s:3,r:"12-15",nt:"Keep elbows still, just extend forearms.",tg:"triceps",lg:1,sw:"10",alt:["Tricep Pushdowns (cable)"]},{n:"Overhead Tricep Extension",s:3,r:"12-15",nt:"Hold ONE dumbbell with both hands behind head, extend up. Hits the long head. Start ~6kg.",tg:"triceps",lg:1,sw:"6",alt:["Triceps Machine (extra set)","Assisted Dips","Skull Crushers"]}]},
+{n:"🔥 warm-up (8 min)",ex:[{n:"Stairmaster",s:1,r:"5 min",nt:"Moderate pace. Gets blood flowing before upper body."},{n:"Arm circles",s:2,r:"15 each way",nt:"Small to big"},{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Push-ups (light)",s:1,r:"10",nt:"Wake up chest + triceps"}]},
+{n:"💪 main lifts",ex:[{n:"Chest Press Machine",s:3,r:"8-10",nt:"Adjust seat so handles are at mid-chest. Push forward, squeeze chest, control back.",tg:"chest",lg:1,sw:"15"},{n:"Shoulder Press Machine",s:3,r:"8-10",nt:"Adjust seat so handles are at shoulder height. Push up, control down.",tg:"shoulders",lg:1,sw:"10",alt:["Dumbbell Overhead Press"]},{n:"Lateral Raises",s:3,r:"12-15",nt:"Dumbbells, light weight. Raise arms out to sides. Builds that capped shoulder look. Start ~3kg.",tg:"shoulders",lg:1,sw:"3",alt:["Cable Lateral Raises"]}]},
+{n:"✨ accessories",ex:[{n:"Pectoral Machine",s:3,r:"12-15",nt:"Do NOT let pads go past your body line — protects your hypermobile shoulders. Squeeze chest at the front.",tg:"chest",lg:1,sw:"10"},{n:"Triceps Machine",s:3,r:"12-15",nt:"Keep elbows still, just extend forearms.",tg:"triceps",lg:1,sw:"10",alt:["Tricep Pushdowns (cable)","Bench Dips"]},{n:"Assisted Dips",s:3,r:"8-12",nt:"Use the assisted dip machine — set enough counterweight that you can do 8-12 reps. Lean forward slightly for more chest, stay upright for more triceps. Builds both.",tg:"triceps",lg:1,sw:"0",alt:["Triceps Machine (extra set)","Bench Dips","Tricep Pushdowns (cable)"]}]},
 {n:"🔥 core (5 min)",ex:[
 {n:"Plank",s:2,r:"30-45 sec",nt:"Elbows under shoulders, squeeze glutes, straight line.",tg:"core",alt:["Ab Crunch Machine"]},
 {n:"Dead Bugs",s:2,r:"10 each side",nt:"Lie on back, arms up, knees at 90°. Lower opposite arm and leg slowly. Keep lower back pressed into floor.",tg:"core",alt:["Ab Crunch Machine"]}
 ]},
 {n:"🧊 cool-down (5 min)",ex:[{n:"Cross-Body Shoulder Stretch",s:1,r:"30 sec each arm",nt:"Pull arm across chest."},{n:"Doorway Chest Stretch",s:1,r:"30 sec",nt:"Arms on frame, lean through."},{n:"Overhead Tricep Stretch",s:1,r:"30 sec each arm",nt:"Reach behind head."},{n:"Cat-Cow",s:1,r:"10 reps",nt:"Slow spinal movement."}]}]},
-{t:"Glutes & Hamstrings",f:"Glutes · Hamstrings",tm:"~75 min",sec:[
-{n:"🔥 warm-up (8 min)",ex:[{n:"Hip circles",s:2,r:"10 each way",nt:"Big circles"},{n:"Clamshells",s:2,r:"15 each side",nt:"Band above knees. Open top knee. Wakes up outer glute."},{n:"Glute bridges",s:2,r:"15",nt:"Bodyweight, squeeze at top"}]},
+{t:"Glutes & Hamstrings",f:"Glutes · Hamstrings · Quads",tm:"~75 min",sec:[
+{n:"🔥 warm-up (10 min)",ex:[{n:"Stairmaster",s:1,r:"5 min",nt:"Big steps, moderate pace. Warms up glutes + hams perfectly."},{n:"Clamshells",s:2,r:"15 each side",nt:"Band above knees. Open top knee. Wakes up outer glute."},{n:"Glute bridges",s:2,r:"15",nt:"Bodyweight, squeeze at top"}]},
 {n:"💪 main lifts",ex:[
 {n:"Hip Thrusts",s:3,r:"6-8",nt:"Your #1 glute exercise. Feet slightly further out for the shelf. Squeeze hard, pause 1 sec at top. 2 warm-up sets first.",tg:"glutes",lg:1,sw:"30",alt:["Hip Thrust Machine","Glute Bridge (dumbbell on hips)"]},
 {n:"Romanian Deadlifts",s:3,r:"6-8",nt:"Slight knee bend. Bar close to legs. Feel the stretch in your hamstrings. This carves the glute-ham line.",tg:"hamstrings",lg:1,sw:"20",alt:["Dumbbell RDLs","Stiff-Leg Deadlifts"]},
@@ -487,22 +405,22 @@ const WO=[
 ]},
 {n:"🎀 accessories",ex:[
 {n:"Leg Curl Machine",s:3,r:"12-15",nt:"Seated or lying — whichever your gym has. Squeeze at the top.",tg:"hamstrings",lg:1,sw:"15",alt:["Lying Leg Curl","Seated Leg Curl"]},
-{n:"Cable Pull-Throughs",s:3,r:"12-15",nt:"Face away from cable, rope between legs, hinge forward then squeeze glutes to stand. Like a standing hip thrust.",tg:"glutes",lg:1,sw:"15",alt:["Cable Kickbacks","Glute Kickback Machine"]},
-{n:"Hip Abductor Machine",s:3,r:"15",nt:"Push knees OUT. Fills hip dips. Lean slightly forward for more glute.",tg:"glutes",lg:1,sw:"20",alt:["Banded Clamshells","Cable Hip Abduction"]},
-{n:"Hip Adductor Machine",s:2,r:"15",nt:"Push knees IN. Inner thigh. Lower priority but good for overall leg shape.",tg:"legs",lg:1,sw:"20",alt:["Sumo Squat","Banded Side Steps"]}
+{n:"Leg Curl Machine (heavy)",s:3,r:"8-10",nt:"Same machine as earlier but HEAVIER weight, lower reps. Go as heavy as you can for 8-10 reps. This builds hamstring strength while the lighter set builds endurance.",tg:"hamstrings",lg:1,sw:"20",alt:["Lying Leg Curl","Seated Leg Curl"]},
+{n:"Hip Abductor Machine",s:3,r:"15",nt:"Push knees OUT. Fills hip dips. Lean slightly forward for more glute.",tg:"glutes",lg:1,sw:"20",alt:["Banded Clamshells","Cable Hip Abduction","Cable Pull-Throughs"]},
+{n:"Leg Extensions",s:3,r:"12-15",nt:"Balances out all the posterior chain work. Keeps quads developing evenly with hams.",tg:"quads",lg:1,sw:"15",alt:["Leg Press (feet low)","Hack Squat (narrow stance)"]}
 ]},
-{n:"🧊 cool-down (5 min)",ex:[{n:"Pigeon Pose",s:1,r:"45 sec each side",nt:"Deep glute stretch."},{n:"Lying Hamstring Stretch",s:1,r:"30 sec each leg",nt:"On back, pull leg towards you."},{n:"Figure-4 Stretch",s:1,r:"30 sec each side",nt:"Ankle on opposite knee."},{n:"Child's Pose",s:1,r:"45 sec",nt:"Breathe."},{n:"Stair Master Finisher",s:1,r:"5 min",nt:"Same as Monday — big steps, lean forward, squeeze glutes."}]}
+{n:"🧊 cool-down (5 min)",ex:[{n:"Pigeon Pose",s:1,r:"45 sec each side",nt:"Deep glute stretch."},{n:"Lying Hamstring Stretch",s:1,r:"30 sec each leg",nt:"On back, pull leg towards you."},{n:"Figure-4 Stretch",s:1,r:"30 sec each side",nt:"Ankle on opposite knee."},{n:"Child's Pose",s:1,r:"45 sec",nt:"Breathe."},{n:"Stairmaster Finisher",s:1,r:"5 min",nt:"Big steps, lean forward, squeeze glutes. Cardio AND glute work."}]}
 ]},
 {t:"Pull — Back & Biceps",f:"Back · Biceps · Rear Delts",tm:"~75 min",sec:[
-{n:"🔥 warm-up (5 min)",ex:[{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Cat-Cow",s:1,r:"10",nt:"Wake up the spine"},{n:"Dead hangs",s:2,r:"20 sec",nt:"Hang from bar. Decompresses spine."}]},
-{n:"💪 main lifts",ex:[{n:"Lat Pulldown",s:3,r:"8-10",nt:"Wide grip, pull to chest. Builds V-taper = waist looks smaller. Start ~25kg.",tg:"back",lg:1,sw:"25",alt:["Assisted Pull-ups","Close Grip Lat Pulldown"]},{n:"Low Row Machine",s:3,r:"8-10",nt:"Pull handles towards stomach, squeeze shoulder blades.",tg:"back",lg:1,sw:"15",alt:["Seated Cable Rows","Dumbbell Rows"]},{n:"Close Grip Lat Pulldown",s:3,r:"10-12",nt:"Same machine, narrow grip handle. Hits mid-back.",tg:"back",lg:1,sw:"15",alt:["Straight Arm Pulldowns","Low Row Machine (extra set)"]}]},
-{n:"✨ accessories",ex:[{n:"Face Pulls",s:3,r:"12-15",nt:"Pull rope towards face, elbows high. Protects shoulders, fixes posture. Start ~5kg.",tg:"shoulders",lg:1,sw:"5",alt:["Band Pull-Aparts","Reverse Flyes"]},{n:"Dumbbell Hammer Curls",s:3,r:"10-12",nt:"LEFT ARM FIRST always. Match reps on right even if it could do more. This fixes your imbalance. Thumbs-up grip. Start ~4kg.",tg:"biceps",lg:1,sw:"4",alt:["Biceps Machine","Dumbbell Bicep Curls"]},{n:"Biceps Machine",s:3,r:"10-12",nt:"The Technogym one at your gym. Use this AFTER hammer curls — the machine finishes off your biceps. The imbalance fix comes from the hammer curls, this just adds volume.",tg:"biceps",lg:1,sw:"10",alt:["Cable Curls","Dumbbell Bicep Curls"]}]},
+{n:"🔥 warm-up (8 min)",ex:[{n:"Stairmaster",s:1,r:"5 min",nt:"Moderate pace. Gets blood flowing."},{n:"Band pull-aparts",s:2,r:"15",nt:"Squeeze shoulder blades"},{n:"Cat-Cow",s:1,r:"10",nt:"Wake up the spine"},{n:"Dead hangs",s:2,r:"20 sec",nt:"Hang from bar. Decompresses spine."}]},
+{n:"💪 main lifts",ex:[{n:"Lat Pulldown",s:3,r:"8-10",nt:"Wide grip, pull to chest. Builds V-taper = waist looks smaller. Start ~25kg.",tg:"back",lg:1,sw:"25",alt:["Assisted Pull-ups","Close Grip Lat Pulldown"]},{n:"Low Row Machine",s:3,r:"8-10",nt:"Pull handles towards stomach, squeeze shoulder blades.",tg:"back",lg:1,sw:"15",alt:["Seated Cable Rows","Dumbbell Rows"]},{n:"Close Grip Lat Pulldown",s:3,r:"10-12",nt:"Same machine, swap to narrow grip handle. Hits mid-back and lower lats differently to wide grip.",tg:"back",lg:1,sw:"15",alt:["Straight Arm Pulldowns","Low Row Machine (extra set)"]}]},
+{n:"✨ accessories",ex:[{n:"Reverse Flyes",s:3,r:"12-15",nt:"Bend forward ~45°, dumbbells hanging down, lift out to sides squeezing shoulder blades. Builds rear delts + fixes posture. Start ~2-3kg.",tg:"shoulders",lg:1,sw:"2",alt:["Reverse Flye Machine","Band Pull-Aparts"]},{n:"Dumbbell Hammer Curls",s:3,r:"10-12",nt:"LEFT ARM FIRST always. Match reps on right even if it could do more. This fixes your imbalance. Thumbs-up grip. Start ~4kg.",tg:"biceps",lg:1,sw:"4",alt:["Biceps Machine","Dumbbell Bicep Curls"]},{n:"Biceps Machine",s:3,r:"10-12",nt:"The Technogym one at your gym. Use this AFTER hammer curls — the machine finishes off your biceps. The imbalance fix comes from the hammer curls, this just adds volume.",tg:"biceps",lg:1,sw:"10",alt:["Cable Curls","Dumbbell Bicep Curls"]}]},
 {n:"🔥 core (5 min)",ex:[
 {n:"Plank",s:2,r:"30-45 sec",nt:"Elbows under shoulders.",tg:"core",alt:["Ab Crunch Machine"]},{n:"Dead Bugs",s:2,r:"10 each side",nt:"Lower back flat on floor.",tg:"core",alt:["Ab Crunch Machine"]}]},
 {n:"🧊 cool-down (5 min)",ex:[{n:"Lat Stretch (doorway)",s:1,r:"30 sec each side",nt:"Hold frame, lean away."},{n:"Bicep Wall Stretch",s:1,r:"30 sec each arm",nt:"Palm on wall, rotate away."},{n:"Thread the Needle",s:1,r:"30 sec each side",nt:"On all fours, reach under. Opens upper back."},{n:"Child's Pose",s:1,r:"45 sec",nt:"Arms forward."}]}]},
 {t:"Upper Body & Core",f:"Chest · Back · Shoulders · Triceps · Abs",tm:"~75 min",sec:[
 {n:"🔥 warm-up (5 min)",ex:[{n:"Cat-Cow",s:1,r:"10",nt:"Spine mobility"},{n:"Arm circles",s:2,r:"15 each way",nt:"Loosen shoulders"},{n:"Band pull-aparts",s:1,r:"15",nt:"Wake up upper back"}]},
-{n:"💪 main lifts",ex:[{n:"Dumbbell Chest Press",s:3,r:"8-10",nt:"Flat bench. Shoulders pinned back.",tg:"chest",lg:1,sw:"6",alt:["Chest Press Machine","Push-ups"]},{n:"Chest-Supported Dumbbell Rows",s:3,r:"8-10",nt:"Lie chest-down on incline bench, row up.",tg:"back",lg:1,sw:"8",alt:["Low Row Machine","Lat Pulldown"]},{n:"Lateral Raises",s:2,r:"12",nt:"Light and controlled.",tg:"shoulders",lg:1,sw:"3",alt:["Shoulder Press Machine","Cable Lateral Raises"]},{n:"Cable Overhead Tricep Extensions",s:3,r:"12",nt:"Rope attachment, extend overhead.",tg:"triceps",lg:1,sw:"8",alt:["Triceps Machine","Overhead Dumbbell Extension"]}]},
+{n:"💪 main lifts",ex:[{n:"Chest Press Machine",s:3,r:"8-10",nt:"Lighter than push day. Good form, full range.",tg:"chest",lg:1,sw:"10",alt:["Push-ups"]},{n:"Low Row Machine",s:3,r:"8-10",nt:"Pull handles towards stomach, squeeze shoulder blades.",tg:"back",lg:1,sw:"15",alt:["Lat Pulldown","Seated Cable Rows"]},{n:"Lateral Raises",s:2,r:"12",nt:"Light and controlled.",tg:"shoulders",lg:1,sw:"3",alt:["Shoulder Press Machine","Cable Lateral Raises"]},{n:"Triceps Machine",s:3,r:"12",nt:"Keep elbows still, just extend forearms.",tg:"triceps",lg:1,sw:"8",alt:["Assisted Dips","Tricep Pushdowns (cable)"]}]},
 {n:"🔥 core circuit — 3 rounds, 60 sec rest",ex:[{n:"Plank",s:3,r:"30 sec",nt:"Forearms. Squeeze everything.",tg:"abs",alt:["Ab Crunch Machine"]},{n:"Dead Bugs",s:3,r:"10 each side",nt:"THE best ab exercise. Back flat, opposite arm + leg.",tg:"abs",alt:["Ab Crunch Machine"]},{n:"Cable Woodchops",s:3,r:"12 each side",nt:"Rotate through core. Start ~5kg.",tg:"abs",lg:1,sw:"5",alt:["Russian Twists","Dead Bugs"]},{n:"Hanging Knee Raises",s:3,r:"10",nt:"Hang from bar, knees to chest. Or lying leg raises.",tg:"abs",alt:["Ab Crunch Machine","Leg Raises (lying)"]}]},
 {n:"🧊 cool-down (5 min)",ex:[{n:"Doorway Chest Stretch",s:1,r:"30 sec",nt:"Arms on frame, lean through."},{n:"Seated Forward Fold",s:1,r:"45 sec",nt:"Reach for toes."},{n:"Supine Twist",s:1,r:"30 sec each side",nt:"Knees one side, arms wide."},{n:"Child's Pose",s:1,r:"45 sec",nt:"You did it."}]}]},
 {t:"Full Body (Optional)",f:"Light Full Body",tm:"~75 min",sec:[
@@ -521,7 +439,7 @@ const WO=[
 {n:"Lat Pulldown",s:3,r:"10",nt:"Wide grip, pull to chest.",tg:"back",lg:1,sw:"15",alt:["Low Row Machine"]},
 {n:"Shoulder Press Machine",s:2,r:"10",nt:"Light. Just maintaining.",tg:"shoulders",lg:1,sw:"8",alt:["Dumbbell Overhead Press","Lateral Raises"]},
 {n:"Dumbbell Hammer Curls",s:2,r:"10-12",nt:"Left arm first always.",tg:"biceps",lg:1,sw:"4",alt:["Biceps Machine","Dumbbell Bicep Curls"]},
-{n:"Triceps Machine",s:2,r:"12",nt:"Light and controlled.",tg:"triceps",lg:1,sw:"8",alt:["Overhead Tricep Extension","Tricep Pushdowns"]}
+{n:"Triceps Machine",s:2,r:"12",nt:"Light and controlled.",tg:"triceps",lg:1,sw:"8",alt:["Assisted Dips","Tricep Pushdowns"]}
 ]},
 {n:"🔥 core",ex:[
 {n:"Dead Bugs",s:2,r:"10 each side",nt:"Lower back flat on floor."},
@@ -586,8 +504,20 @@ let dark=localStorage.getItem('dark')==='1';
 let water=JSON.parse(localStorage.getItem('water')||'{}');
 let wnotes=JSON.parse(localStorage.getItem('wnotes')||'{}');
 let exSwaps=JSON.parse(localStorage.getItem("exSwaps")||"{}");
+let setDates=JSON.parse(localStorage.getItem('setDates')||'{}');
+function autoResetSets(dayIdx){
+  var today=new Date().toISOString().slice(0,10);
+  var lastDate=setDates[dayIdx];
+  if(lastDate&&lastDate!==today){
+    Object.keys(setD).filter(function(k){return k.startsWith(dayIdx+'::')}).forEach(function(k){delete setD[k]});
+    localStorage.setItem('sd5',JSON.stringify(setD));
+  }
+  setDates[dayIdx]=today;
+  localStorage.setItem('setDates',JSON.stringify(setDates));
+}
 let activeSwaps=JSON.parse(localStorage.getItem('swaps2')||'{}');
 let portions={};
+
 let collapsed={todayMeals:false,todayWorkout:true,todayReview:true,todayStudy:true};
 let dayOffset=0;
 if(dark)document.body.classList.add('dark');
@@ -625,6 +555,24 @@ let streak=JSON.parse(localStorage.getItem('streak2')||'{"count":0,"lastDate":""
 let difficulty=JSON.parse(localStorage.getItem('diff')||'{}');
 let wlogHist=JSON.parse(localStorage.getItem('wlh')||'{}');
 let cycleData=JSON.parse(localStorage.getItem('cycle')||'{"lastPeriod":"","cycleLength":28}');
+
+// One-time cleanup: remove saved data for exercises that no longer exist
+(function(){
+  var gone=["Smith Reverse Lunges","Face Pulls","Face Pulls (light)","Dumbbell Chest Press","Incline Dumbbell Press","Dumbbell Flyes","Dumbbell Flyes (floor)","Cable Flyes","Overhead Tricep Extension","Cable Overhead Tricep Extensions","Single-Leg RDLs","Chest-Supported Dumbbell Rows"];
+  var cleaned=false;
+  gone.forEach(function(name){
+    Object.keys(wlog).forEach(function(k){if(k.indexOf(name)>-1){delete wlog[k];cleaned=true}});
+    Object.keys(wlogHist).forEach(function(k){if(k.indexOf(name)>-1){delete wlogHist[k];cleaned=true}});
+    Object.keys(setD).forEach(function(k){if(k.indexOf(name)>-1){delete setD[k];cleaned=true}});
+    Object.keys(exSwaps).forEach(function(k){if(exSwaps[k]===name){delete exSwaps[k];cleaned=true}});
+  });
+  if(cleaned){
+    localStorage.setItem('wl3',JSON.stringify(wlog));
+    localStorage.setItem('wlh',JSON.stringify(wlogHist));
+    localStorage.setItem('sd5',JSON.stringify(setD));
+    localStorage.setItem('exSwaps',JSON.stringify(exSwaps));
+  }
+})();
 
 function checkStreak(){
   const today=todayKey();const yesterday=new Date(Date.now()-86400000).toISOString().slice(0,10);
@@ -698,10 +646,10 @@ function getCyclePhase(){
   return{phase:"luteal",day:dayInCycle+1,emoji:"🌙",title:"luteal phase",tip:"Energy starts to dip. You might crave more carbs — that's normal, eat them. Focus on steady workouts, don't push for PRs. Extra rest is okay 🧘‍♀️",cls:"lut"};
 }
 
-function setCycle(field,val){cycleData[field]=val;localStorage.setItem('cycle',JSON.stringify(cycleData));debouncedSync();localStorage.setItem('sleep',JSON.stringify(sleepData));debouncedSync();localStorage.setItem('studyChk',JSON.stringify(studyChecks));localStorage.setItem('studyProg',JSON.stringify(studyProgress));debouncedSync();localStorage.setItem('blocked',JSON.stringify(blockedDays));debouncedSync();localStorage.setItem('errorLogs',JSON.stringify(errorLogs));debouncedSync();localStorage.setItem('meas',JSON.stringify(measurements));debouncedSync();window._scrollSave=window.scrollY;render()}
+function setCycle(field,val){cycleData[field]=val;localStorage.setItem('cycle',JSON.stringify(cycleData));localStorage.setItem('sleep',JSON.stringify(sleepData));localStorage.setItem('meas',JSON.stringify(measurements));debouncedSync();window._scrollSave=window.scrollY;render()}
 
 function exportData(){
-  const data={cfg,chk,favs,setD,wlog,wlogHist,water,wnotes,activeSwaps,portions,streak,difficulty,cycleData,sleepData,measurements,studyChecks,studyProgress,errorLogs,blockedDays,studyBlocks:JSON.parse(localStorage.getItem("studyBlocks")||"{}"),setDates:setDates,exSwaps:exSwaps};
+  const data={cfg,chk,favs,setD,wlog,wlogHist,water,wnotes,activeSwaps,portions,streak,difficulty,cycleData,sleepData,measurements,setDates:setDates,exSwaps:exSwaps,shopChk2:JSON.parse(localStorage.getItem('shopChk2')||'{}')};
   const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);
   a.download='meal-workout-backup-'+todayKey()+'.json';a.click();
@@ -718,7 +666,7 @@ function importData(input){
       if(data.water)water=data.water;if(data.wnotes)wnotes=data.wnotes;
       if(data.activeSwaps)activeSwaps=data.activeSwaps;if(data.portions)portions=data.portions;
       if(data.streak)streak=data.streak;if(data.difficulty)difficulty=data.difficulty;
-      if(data.cycleData)cycleData=data.cycleData;if(data.sleepData)sleepData=data.sleepData;if(data.studyChecks)studyChecks=data.studyChecks;if(data.studyProgress)studyProgress=data.studyProgress;if(data.blockedDays)blockedDays=data.blockedDays;if(data.errorLogs)errorLogs=data.errorLogs;if(data.measurements)measurements=data.measurements;
+      if(data.cycleData)cycleData=data.cycleData;if(data.sleepData)sleepData=data.sleepData;if(data.measurements)measurements=data.measurements;
       saveCfg();saveCk();saveFv();saveSD();saveWL();
       localStorage.setItem('wlh',JSON.stringify(wlogHist));
       localStorage.setItem('water',JSON.stringify(water));
@@ -726,7 +674,7 @@ function importData(input){
       localStorage.setItem('swaps2',JSON.stringify(activeSwaps));
       localStorage.setItem('streak2',JSON.stringify(streak));
       localStorage.setItem('diff',JSON.stringify(difficulty));
-      localStorage.setItem('cycle',JSON.stringify(cycleData));localStorage.setItem('sleep',JSON.stringify(sleepData));localStorage.setItem('studyChk',JSON.stringify(studyChecks));localStorage.setItem('studyProg',JSON.stringify(studyProgress));localStorage.setItem('blocked',JSON.stringify(blockedDays));localStorage.setItem('errorLogs',JSON.stringify(errorLogs));localStorage.setItem('meas',JSON.stringify(measurements));
+      localStorage.setItem('cycle',JSON.stringify(cycleData));localStorage.setItem('sleep',JSON.stringify(sleepData));localStorage.setItem('meas',JSON.stringify(measurements));
       alert('Data restored! 🩷');render();
     }catch(err){alert('Invalid file');}
   };reader.readAsText(file);
@@ -789,313 +737,6 @@ function getMeasChange(field){
   const last=parseFloat(recent[recent.length-1][field]);
   return{diff:(last-first).toFixed(1),first,last};
 }
-
-// Study plan data
-
-let studyChecks=JSON.parse(localStorage.getItem('studyChk')||'{}');
-let studyNotes=JSON.parse(localStorage.getItem('studyNotes')||'{}');
-let errorLogs=JSON.parse(localStorage.getItem('errorLogs')||'{"maths":"","physics":"","fm":""}');
-
-// Study planner - queue-based reflow system
-const MOCK_DATE=new Date(2026,11,7,9,30); // Mon 7 Dec 2026
-
-// === STUDY PLANNER ===
-
-const DAILY_PLAN={
-"2026-09-28":[{s:"🧮 FM",t:"SPRINT anchor set: SERIES + MATRICES round 2 — textbook questions only",h:"2h",tag:"sprint"},{s:"📊 Maths",t:"STATS: probability, conditional, Venn & tree + DRVs — past-paper Qs [GAP] — diagnose-first",h:"2h",tag:"gap"},{s:"⚛️ Physics",t:"Textbook grind from bookmark — 5 past-paper MCQs first, every question, log misses",h:"2h",tag:"grind"},{s:"📝 TMUA",t:"Timed past-paper/specimen sections + mark + error log",h:"2h",tag:"tmua"}],
-"2026-09-29":[{s:"🧮 FM",t:"SPRINT U21: roots of polynomials + forming new equations — videos + anchors",h:"2h",tag:"sprint"},{s:"⚛️ Physics",t:"Textbook grind from bookmark — 5 MCQs first, every question, log misses",h:"2h",tag:"grind"},{s:"🏋️ Mini-gym",t:"Binomial hypothesis tests [GAP]",h:"1h",tag:"gap"},{s:"🔄 Retrieval",t:"10 min flashcards / 10 min error-log redos / 10 min MCQs",h:"30min",tag:"retrieval"}],
-"2026-09-30":[{s:"🧮 FM",t:"SPRINT U22: proof by induction — series — videos + anchors",h:"2h",tag:"sprint"},{s:"📊 Maths",t:"STATS MIXED: timed past-paper stats section — the U-to-A mission, round 1 [GAP]",h:"2h",tag:"gap"},{s:"⚛️ Physics",t:"FULL H556 past paper, timed — rotate Papers 1/2/3, oldest first",h:"2.5h",tag:"paper"},{s:"⚛️ Physics",t:"Mark to official scheme incl. 6-marker levels + error log",h:"1.5h",tag:"marking"}],
-"2026-10-01":[{s:"🧮 FM",t:"SPRINT U23: induction — sequences — videos + anchors",h:"2h",tag:"sprint"},{s:"⚛️ Physics",t:"Textbook grind from bookmark — 5 MCQs first, every question, log misses",h:"2h",tag:"grind"},{s:"🏋️ Mini-gym",t:"Normal hypothesis tests — around the NULL mean [GAP]",h:"1h",tag:"gap"},{s:"🔄 Retrieval",t:"10 min flashcards / 10 min error-log redos / 10 min MCQs",h:"30min",tag:"retrieval"}],
-"2026-10-02":[{s:"🧮 FM",t:"SPRINT U24: induction — matrices — videos + anchors",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"Simultaneous equations & inequalities + polynomials: factor theorem, division WITH unknown k [GAP] — diagnose-first",h:"2h",tag:"gap"},{s:"🔬 Practical",t:"PRACTICAL TRACK: log-linear & log-log plots → constants; SANITY-CHECK the magnitude [GAP]",h:"2h",tag:"practical"},{s:"📝 TMUA",t:"Timed past-paper/specimen sections + mark + error log",h:"2h",tag:"tmua"}],
-"2026-10-03":[{s:"🧮 FM",t:"SPRINT anchor set: ROOTS + INDUCTION — textbook questions only",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"FULL H640 past paper, timed — rotation weighted to P&S: Paper 2,1,2,3. Oldest first",h:"2h",tag:"paper"},{s:"📐 Maths",t:"Mark to official scheme + error log every dropped mark",h:"1.5h",tag:"marking"},{s:"⚛️ Physics",t:"Textbook grind from bookmark — 5 MCQs, every question, log misses",h:"2h",tag:"grind"}],
-"2026-10-04":[{s:"🧮 FM",t:"SPRINT U25: scalar product + perpendicular vectors — videos + anchors",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"Rational expressions & partial fractions + functions — diagnose-first",h:"2h",tag:"pure"},{s:"⚛️ Physics",t:"Textbook grind from bookmark — 5 MCQs, every question, log misses",h:"2h",tag:"grind"},{s:"📝 TMUA",t:"Timed past-paper/specimen sections + mark + error log",h:"2h",tag:"tmua"}],
-"2026-10-05":[{s:"🧮 FM",t:"SPRINT U26: planes — videos + anchors",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"Graph transformations, proportion, asymptotes + straight lines — diagnose-first",h:"2h",tag:"pure"},{s:"⚛️ Physics",t:"Textbook grind from bookmark — 5 MCQs, every question, log misses",h:"2h",tag:"grind"},{s:"📝 TMUA",t:"Timed past-paper/specimen sections + mark + error log",h:"2h",tag:"tmua"}],
-"2026-10-06":[{s:"🧮 FM",t:"SPRINT anchor set: VECTORS + full Core Pure sweep — textbook questions",h:"2h",tag:"sprint"},{s:"⚛️ Physics",t:"Textbook grind from bookmark — 5 MCQs, every question, log misses",h:"2h",tag:"grind"},{s:"🏋️ Mini-gym",t:"Conditional probability, Venn & tree diagrams",h:"1h",tag:"drill"},{s:"🔄 Retrieval",t:"10 min flashcards / 10 min error-log redos / 10 min MCQs",h:"30min",tag:"retrieval"}],
-"2026-10-07":[{s:"🧮 FM",t:"SPRINT St27-28: PMCC + linear regression — videos + anchors",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"Circles: tangent-from-a-point + mixed coord geometry [GAP] — diagnose-first",h:"2h",tag:"gap"},{s:"⚛️ Physics",t:"FULL H556 past paper, timed — rotate Papers 1/2/3, oldest first",h:"2.5h",tag:"paper"},{s:"⚛️ Physics",t:"Mark to official scheme incl. 6-marker levels + error log",h:"1.5h",tag:"marking"}],
-"2026-10-08":[{s:"🎉",t:"OPEN DAY — full day out. Optional train retrieval only: flashcards, error-log re-read, phone MCQs",h:"free",tag:"rest"}],
-"2026-10-09":[{s:"🎉",t:"OPEN DAY — full day out. Optional train retrieval only",h:"free",tag:"rest"}],
-"2026-10-10":[{s:"🧮 FM",t:"SPRINT St29-30: PMCC hypothesis testing + Spearman's rank — videos + anchors",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"FULL H640 past paper, timed — P&S rotation, oldest first",h:"2h",tag:"paper"},{s:"📐 Maths",t:"Mark to official scheme + error log every dropped mark",h:"1.5h",tag:"marking"},{s:"⚛️ Physics",t:"Textbook grind from bookmark",h:"2h",tag:"grind"}],
-"2026-10-11":[{s:"🧮 FM",t:"SPRINT St31: chi-squared contingency tests — videos + anchors",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"Sequences & series + binomial expansion (both types) — diagnose-first",h:"2h",tag:"pure"},{s:"⚛️ Physics",t:"Textbook grind from bookmark",h:"2h",tag:"grind"},{s:"📝 TMUA",t:"Timed past-paper/specimen sections + mark + error log",h:"2h",tag:"tmua"}],
-"2026-10-12":[{s:"🧮 FM",t:"SPRINT St32-33: DRVs + discrete uniform (incl. E(X), Var(X)) — videos + anchors",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"Trig: exact values, radians, arcs + identities & equations — diagnose-first",h:"2h",tag:"pure"},{s:"🎉",t:"Open day event (~2h) + travel",h:"2h",tag:"event"}],
-"2026-10-13":[{s:"🧮 FM",t:"SPRINT St34-35: geometric + binomial (mean/variance proofs) — videos + anchors",h:"2h",tag:"sprint"},{s:"⚛️ Physics",t:"Textbook grind from bookmark",h:"2h",tag:"grind"},{s:"🏋️ Mini-gym",t:"Data interpretation wording + outliers [GAP]",h:"1h",tag:"gap"},{s:"🔄 Retrieval",t:"Flashcards / error-log redos / MCQs",h:"30min",tag:"retrieval"}],
-"2026-10-14":[{s:"🧮 FM",t:"SPRINT St36: Poisson — videos + anchors",h:"2h",tag:"sprint"},{s:"📐 Maths",t:"Compound & double angle + R-form, small angles, reciprocal & inverse — diagnose-first",h:"2h",tag:"pure"},{s:"⚛️ Physics",t:"FULL H556 past paper, timed — rotate Papers 1/2/3, oldest first",h:"2.5h",tag:"paper"},{s:"⚛️ Physics",t:"Mark to official scheme + error log",h:"1.5h",tag:"marking"}],
-"2026-10-15":[{s:"🧮 FM",t:"SPRINT St37: goodness of fit tests — videos + anchors",h:"2h",tag:"sprint"},{s:"⚛️ Physics",t:"Textbook grind from bookmark",h:"2h",tag:"grind"},{s:"🏋️ Mini-gym",t:"Proof: show-that, verification vs proof [GAP]",h:"1h",tag:"gap"},{s:"🔄 Retrieval",t:"Flashcards / error-log redos / MCQs",h:"30min",tag:"retrieval"}],
-"2026-10-16":[{s:"🧮 FM",t:"SPRINT anchor set: CORRELATION & TESTS — textbook questions only",h:"2h",tag:"sprint"},{s:"📊 Maths",t:"STATS MIXED round 2: timed past-paper stats section [GAP]",h:"2h",tag:"gap"},{s:"🔬 Practical",t:"PRACTICAL TRACK: worst-fit lines; uncertainty in gradient & intercept",h:"2h",tag:"practical"},{s:"📝 TMUA",t:"Timed past-paper/specimen sections + mark + error log",h:"2h",tag:"tmua"}],
-"2026-10-17":[{s:"🧮 FM",t:"SPRINT anchor set: DISTRIBUTIONS + GOF — textbook questions only",h:"2h",tag:"sprint"},{s:"📝 TMUA",t:"TMUA on the train: timed paper drills",h:"1h",tag:"tmua"},{s:"🎉",t:"London open day event",h:"2h",tag:"event"}],
-"2026-10-18":[{s:"🧮 FM",t:"PRACTICE: textbook grind — matrices (all non-green questions)",h:"2h",tag:"practice"},{s:"📐 Maths",t:"Exponentials & logs + modelling, reduction to linear form — diagnose-first",h:"2h",tag:"pure"},{s:"📝 TMUA",t:"Timed sections + mark",h:"1h",tag:"tmua"}],
-"2026-10-19":[{s:"🧮 FM",t:"PRACTICE: textbook grind — complex numbers",h:"2h",tag:"practice"},{s:"📝 TMUA",t:"TMUA on the train: timed paper drills",h:"1h",tag:"tmua"},{s:"🎉",t:"Open day event + travel home",h:"2h",tag:"event"}]
-};
-
-const STUDY={
-// === AS FURTHER MATHS (DECEMBER) ===
-cp_proof_as:{name:"Proof by Induction (AS)",emoji:"🧮",cat:"AS FM",priority:1,topics:[
-"Induction: prove formulae for sums",
-"Induction: prove formulae for sequences",
-"Induction: matrix powers"]},
-cp_complex_as:{name:"Complex Numbers (AS)",emoji:"🧮",cat:"AS FM",priority:1,topics:[
-"Definition of i, powers of i",
-"Complex arithmetic (add, subtract, multiply, divide)",
-"Complex conjugates",
-"Modulus & argument",
-"Modulus-argument form",
-"Argand diagrams",
-"Solve polynomials with complex roots",
-"Loci on Argand diagram (|z-a|=r, arg(z-a)=θ)"]},
-cp_matrices_as:{name:"Matrices (AS)",emoji:"🧮",cat:"AS FM",priority:1,topics:[
-"Matrix notation, addition, scalar multiplication",
-"Matrix multiplication",
-"Identity & inverse matrices (2×2)",
-"Matrix transformations (2D & some 3D)",
-"Composite & inverse transformations",
-"Solve matrix equations",
-"Invariant points & lines"]},
-cp_vectors_as:{name:"Vectors & 3D (AS)",emoji:"🧮",cat:"AS FM",priority:1,topics:[
-"3D vectors & scalar product",
-"Equation of a plane (normal form)",
-"Plane intersections"]},
-cp_algebra_as:{name:"Roots of Polynomials (AS)",emoji:"🧮",cat:"AS FM",priority:1,topics:[
-"Polynomial roots: relationships between roots",
-"Sum/product of roots (α+β, αβ etc.)",
-"Form equations from transformed roots"]},
-cp_series_as:{name:"Series (AS)",emoji:"🧮",cat:"AS FM",priority:1,topics:[
-"Standard summation formulae (Σr, Σr², Σr³)",
-"Method of differences (telescoping)"]},
-fmst_samp:{name:"Sampling",emoji:"📊",cat:"AS FM",priority:1,topics:[
-"Purpose of sampling",
-"Sampling methods (random, systematic, stratified)",
-"Sampling bias & practical considerations"]},
-fmst_drv_as:{name:"Discrete Random Variables (AS)",emoji:"📊",cat:"AS FM",priority:1,topics:[
-"Probability distributions & PMFs",
-"E(X) and Var(X)",
-"Discrete uniform distribution",
-"Geometric distribution",
-"Poisson distribution",
-"Binomial: extending A-level content",
-"Mean & variance of distributions",
-"Choose appropriate distribution & assumptions",
-"Relationship between binomial & Poisson"]},
-fmst_biv:{name:"Bivariate Data",emoji:"📊",cat:"AS FM",priority:1,topics:[
-"Scatter diagrams & correlation",
-"PMCC calculation & interpretation",
-"Spearman's rank correlation",
-"Linear regression & least squares",
-"Residuals & assessing model fit",
-"Correlation ≠ causation"]},
-fmst_chi:{name:"Chi-squared Tests",emoji:"📊",cat:"AS FM",priority:1,topics:[
-"Chi-squared statistic & expected frequencies",
-"Degrees of freedom & critical values",
-"Goodness-of-fit test",
-"Contingency tables & test for association",
-"State hypotheses & interpret in context"]},
-
-// === A-LEVEL FURTHER MATHS (A2 CONTENT) ===
-cp_proof_a2:{name:"Proof by Induction (A2)",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"Induction: divisibility",
-"More sophisticated proof arguments"]},
-cp_complex_a2:{name:"Complex Numbers (A2)",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"De Moivre's theorem",
-"Derive trig identities using De Moivre's",
-"nth roots of complex numbers",
-"Geometrical problems involving roots"]},
-cp_matrices_a2:{name:"Matrices (A2)",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"Determinant of 3×3 matrix",
-"Inverse of 3×3 without calculator",
-"Matrix properties & proofs"]},
-cp_vectors_a2:{name:"Vectors & 3D (A2)",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"Vector equations of lines",
-"Lines & planes together",
-"Angles between lines/planes",
-"Distances between points, lines & planes"]},
-cp_algebra_a2:{name:"Roots of Polynomials (A2)",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"Advanced polynomial relationships",
-"Complex roots of polynomials"]},
-cp_series_a2:{name:"Series (A2)",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"Partial fractions in series",
-"Maclaurin series: derive & use",
-"Taylor series",
-"Accuracy of series approximations"]},
-cp_calc:{name:"Further Calculus",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"Improper integrals",
-"Volumes of revolution",
-"Mean value of a function",
-"Integrals involving inverse trig",
-"Advanced integration techniques"]},
-cp_polar:{name:"Polar Coordinates",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"Convert Cartesian ↔ polar",
-"Sketch polar curves r=f(θ)",
-"Tangents to polar curves",
-"Areas enclosed by polar curves"]},
-cp_hyp:{name:"Hyperbolic Functions",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"sinh, cosh, tanh: definitions & graphs",
-"Hyperbolic identities",
-"Inverse hyperbolic functions",
-"Differentiate & integrate hyperbolics",
-"Hyperbolic substitutions in integration"]},
-cp_de:{name:"Differential Equations",emoji:"🧮",cat:"A2 FM",priority:1,topics:[
-"1st order: separable variables",
-"1st order: integrating factor",
-"2nd order: complementary function (auxiliary equation)",
-"2nd order: particular integral",
-"General solution with initial/boundary conditions",
-"SHM & damped oscillations applications"]},
-fmst_crv:{name:"Continuous RVs (A2)",emoji:"📊",cat:"A2 FM",priority:1,topics:[
-"PDFs & CDFs",
-"Probabilities from PDFs",
-"E(X) and Var(X) for continuous",
-"Continuous uniform distribution",
-"Normal probability plots",
-"Central Limit Theorem"]},
-fmst_inf:{name:"Statistical Inference (A2)",emoji:"📊",cat:"A2 FM",priority:1,topics:[
-"Confidence intervals (Normal)",
-"t-distribution & t-tests",
-"Paired-sample confidence intervals",
-"Wilcoxon single-sample test",
-"Parametric vs non-parametric",
-"Choose appropriate inference method"]},
-fmst_sim:{name:"Simulation (A2)",emoji:"📊",cat:"A2 FM",priority:1,topics:[
-"Simulating random variables",
-"Random number generation",
-"Spreadsheet simulation",
-"Interpret simulation output",
-"Use simulation when theory is difficult"]},
-algo_alg:{name:"Algorithms",emoji:"🔢",cat:"A2 FM",priority:2,topics:[
-"What an algorithm is & algorithmic thinking",
-"Design, follow & test algorithms",
-"Prove an algorithm works",
-"Compare algorithms & complexity",
-"Exact vs heuristic algorithms",
-"Limitations of algorithms"]},
-algo_net:{name:"Networks",emoji:"🔢",cat:"A2 FM",priority:2,topics:[
-"Vertices, edges, degree, paths, cycles",
-"Directed & undirected networks",
-"Trees & spanning trees",
-"Minimum spanning tree: Prim's algorithm",
-"Minimum spanning tree: Kruskal's algorithm",
-"Shortest path: Dijkstra's algorithm",
-"Route inspection (Chinese postman)",
-"Travelling salesman: bounds & heuristics",
-"Model real-world situations as networks"]},
-algo_lp:{name:"Linear Programming",emoji:"🔢",cat:"A2 FM",priority:2,topics:[
-"Formulate LP problems (variables, constraints, objective)",
-"Graphical LP: feasible region & optimal solution",
-"Simplex method concept",
-"Interpret software/calculator output",
-"Apply LP to real-world modelling"]},
-
-// === A-LEVEL MATHS (H640) ===
-pure_proof:{name:"1. Proof",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Mathematical statements","Direct proof","Proof by exhaustion","Proof by contradiction","Disproof by counterexample","Proof involving algebra","Proof involving inequalities","Proof involving divisibility"]},
-pure_algebra:{name:"2. Algebra",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Laws of indices","Fractional & negative indices","Surds & rationalising denominators","Quadratic equations & completing the square","Quadratic formula & discriminant","Simultaneous equations (linear & quadratic)","Factor theorem & remainder theorem","Polynomial division","Algebraic & partial fractions","Linear & quadratic inequalities","Modulus equations & inequalities","Binomial expansion (positive integer)","General binomial expansion (rational n)","Approximation using binomial"]},
-pure_functions:{name:"3. Functions",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Function notation, domain & range","Composite functions","Inverse functions","Restrictions on domains","Transformations: translation, reflection, stretch","Transformations involving modulus","Graphs of functions"]},
-pure_coord:{name:"5. Coordinate Geometry",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Gradient & equation of a line","Parallel & perpendicular lines","Distance & midpoint","Equation of a circle (centre, radius)","Completing the square for circles","Intersections of lines & circles","Tangents & chords of circles"]},
-pure_seq:{name:"6. Sequences & Series",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Arithmetic sequences & series","Geometric sequences & series","Sum to infinity of geometric series","Sigma notation","Recurrence relationships","Modelling with sequences"]},
-pure_trig:{name:"7. Trigonometry",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Radians & degree conversion","Exact trig values","sin²x+cos²x=1, tanx=sinx/cosx","Trig graphs & transformations","Compound-angle formulae","Double-angle formulae","Solving trig equations (general solutions)","Inverse trig functions","Small-angle approximations","Reciprocal trig functions (sec, cosec, cot)"]},
-pure_exp:{name:"8. Exponentials & Logarithms",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Laws of logarithms & change of base","Natural logarithms & e","Exponential & logarithmic functions","Solve exponential & log equations","Exponential modelling (growth & decay)"]},
-pure_calc:{name:"9. Calculus",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Differentiation from first principles","Standard derivatives (xⁿ, trig, exp, ln)","Product rule","Quotient rule","Chain rule","Implicit differentiation","Parametric differentiation","Stationary points & optimisation","Increasing/decreasing functions","Connected rates of change","Integration as reverse differentiation","Definite integration & areas","Area between curves","Integration by substitution","Integration by parts","Parametric integration","Differential equations & modelling"]},
-pure_num:{name:"10. Numerical Methods",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Fixed-point iteration","Convergence & divergence","Newton-Raphson method","Trapezium rule","Estimate errors & assess accuracy"]},
-pure_vec:{name:"11. Vectors",emoji:"📐",cat:"H640 Pure",priority:3,topics:["Vector notation & magnitude","Position vectors & unit vectors","Vector addition, subtraction, scalar multiplication","Collinearity & ratios using vectors","Vector proofs"]},
-mech_kin:{name:"13. Kinematics",emoji:"⚙️",cat:"H640 Mechanics",priority:4,topics:["Displacement-time & velocity-time graphs","Gradient & area interpretation","SUVAT equations","Calculus & kinematics","Vertical motion under gravity"]},
-mech_proj:{name:"15. Projectiles",emoji:"⚙️",cat:"H640 Mechanics",priority:4,topics:["Horizontal & vertical components","Time of flight, max height, range","Projectile trajectories","Modelling assumptions"]},
-mech_forces:{name:"16. Forces",emoji:"⚙️",cat:"H640 Mechanics",priority:4,topics:["Force diagrams (weight, normal, tension, friction, drag)","Resultant force & resolving","Equilibrium & forces at angles"]},
-mech_newton:{name:"17. Newton's Laws",emoji:"⚙️",cat:"H640 Mechanics",priority:4,topics:["Newton's 1st, 2nd, 3rd laws","Connected particles & pulleys","Inclined planes & friction","Variable acceleration"]},
-mech_rigid:{name:"18. Rigid Bodies",emoji:"⚙️",cat:"H640 Mechanics",priority:4,topics:["Moments & couples","Equilibrium of rigid bodies","Centre of mass & stability"]},
-stats_samp:{name:"19. Sampling",emoji:"📊",cat:"H640 Stats",priority:2,topics:["Population vs sample","Random, systematic, stratified sampling","Opportunity sampling & bias"]},
-stats_data:{name:"20. Data Presentation",emoji:"📊",cat:"H640 Stats",priority:2,topics:["Histograms, box plots, cumulative frequency","Mean, median, mode","Variance & standard deviation","IQR & outliers","Interpret statistical diagrams","Large data set familiarity"]},
-stats_prob:{name:"21. Probability",emoji:"📊",cat:"H640 Stats",priority:2,topics:["Probability notation & complementary events","Mutually exclusive & independent events","Conditional probability P(A|B)","Probability trees & Venn diagrams"]},
-stats_dist:{name:"22. Probability Distributions",emoji:"📊",cat:"H640 Stats",priority:2,topics:["Discrete probability distributions","E(X) and Var(X)","Binomial distribution & assumptions","Binomial probabilities & cumulative","Normal distribution & standardisation Z=(X-μ)/σ","Inverse Normal calculations","Normal approximation to binomial"]},
-stats_hyp:{name:"23. Hypothesis Testing",emoji:"📊",cat:"H640 Stats",priority:2,topics:["Null & alternative hypotheses","Significance level & critical regions","One-tailed & two-tailed tests","Binomial hypothesis tests","Normal hypothesis tests","Type I errors","Interpret conclusions in context"]},
-
-// === PHYSICS H556 ===
-phys_m1:{name:"M1. Practical Skills",emoji:"🔬",cat:"Physics",priority:2,topics:["Experimental design & choosing apparatus","Independent, dependent & control variables","Use apparatus correctly & record data","Absolute & percentage uncertainty","Combine uncertainties","Random vs systematic errors","Gradients, intercepts & linearisation","Evaluate data & identify anomalies","Precision vs accuracy","Suggest & justify improvements"]},
-phys_m2:{name:"M2. Foundations",emoji:"⚛️",cat:"Physics",priority:2,topics:["SI base units & derived units","Prefixes & orders of magnitude","Scalars vs vectors","Vector addition & resolution","Homogeneous equations"]},
-phys_m3a:{name:"M3.1-3.2 Motion & Forces",emoji:"⚛️",cat:"Physics",priority:2,topics:["Distance vs displacement, speed vs velocity","SUVAT equations","Displacement-time & velocity-time graphs","Free fall & projectile motion","Terminal velocity","Force diagrams & resultant force","Equilibrium & resolving forces","Moments, couples & turning effects"]},
-phys_m3b:{name:"M3.3-3.5 Energy, Materials & Momentum",emoji:"⚛️",cat:"Physics",priority:2,topics:["Work done (W=Fs cosθ)","KE, GPE & conservation of energy","Power (P=Fv) & efficiency","Hooke's law & force-extension graphs","Elastic & plastic deformation","Stress, strain & Young's modulus","Tensile strength & energy stored","Newton's three laws","Momentum (p=mv) & impulse (FΔt=Δp)","Conservation of momentum, collisions & explosions"]},
-phys_m4a:{name:"M4.1-4.3 Electricity",emoji:"⚛️",cat:"Physics",priority:2,topics:["Charge, current & drift velocity (I=nAve)","EMF & potential difference","Resistance & Ohm's law (V=IR)","Resistivity (R=ρL/A)","I-V characteristics (ohmic, filament, diode, thermistor, LDR)","Series & parallel circuits, Kirchhoff's laws","Internal resistance (ε=V+Ir)","Potential dividers & sensor circuits"]},
-phys_m4b:{name:"M4.4-4.5 Waves & Quantum",emoji:"⚛️",cat:"Physics",priority:2,topics:["Progressive waves: amplitude, frequency, wavelength, speed","EM spectrum & polarisation","Superposition, interference & Young's double slit","Standing waves: nodes, antinodes, harmonics","Refraction, TIR & fibre optics","Photons: E=hf, photoelectric effect, work function","Energy levels, line spectra & wave-particle duality (de Broglie)"]},
-phys_m5a:{name:"M5.1-5.2 Thermal & Circular Motion",emoji:"⚛️",cat:"Physics",priority:2,topics:["Temperature & thermal equilibrium","Ideal gas laws: pV=NkT","Kinetic theory & molecular motion","Internal energy, specific heat capacity (Q=mcΔT)","Specific latent heat (Q=mL)","Angular velocity (ω) & v=rω","Centripetal acceleration (a=v²/r)","Centripetal force (F=mv²/r)"]},
-phys_m5b:{name:"M5.3-5.5 SHM, Gravity & Astrophysics",emoji:"⚛️",cat:"Physics",priority:2,topics:["SHM: a=-ω²x, x=Acosωt","SHM velocity, energy & graphs","Damping (light, heavy, critical) & resonance","Gravitational field strength: g=GM/r²","Gravitational potential: V=-GM/r","Kepler's laws & orbital mechanics (T²∝r³)","Escape velocity & geostationary orbits","Stellar classification & luminosity","Wien's law & Stefan's law","HR diagrams & stellar evolution","Redshift, Hubble's law (v=H₀d) & Big Bang","Cosmic microwave background"]},
-phys_m6a:{name:"M6.1-6.2 Capacitors & Electric Fields",emoji:"⚛️",cat:"Physics",priority:2,topics:["Capacitance: C=Q/V, energy W=½CV²","Capacitors in series & parallel","Charging & discharging: time constant τ=RC","Exponential curves & calculating Q/I/V at time t","Coulomb's law: F=kQ₁Q₂/r²","Electric field strength: E=F/Q, uniform E=V/d","Electric potential & energy in fields"]},
-phys_m6b:{name:"M6.3 Electromagnetism",emoji:"⚛️",cat:"Physics",priority:2,topics:["Magnetic flux density (B), F=BIL, F=BQv","Fleming's left-hand rule","Motion of charged particles in B fields","Magnetic flux (Φ=BA)","Faraday's law: ε=-NdΦ/dt","Lenz's law","Generators & transformers (Ns/Np=Vs/Vp)"]},
-phys_m6c:{name:"M6.4 Nuclear & Particle Physics",emoji:"⚛️",cat:"Physics",priority:2,topics:["α, β, γ radiation: properties & penetration","Radioactive decay: N=N₀e^(-λt), half-life t½=ln2/λ","Activity & decay equations","Mass defect & binding energy per nucleon","Nuclear fission & fusion, E=mc²","Quarks (u,d,s), leptons, hadrons, baryons, mesons","Antiparticles & particle interactions","Conservation laws: charge, baryon number, lepton number, strangeness","Exchange particles & Feynman diagrams"]},
-phys_m6d:{name:"M6.5 Medical Imaging",emoji:"⚛️",cat:"Physics",priority:2,topics:["X-rays: production & attenuation I=I₀e^(-μx)","CT scanning: image reconstruction","Ultrasound: piezoelectric effect, A-scan & B-scan","Acoustic impedance & Doppler effect","PET scanning: positron-electron annihilation","Gamma cameras & nuclear medicine","Radiation dose & safety"]},
-
-// === PAST PAPERS ===
-papers_maths:{name:"Papers — H640 Maths",emoji:"📝",cat:"Papers",priority:5,topics:["2024 P1","2024 P2","2024 P3","2023 P1","2023 P2","2023 P3","2022 P1","2022 P2","2022 P3","2021 P1","2021 P2","2021 P3","2020 P1","2020 P2","2020 P3","2019 P1","2019 P2","2019 P3","Specimen P1","Specimen P2","Specimen P3"]},
-papers_physics:{name:"Papers — H556 Physics",emoji:"📝",cat:"Papers",priority:5,topics:["2024 P1","2024 P2","2024 P3","2023 P1","2023 P2","2023 P3","2022 P1","2022 P2","2022 P3","2021 P1","2021 P2","2021 P3","2020 P1","2020 P2","2020 P3","2019 P1","2019 P2","2019 P3","Specimen P1","Specimen P2","Specimen P3"]},
-papers_fm_as:{name:"Papers — AS FM (Y410+Y412)",emoji:"📝",cat:"Papers",priority:5,topics:["2024 Y410","2024 Y412","2023 Y410","2023 Y412","2022 Y410","2022 Y412","2021 Y410","2021 Y412","2020 Y410","2020 Y412","Specimen Y410","Specimen Y412"]},
-papers_fm_a2:{name:"Papers — A2 FM (Y420+Y422+Y433)",emoji:"📝",cat:"Papers",priority:5,topics:["2024 Y420","2024 Y422","2024 Y433","2023 Y420","2023 Y422","2023 Y433","2022 Y420","2022 Y422","2022 Y433","2021 Y420","2021 Y422","2021 Y433","Specimen Y420","Specimen Y422","Specimen Y433"]}
-};
-
-var openSubjects={};
-var openCats={};
-var studyTab="today";
-var calMonth=new Date().getMonth();
-var calYear=new Date().getFullYear();
-var blockedDays=JSON.parse(localStorage.getItem("blocked")||"{}");
-var studyProgress=JSON.parse(localStorage.getItem('studyProg')||'{}');
-
-function toggleBlockDay(dateStr){
-  if(blockedDays[dateStr]){delete blockedDays[dateStr];}
-  else{blockedDays[dateStr]=true;}
-  localStorage.setItem('blocked',JSON.stringify(blockedDays));
-  window._scrollSave=window.scrollY;render();
-}
-function calPrev(){calMonth--;if(calMonth<0){calMonth=11;calYear--;}window._scrollSave=window.scrollY;render();}
-function calNext(){calMonth++;if(calMonth>11){calMonth=0;calYear++;}window._scrollSave=window.scrollY;render();}
-
-// Global click handler for study topics
-document.addEventListener("click",function(e){
-  var el=e.target.closest("[data-study]");
-  if(el){
-    var parts=el.getAttribute("data-study").split("::");
-    toggleStudyTopic(parts[0],parseInt(parts[1]));
-  }
-});
-
-function toggleStudyTopic(subj,idx){
-  var k=subj+'::'+idx;
-  var states=['learn','familiar','practise','secure'];
-  var cur=studyProgress[k]||'';
-  var ni=states.indexOf(cur)+1;
-  if(ni>=states.length){delete studyProgress[k];}
-  else{studyProgress[k]=states[ni];}
-  localStorage.setItem('studyProg',JSON.stringify(studyProgress));
-  window._scrollSave=window.scrollY;render();
-}
-
-function getSubjProgress(sk){
-  var topics=STUDY[sk].topics;
-  var counts={learn:0,familiar:0,practise:0,secure:0};
-  topics.forEach(function(_,i){var s=studyProgress[sk+'::'+i];if(s&&typeof s==='string')counts[s]++;});
-  var done=counts.secure+counts.practise;
-  return{done:done,total:topics.length,pct:topics.length?Math.round((done/topics.length)*100):0,counts:counts};
-}
-
-function getTodayStudy(){
-  // Find the 2-3 subjects to study today based on priority + lowest completion
-  var subjects=Object.keys(STUDY).map(function(sk){
-    return{key:sk,name:STUDY[sk].name,emoji:STUDY[sk].emoji,priority:STUDY[sk].priority,pct:getSubjProgress(sk).pct};
-  });
-  // Sort by: priority first, then lowest completion
-  subjects.sort(function(a,b){
-    if(a.priority!==b.priority)return a.priority-b.priority;
-    return a.pct-b.pct;
-  });
-  // Return top 3 (but mechanics only if others are >80%)
-  var picks=[];
-  for(var i=0;i<subjects.length&&picks.length<3;i++){
-    if(subjects[i].key==='mechanics'&&picks.length>=2)continue;
-    picks.push(subjects[i]);
-  }
-  return picks;
-}
-
-function getMockCountdown(){
-  var now=new Date();var mock=new Date(2026,11,7,9,30);
-  var diff=mock-now;if(diff<=0)return"mocks started!";
-  return Math.floor(diff/(1000*60*60*24))+" days to mocks";
-}
-
-let studyTicks=JSON.parse(localStorage.getItem('studyTicks')||'{}');
 
 function todayKey(){return getOffsetDate(dayOffset)}
 
@@ -1314,11 +955,9 @@ var lastSyncTime=0;
 function getAllData(){
   return{cfg:cfg,chk:chk,favs:favs,setD:setD,wlog:wlog,wlogHist:wlogHist,water:water,
     wnotes:wnotes,activeSwaps:activeSwaps,portions:portions,streak:streak,difficulty:difficulty,
-    cycleData:cycleData,sleepData:sleepData,measurements:measurements,studyProgress:studyProgress,
-    errorLogs:errorLogs,blockedDays:blockedDays,
-    studyBlocks:JSON.parse(localStorage.getItem('studyBlocks')||'{}'),
-    physCheck:JSON.parse(localStorage.getItem('physCheck')||'{}'),
+    cycleData:cycleData,sleepData:sleepData,measurements:measurements,
     shopChk2:JSON.parse(localStorage.getItem('shopChk2')||'{}'),
+    setDates:setDates,exSwaps:exSwaps,
     lastSync:Date.now()};
 }
 
@@ -1330,8 +969,8 @@ function applySyncData(data){
   if(data.activeSwaps)activeSwaps=data.activeSwaps;if(data.portions)portions=data.portions;
   if(data.streak)streak=data.streak;if(data.difficulty)difficulty=data.difficulty;
   if(data.cycleData)cycleData=data.cycleData;if(data.sleepData)sleepData=data.sleepData;
-  if(data.measurements)measurements=data.measurements;if(data.studyProgress)studyProgress=data.studyProgress;
-  if(data.errorLogs)errorLogs=data.errorLogs;if(data.blockedDays)blockedDays=data.blockedDays;
+  if(data.measurements)measurements=data.measurements;
+  
   // Save all to localStorage
   localStorage.setItem('cfg5',JSON.stringify(cfg));localStorage.setItem('chk',JSON.stringify(chk));
   localStorage.setItem('favs',JSON.stringify(favs));localStorage.setItem('setD',JSON.stringify(setD));
@@ -1340,10 +979,8 @@ function applySyncData(data){
   localStorage.setItem('swaps2',JSON.stringify(activeSwaps));localStorage.setItem('streak2',JSON.stringify(streak));
   localStorage.setItem('diff',JSON.stringify(difficulty));localStorage.setItem('cycle',JSON.stringify(cycleData));
   localStorage.setItem('sleep',JSON.stringify(sleepData));localStorage.setItem('meas',JSON.stringify(measurements));
-  localStorage.setItem('studyProg',JSON.stringify(studyProgress));localStorage.setItem('errorLogs',JSON.stringify(errorLogs));
-  localStorage.setItem('blocked',JSON.stringify(blockedDays));
-  if(data.studyBlocks)localStorage.setItem('studyBlocks',JSON.stringify(data.studyBlocks));
-  if(data.physCheck)localStorage.setItem('physCheck',JSON.stringify(data.physCheck));
+  
+  
   if(data.shopChk2)localStorage.setItem('shopChk2',JSON.stringify(data.shopChk2));if(data.exSwaps){exSwaps=data.exSwaps;localStorage.setItem('exSwaps',JSON.stringify(exSwaps));}
 }
 
@@ -1429,7 +1066,6 @@ h+=`</div>`;
 h+=`<div style="display:flex;gap:6px;margin-bottom:10px;justify-content:center"><button class="btn sm" onclick="subWater()" style="background:#999;font-size:10px;padding:3px 10px">−</button><button class="btn sm" onclick="addWater()" style="background:#e84f8a;font-size:10px;padding:3px 10px">+</button></div>`;
 
 // Mock countdown
-h+=`<div style="background:linear-gradient(135deg,#e84f8a,#f472b6);border-radius:10px;padding:8px;color:#fff;margin-bottom:8px;text-align:center;font-size:13px;font-weight:700">${getMockCountdown()} 📚</div>`;
 
 // Cycle phase
 const cyc=getCyclePhase();
@@ -1450,10 +1086,6 @@ h+='<div class="home-card" onclick="sT(\'gym\')" style="text-align:left;padding:
 }
 
 // Study card
-var homePlan=DAILY_PLAN[getOffsetDate(dayOffset)];
-var homeBlocks=homePlan?homePlan.length+' blocks today':getMockCountdown();
-h+='<div class="home-card" onclick="sT(\'study\')" style="text-align:left;padding:12px"><div class="home-card-icon" style="margin-bottom:4px">📚</div><div class="home-card-name">Study</div><div class="home-card-sub">'+homeBlocks+'</div></div>';
-
 // Shop card
 h+='<div class="home-card" onclick="sT(\'shop\')" style="text-align:left;padding:12px"><div class="home-card-icon" style="margin-bottom:4px">🛒</div><div class="home-card-name">Shopping</div><div class="home-card-sub">weekly list</div></div>';
 
@@ -1482,8 +1114,6 @@ h+=`<div style="background:#fff;border:1px solid #f0c0d5;border-radius:10px;padd
 h+=`<div style="background:linear-gradient(135deg,#e84f8a,#f472b6);border-radius:10px;padding:10px;text-align:center;color:#fff"><div style="font-size:11px;opacity:.8">🔥 streak</div><div style="font-size:18px;font-weight:700;margin-top:4px">${streak.count} ${streak.count>=7?'👑':streak.count>=3?'🔥':'🌱'}</div></div>`;
 h+=`</div>`;
 h+=`<div style="display:flex;gap:6px;margin-bottom:8px;justify-content:center"><button class="btn sm" onclick="subWater()" style="background:#999;font-size:10px;padding:3px 10px">− water</button><button class="btn sm" onclick="addWater()" style="background:#e84f8a;font-size:10px;padding:3px 10px">+ water</button></div>`;
-// Mock countdown
-h+=`<div style="background:linear-gradient(135deg,#e84f8a,#f472b6);border-radius:10px;padding:8px;color:#fff;margin-bottom:8px;text-align:center;font-size:13px;font-weight:700">${getMockCountdown()} 📚</div>`;
 
 // Cycle phase
 const cyc=getCyclePhase();
@@ -1496,16 +1126,7 @@ if(!collapsed.todayMeals){
 const mo=train?['breakfast','preworkout','lunch','postworkout','dinner','snack']:['breakfast','lunch','postworkout','dinner','snack'];
 for(const k of mo){const m=meals[k];if(m)h+=`<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-bottom:0.5px solid #ffe8f2"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px">${MI[k]||''}</span><span style="font-size:12px;font-weight:600">${m.name}</span></div><span class="pt" style="font-size:9px">${m.protein}</span></div>`}
 }
-// Today's study
-const todayStudy=STUDY_SCHEDULE[d]||[];
-if(todayStudy.length){
-h+=`<div class="coll-hdr" style="color:#e84f8a" onclick="toggleCollapse('todayStudy')">📚 today's study<span><span style="font-size:10px;color:#d09ab0;margin-right:6px">${todayStudy.map(s=>SUBJECTS[s].name).join(' + ')}</span><span class="coll-arr ${collapsed.todayStudy?'shut':''}">▾</span></span></div>`;
-if(!collapsed.todayStudy){
-todayStudy.forEach(function(sk){
-  const subj=SUBJECTS[sk];const prog=getStudyProgress(sk);
-  h+=`<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-bottom:0.5px solid #ffe8f2"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px">${subj.emoji}</span><span style="font-size:12px;font-weight:600">${subj.name}</span></div><span style="font-size:10px;color:#e84f8a;font-weight:600">${prog.pct}% done</span></div>`;
-});
-}}
+
 
 if(train&&wo){h+=`<div class="coll-hdr" style="color:#b05ab0" onclick="toggleCollapse('todayWorkout')">💪 ${wo.t}<span><span style="font-size:10px;color:#c080d0;margin-right:6px">${wo.tm}</span><span class="coll-arr ${collapsed.todayWorkout?'shut':''}">▾</span></span></div>`;
 if(!collapsed.todayWorkout){
@@ -1552,7 +1173,7 @@ const vol=getVolume();const volEntries=Object.entries(vol).sort((a,b)=>b[1]-a[1]
 const maxVol=Math.max(...volEntries.map(e=>e[1]),1);
 h+=`<details class="pov" style="margin-top:0;margin-bottom:14px;border-top:none"><summary>💪 weekly volume (sets per muscle)</summary><div style="padding-top:6px">${volEntries.map(([m,v])=>`<div class="vol-bar"><span class="vol-lbl">${m}</span><div class="vol-trk"><div class="vol-fil" style="width:${(v/maxVol)*100}%"></div></div><span class="vol-val">${v} sets</span></div>`).join('')}</div></details>`;
 
-if(isTD(sel)){const wo=getWO(sel);
+if(isTD(sel)){autoResetSets(sel);const wo=getWO(sel);
 h+=`<div class="dsum"><div class="pill g">💪 ${wo.t}</div><div class="pill g">${wo.tm}</div></div>`;
 h+=`<p style="font-size:12px;color:#888;margin-bottom:10px">${wo.f}</p>`;
 h+=`<div style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap"><span style="font-size:11px;color:#999;align-self:center;margin-right:2px">⏱ rest timer:</span><button class="btn sm" onclick="startT(60)">60s</button><button class="btn sm" onclick="startT(90)">90s</button><button class="btn sm" onclick="startT(120)">2m</button><button class="btn sm" onclick="startT(180)">3m</button></div>`;
@@ -1581,221 +1202,6 @@ h+=`<p style="font-size:12px;color:#555;margin-bottom:10px">Pick a recovery rout
 h+=`<div class="rab">${RA.map((r,i)=>`<button class="ra ${i===selRA?'on':''}" onclick="selRA=${i};render()">${r.ic} ${r.t.split(' ')[0]}</button>`).join('')}</div>`;
 const ra=RA[selRA];h+=`<p style="font-size:15px;font-weight:700;color:#9a7ab8;margin-bottom:2px">${ra.ic} ${ra.t}</p><p style="font-size:12px;color:#888;margin-bottom:10px">${ra.tm}</p>`;
 ra.ex.forEach(e=>{h+=`<div class="sc"><div class="scn">${e.n}</div><div class="scd">${e.d}</div><div class="scno">${e.nt}</div></div>`})}
-
-}else if(curTab==='study'){
-
-// Countdown (always visible)
-var countdown=getMockCountdown();
-h+='<div class="study-countdown"><div style="font-size:28px;font-weight:800;position:relative">'+countdown+'</div><div style="font-size:11px;opacity:.7;margin-top:4px;position:relative">Mon 7 Dec 2026 · first mock</div></div>';
-
-// Sub-tabs
-h+='<div class="study-tabs">';
-h+='<div class="study-tab '+(studyTab==='today'?'active':'')+'" onclick="studyTab=\'today\';window._scrollSave=0;render()">📋 Today</div>';
-h+='<div class="study-tab '+(studyTab==='topics'?'active':'')+'" onclick="studyTab=\'topics\';window._scrollSave=0;render()">📊 Topics</div>';
-h+='<div class="study-tab '+(studyTab==='papers'?'active':'')+'" onclick="studyTab=\'papers\';window._scrollSave=0;render()">📝 Papers</div>';
-h+='<div class="study-tab '+(studyTab==='logs'?'active':'')+'" onclick="studyTab=\'logs\';window._scrollSave=0;render()">✏️ Logs</div>';
-h+='<div class="study-tab '+(studyTab==='cal'?'active':'')+'" onclick="studyTab=\'cal\';window._scrollSave=0;render()">📅 Cal</div>';
-h+='</div>';
-
-if(studyTab==='today'){
-// Today's plan
-var todayDate=getOffsetDate(dayOffset);
-var todayPlan=DAILY_PLAN[todayDate];
-
-if(blockedDays[todayDate]){
-h+='<div style="text-align:center;padding:30px;color:#d09ab0"><div style="font-size:28px;margin-bottom:8px">🚫</div><div style="font-size:13px;font-weight:600">Day blocked</div><div style="font-size:11px;margin-top:4px">No study today. Unblock in the calendar tab if this was a mistake.</div></div>';
-}else if(todayPlan){
-var studyBlockChecks=JSON.parse(localStorage.getItem('studyBlocks')||'{}');
-var tagColors={sprint:'#e84f8a',gap:'#e85050',paper:'#5080e8',marking:'#8050e8',grind:'#50a0e8',practice:'#50c88a',tmua:'#c8a050',retrieval:'#80c050',drill:'#c080e8',pure:'#6080c0',practical:'#60a0a0',rest:'#90c090',event:'#c0a060'};
-var doneCount=0;
-todayPlan.forEach(function(block,idx){
-  var bk=todayDate+'::'+idx;
-  var done=studyBlockChecks[bk];
-  if(done)doneCount++;
-  var tagColor=tagColors[block.tag]||'#e84f8a';
-  h+='<div class="study-block '+(done?'done':'')+'">';
-  h+='<div class="study-block-bar" style="background:'+tagColor+'"></div>';
-  h+='<div class="study-tick '+(done?'done':'')+'" onclick="event.stopPropagation();var sc=JSON.parse(localStorage.getItem(\'studyBlocks\')||\'{}\'  );sc[\''+bk+'\']=!sc[\''+bk+'\'];localStorage.setItem(\'studyBlocks\',JSON.stringify(sc));window._scrollSave=window.scrollY;render()" style="cursor:pointer;margin-top:2px">'+(done?'✓':'')+'</div>';
-  h+='<div style="flex:1"><div class="study-block-subj" style="color:'+tagColor+'">'+block.s+'</div>';
-  h+='<div class="study-block-task">'+block.t+'</div></div>';
-  h+='<span class="study-block-hrs" style="color:'+tagColor+'">'+block.h+'</span></div>';
-});
-h+='<div style="text-align:center;font-size:11px;color:#d09ab0;margin-top:10px">'+doneCount+'/'+todayPlan.length+' blocks done</div>';
-}else{
-var todayStudy=getTodayStudy();
-h+='<div style="font-size:12px;color:#d09ab0;margin-bottom:10px">No specific plan for today — suggested by priority:</div>';
-todayStudy.forEach(function(s){
-  var prog=getSubjProgress(s.key);
-  h+='<div class="study-block"><div class="study-block-bar" style="background:#e84f8a"></div><div style="flex:1"><div class="study-block-subj">'+s.emoji+' '+s.name+'</div><div class="study-block-task">'+prog.pct+'% covered — focus on unchecked topics</div></div></div>';
-});
-}
-
-}else if(studyTab==='topics'){
-
-// Clean status legend
-h+='<div style="display:flex;gap:10px;justify-content:center;margin-bottom:14px">';
-[['#e85050','Learn'],['#e8a040','Familiar'],['#e8d040','Practise'],['#50c868','Secure'],['#ddd','New']].forEach(function(s){
-  h+='<div style="display:flex;align-items:center;gap:3px;font-size:10px;color:#999"><div style="width:8px;height:8px;border-radius:50%;background:'+s[0]+'"></div>'+s[1]+'</div>';
-});
-h+='</div>';
-
-// Categories
-var cats=[
-{id:'asfm',name:'AS Further Maths',sub:'December mocks',gradient:'linear-gradient(135deg,#8050e8,#a070f0)',keys:['cp_proof_as','cp_complex_as','cp_matrices_as','cp_vectors_as','cp_algebra_as','cp_series_as','fmst_samp','fmst_drv_as','fmst_biv','fmst_chi']},
-{id:'alfm',name:'A-Level Further Maths',sub:'H645 · June',gradient:'linear-gradient(135deg,#6040c0,#8060d8)',keys:['cp_proof_a2','cp_complex_a2','cp_matrices_a2','cp_vectors_a2','cp_algebra_a2','cp_series_a2','cp_calc','cp_polar','cp_hyp','cp_de','fmst_crv','fmst_inf','fmst_sim','algo_alg','algo_net','algo_lp']},
-{id:'maths',name:'A-Level Maths',sub:'H640',gradient:'linear-gradient(135deg,#e84f8a,#f472b6)',keys:Object.keys(STUDY).filter(function(k){var s=STUDY[k];return s.cat&&(s.cat.indexOf('H640')>=0)})},
-{id:'physics',name:'A-Level Physics',sub:'H556',gradient:'linear-gradient(135deg,#3090d0,#50b0e8)',keys:Object.keys(STUDY).filter(function(k){return STUDY[k].cat&&STUDY[k].cat==='Physics'})}
-];
-
-cats.forEach(function(cat){
-if(!cat.keys.length)return;
-var catDone=0,catTotal=0;
-cat.keys.forEach(function(sk){if(STUDY[sk]){var p=getSubjProgress(sk);catDone+=p.done;catTotal+=p.total;}});
-var catPct=catTotal?Math.round((catDone/catTotal)*100):0;
-var catOpen=openCats[cat.id];
-
-// Category card
-h+='<div style="margin-bottom:10px">';
-h+='<div onclick="openCats[\''+cat.id+'\']='+(catOpen?'false':'true')+';window._scrollSave=window.scrollY;render()" style="background:'+cat.gradient+';border-radius:14px;padding:14px 16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">';
-h+='<div><div style="color:#fff;font-size:15px;font-weight:700">'+cat.name+'</div><div style="color:rgba(255,255,255,0.7);font-size:11px;margin-top:2px">'+cat.sub+' · '+catDone+'/'+catTotal+' topics</div></div>';
-h+='<div style="display:flex;align-items:center;gap:8px"><div style="background:rgba(255,255,255,0.25);border-radius:8px;padding:4px 10px"><span style="color:#fff;font-size:16px;font-weight:800">'+catPct+'%</span></div><span style="color:rgba(255,255,255,0.7);font-size:14px">'+(catOpen?'▾':'▸')+'</span></div>';
-h+='</div>';
-
-// Progress bar under header
-h+='<div style="height:4px;background:rgba(0,0,0,0.08);border-radius:0 0 8px 8px;margin:0 8px"><div style="height:100%;background:rgba(255,255,255,0.9);border-radius:4px;width:'+catPct+'%;transition:width .3s"></div></div>';
-
-if(catOpen){
-h+='<div style="margin-top:8px">';
-cat.keys.forEach(function(sk){
-  if(!STUDY[sk])return;
-  var subj=STUDY[sk];
-  var prog=getSubjProgress(sk);
-  var isOpen=openSubjects[sk];
-  
-  h+='<div style="background:#fff;border:1px solid #f0c0d5;border-radius:10px;margin-bottom:6px;overflow:hidden">';
-  h+='<div onclick="openSubjects[\''+sk+'\']='+(isOpen?'false':'true')+';window._scrollSave=window.scrollY;render()" style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;cursor:pointer">';
-  h+='<span style="font-size:12px;font-weight:700;color:#555">'+subj.emoji+' '+subj.name+'</span>';
-  h+='<div style="display:flex;align-items:center;gap:6px"><div style="width:40px;height:4px;background:#ffd6e8;border-radius:2px;overflow:hidden"><div style="height:100%;background:#e84f8a;width:'+prog.pct+'%"></div></div><span style="font-size:11px;font-weight:600;color:#e84f8a">'+prog.pct+'%</span><span style="color:#ccc;font-size:12px">'+(isOpen?'▾':'▸')+'</span></div>';
-  h+='</div>';
-  
-  if(isOpen){
-  subj.topics.forEach(function(t,idx){
-    var status=studyProgress[sk+'::'+idx]||'';
-    if(typeof status!=='string')status='learn';
-    var colors={learn:'#e85050',familiar:'#e8a040',practise:'#e8d040',secure:'#50c868'};
-    var col=colors[status]||'#ddd';
-    h+='<div data-study="'+sk+'::'+idx+'" style="display:flex;align-items:center;gap:10px;padding:9px 14px;cursor:pointer;border-top:0.5px solid #f8f0f4;'+(status==='secure'?'opacity:0.4':'')+'">';
-    h+='<div style="width:16px;height:16px;border-radius:4px;background:'+col+';flex-shrink:0;border:2px solid '+(status?col:'#ccc')+'"></div>';
-    h+='<span style="font-size:12px;color:'+(status==='secure'?'#bbb':'#555')+';flex:1;'+(status==='secure'?'text-decoration:line-through':'')+'">'+t+'</span>';
-    if(status&&typeof status==='string'){h+='<span style="font-size:9px;color:'+col+';font-weight:600">'+status.toUpperCase()+'</span>';}
-    h+='</div>';
-  });
-  }
-  h+='</div>';
-});
-h+='</div>';
-}
-h+='</div>';
-});
-
-}else if(studyTab==='papers'){
-var paperKeys=Object.keys(STUDY).filter(function(k){return k.indexOf('papers')>=0});
-paperKeys.forEach(function(sk){
-  var subj=STUDY[sk];
-  var prog=getSubjProgress(sk);
-  var isOpen=openSubjects[sk];
-  
-  h+='<div style="background:#fff;border:1px solid #f0c0d5;border-radius:10px;margin-bottom:6px;overflow:hidden">';
-  h+='<div onclick="openSubjects[\''+sk+'\']='+(isOpen?'false':'true')+';window._scrollSave=window.scrollY;render()" style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;cursor:pointer">';
-  h+='<span style="font-size:12px;font-weight:700;color:#555">'+subj.emoji+' '+subj.name+'</span>';
-  h+='<div style="display:flex;align-items:center;gap:6px"><div style="width:40px;height:4px;background:#ffd6e8;border-radius:2px;overflow:hidden"><div style="height:100%;background:#e84f8a;width:'+prog.pct+'%"></div></div><span style="font-size:11px;font-weight:600;color:#e84f8a">'+prog.pct+'%</span><span style="color:#ccc;font-size:12px">'+(isOpen?'▾':'▸')+'</span></div>';
-  h+='</div>';
-  
-  if(isOpen){
-  subj.topics.forEach(function(t,idx){
-    var status=studyProgress[sk+'::'+idx]||'';
-    if(typeof status!=='string')status='learn';
-    var colors={learn:'#e85050',familiar:'#e8a040',practise:'#e8d040',secure:'#50c868'};
-    var col=colors[status]||'#ddd';
-    h+='<div data-study="'+sk+'::'+idx+'" style="display:flex;align-items:center;gap:10px;padding:9px 14px;cursor:pointer;border-top:0.5px solid #f8f0f4;'+(status==='secure'?'opacity:0.4':'')+'">';
-    h+='<div style="width:16px;height:16px;border-radius:4px;background:'+col+';flex-shrink:0;border:2px solid '+(status?col:'#ccc')+'"></div>';
-    h+='<span style="font-size:12px;color:'+(status==='secure'?'#bbb':'#555')+';flex:1;'+(status==='secure'?'text-decoration:line-through':'')+'">'+t+'</span>';
-    if(status&&typeof status==='string'){h+='<span style="font-size:9px;color:'+col+';font-weight:600">'+status.toUpperCase()+'</span>';}
-    h+='</div>';
-  });
-  }
-  h+='</div>';
-});
-
-}else if(studyTab==='logs'){
-// Error logs
-h+='<div style="font-size:12px;color:#d09ab0;margin-bottom:10px">Every dropped mark: topic · why · fix</div>';
-['maths','physics','fm'].forEach(function(subj){
-  var label=subj==='fm'?'Further Maths':subj.charAt(0).toUpperCase()+subj.slice(1);
-  var emoji=subj==='maths'?'📐':subj==='physics'?'⚛️':'🧮';
-  h+='<div style="margin-bottom:12px"><div style="font-size:12px;font-weight:700;color:#c4567a;margin-bottom:6px">'+emoji+' '+label+'</div><textarea style="width:100%;min-height:80px;border:1px solid #f0c0d5;border-radius:10px;padding:10px;font-size:12px;font-family:inherit;resize:vertical;box-sizing:border-box;line-height:1.6" placeholder="Topic · why · fix..." onchange="errorLogs[\''+subj+'\']=this.value;localStorage.setItem(\'errorLogs\',JSON.stringify(errorLogs))">'+(errorLogs[subj]||'')+'</textarea></div>';
-});
-
-// Standing rules
-h+='<div style="margin-top:14px;padding:12px;background:#fff0f5;border-radius:10px;font-size:11px;color:#888;line-height:1.6">';
-h+='<div style="font-size:12px;font-weight:700;color:#c4567a;margin-bottom:6px">📋 standing rules</div>';
-h+='<b>Drop order:</b> TMUA first, then Maths/Physics. FM never.<br>';
-h+='<b>Late start:</b> cut blocks, never the 7pm line.<br>';
-h+='<b>Error log:</b> every dropped mark = topic · why · fix.<br>';
-h+='<b>Every question:</b> first-line check (20 sec) + sanity check.<br>';
-h+='<b>Papers:</b> oldest first. Most recent sealed for December.<br>';
-h+='<b>STATS mission:</b> U → C by round 2 → A by round 3.</div>';
-
-}else if(studyTab==='cal'){
-// Calendar view
-var monthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
-h+='<div class="cal-nav"><button class="cal-nav-btn" onclick="calPrev()">‹</button><span class="cal-month">'+monthNames[calMonth]+' '+calYear+'</span><button class="cal-nav-btn" onclick="calNext()">›</button></div>';
-
-// Day headers
-h+='<div class="cal-grid">';
-['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].forEach(function(d){h+='<div class="cal-day-hdr">'+d+'</div>'});
-
-// Calendar days
-var firstDay=new Date(calYear,calMonth,1);
-var lastDay=new Date(calYear,calMonth+1,0);
-var startDow=(firstDay.getDay()+6)%7;
-var todayStr=new Date().toISOString().slice(0,10);
-var nowDate=new Date();
-
-// Empty cells before first day
-for(var e=0;e<startDow;e++){h+='<div class="cal-day empty"></div>';}
-
-// Day cells
-for(var d=1;d<=lastDay.getDate();d++){
-  var dateStr=calYear+'-'+String(calMonth+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');
-  var isToday=dateStr===todayStr;
-  var isBlocked=blockedDays[dateStr];
-  var hasPlan=DAILY_PLAN[dateStr];
-  var isPast=new Date(dateStr)<new Date(todayStr);
-  var cls='cal-day';
-  if(isToday)cls+=' today';
-  else if(isBlocked)cls+=' blocked';
-  else if(hasPlan)cls+=' has-plan';
-  if(isPast&&!isToday)cls+=' past';
-  h+='<div class="'+cls+'" onclick="toggleBlockDay(\''+dateStr+'\')">'+d+'</div>';
-}
-
-h+='</div>';
-
-// Legend
-h+='<div class="cal-legend"><span><span class="cal-legend-dot" style="background:#e84f8a"></span> today</span><span><span class="cal-legend-dot" style="background:#ffd6e8"></span> blocked</span><span><span class="cal-legend-dot" style="border:2px solid #e84f8a"></span> has plan</span></div>';
-
-// Blocked days list
-var blockedList=Object.keys(blockedDays).filter(function(k){return blockedDays[k]}).sort();
-if(blockedList.length){
-h+='<div style="margin-top:14px;font-size:12px;font-weight:700;color:#c4567a;margin-bottom:6px">blocked days ('+blockedList.length+')</div>';
-blockedList.forEach(function(d){
-  var dt=new Date(d);
-  var dayName=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dt.getDay()];
-  h+='<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-bottom:0.5px solid #ffe8f2;font-size:11px"><span>'+dayName+' '+d+'</span><button style="background:none;border:none;color:#e84f8a;cursor:pointer;font-size:11px" onclick="toggleBlockDay(\''+d+'\')">unblock</button></div>';
-});
-}
-}
 
 }else if(curTab==='shop'){
 
